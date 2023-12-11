@@ -1,6 +1,33 @@
 .promo {
     width: 100%;
     height: 574px;
-    color: #073042;
+    background: #073042;
 }
 
+.promo__container_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.promo__title_main {
+    color: #fff;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+    margin: 0;
+}
+
+.promo__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.73px;
+}
+
+.promo__logo {
+    width: 310px;
+    height: 304px;
+}

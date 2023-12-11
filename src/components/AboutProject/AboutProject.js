@@ -5,7 +5,7 @@ import MainTitle from '../MainTitle/MainTitle'
 const AboutProject = () => {
     return (
         <div className="aboutproject">
-            <MainTitle title = "О проекте" />
+            <MainTitle title="О проекте" />
             <div className='aboutproject__content'>
                 <div className='aboutproject__col1'>
                     <p className='aboutproject__col_title_1'>Дипломный проект включал 5 этапов</p>
@@ -29,25 +29,6 @@ const AboutProject = () => {
                     <p className='aboutproject__timeline_frontend_week'>4 недели</p>
                     <p className='aboutproject__timeline_frontend_text'>Front-end</p>
                 </div>
-            </div>
-
-            <div className="promo__container">
-
-                <div className="promo__container_content">
-                    <div className="promo__container_title">
-                        <p className="promo__title_main">
-                            Учебный проект студента
-                            факультета
-                            Веб-разработки.
-                        </p>
-                        <p className="promo__title_footer">
-                            Листайте ниже, чтобы узнать больше про этот
-                            проект и его создателя.
-                        </p>
-                    </div>
-                    <img alt="logo" src={imgLogo} />
-                </div>
-                <div className="promo__button_more"></div>
             </div>
         </div>
     )

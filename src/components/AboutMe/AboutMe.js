@@ -1,7 +1,8 @@
 import React from 'react'
 import './AboutMe.css'
 import MainTitle from '../MainTitle/MainTitle'
-import imgAvatar from '../images/popup-error.png'
+import Portfolio from '../Portfolio/Portfolio'
+import imgAvatar from '../../images/logo.svg'
 
 const AboutMe = () => {
     return (
@@ -27,14 +28,6 @@ const AboutMe = () => {
                 <Portfolio title="Статичный сайт" />
                 <Portfolio title="Адаптивный сайт" />
                 <Portfolio title="Одностраничное приложение" />
-            </div>
-            <p className="aboutme__prefooter">
-                Учебный проект Яндекс.Практикум х BeatFilm.
-            </p>
-            <div className="aboutme__footer">
-                <p className="aboutme__footer_year">© 2023</p>
-                <a className="aboutme__footer_practicum" href="https://practicum.yandex.ru">Яндекс.Практикум</a>
-                <a className="aboutme__footer_github" href="https://github.com/taniauvya">Github</a>
             </div>
         </div>
     )
