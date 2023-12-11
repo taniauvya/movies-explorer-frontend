@@ -1,11 +1,11 @@
 import React from 'react'
 import './AboutProject.css'
-
+import MainTitle from '../MainTitle/MainTitle'
 
 const AboutProject = () => {
     return (
         <div className="aboutproject">
-            <h1 className="aboutproject__title_main">О проекте</h1>
+            <MainTitle title = "О проекте" />
             <div className='aboutproject__content'>
                 <div className='aboutproject__col1'>
                     <p className='aboutproject__col_title_1'>Дипломный проект включал 5 этапов</p>
