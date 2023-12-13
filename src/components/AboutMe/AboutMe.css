@@ -1,0 +1,22 @@
+.aboutme {
+    height: 1079px;
+}
+
+.aboutme__container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+.aboutme__about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutme__portfolio_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #A0A0A0;
+}

@@ -3,7 +3,7 @@ import './MainTitle.css'
 
 const MainTitle = (props) => {
     return (
-            <h1 className="maintitle">{props.title}</h1>
+        <h1 className="maintitle">{props.title}</h1>
     )
 };
 

@@ -4,13 +4,19 @@
     background: #073042;
 }
 
+.promo__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .promo__container_content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+   
 }
 
 .promo__title_main {
@@ -22,6 +28,8 @@
 }
 
 .promo__text {
+    color: #fff;
+    opacity: 50%;
     font-weight: 400;
     font-size: 13px;
     line-height: 15.73px;
@@ -30,4 +38,23 @@
 .promo__logo {
     width: 310px;
     height: 304px;
+}
+
+.promo__container_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 129px;
+    height: 36px;
+    opacity: 60%;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+.promo__link_more {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #fff;
 }

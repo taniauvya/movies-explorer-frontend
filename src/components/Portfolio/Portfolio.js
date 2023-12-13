@@ -10,7 +10,7 @@ const Portfolio = (props) => {
                 </h1>
                 <a className="portfolio__link" href={props.link}></a>
             </div>
-            <div className="portfoli__underline"></div>
+            <div className="portfolio__underline" />
         </div>
     )
 };

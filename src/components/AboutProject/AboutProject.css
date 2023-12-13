@@ -1,0 +1,57 @@
+.aboutproject {
+    height: 608px;
+}
+
+.aboutproject__content_main {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+.aboutproject__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutproject__col_title_1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.2px;
+    letter-spacing: -4%;
+}
+
+.aboutproject__col_title_2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.aboutproject__timeline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.aboutproject__timeline_backend {
+    text-align: center;
+    flex-basis: 25%;
+}
+
+.aboutproject__timeline_frontend {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.aboutproject__timeline_backend_week {
+    background-color: #2BE080;
+}
+
+.aboutproject__timeline_frontend_week {
+    background-color: #F2F2F2;
+}
+
+.aboutproject__timeline_bottom_text {
+    color: #A0A0A0;
+}

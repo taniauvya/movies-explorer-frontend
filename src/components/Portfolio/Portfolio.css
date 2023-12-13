@@ -1,0 +1,22 @@
+.portfolio__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.portfolio__link {
+    display: block;
+    background: url("../../images/portfolio-link.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 60px;
+}
+
+.portfolio__underline {
+    border-bottom: 1px solid;
+    width: 100%;
+    display: block;
+    border-color: #E8E8E8;
+}
