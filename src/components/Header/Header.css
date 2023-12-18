@@ -3,3 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.header__link_active {
+    font-weight: 500;
+}
