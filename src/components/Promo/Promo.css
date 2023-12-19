@@ -58,3 +58,11 @@
     outline-color: transparent;
     color: #fff;
 }
+
+.header_account_color {
+    background-color: #2BE080;
+}
+
+.header_link_color {
+    color: #fff !important;
+}

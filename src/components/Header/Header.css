@@ -5,5 +5,20 @@
 }
 
 .header__link_active {
-    font-weight: 500;
+    font-weight: 700 !important;
+}
+
+.header__account_container {
+    border-radius: 40px;
+    width: 100px;
+    height: 32px;
+}
+
+.header__link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #000;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
 }

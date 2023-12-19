@@ -3,17 +3,18 @@ import './Header.css'
 import imgLogo from '../../images/logo.svg'
 import imgAccountButton from '../../images/account-button.svg'
 
-const linkClass = ({isActive}) => `header__link ${isActive ? "header__link_active" : ""}`;
+const Header = ({linkClass, accountClass}) => {
 
-const Header = () => {
+    const linkClassNav = ({isActive}) => `${linkClass || ""} header__link ${isActive ? "header__link_active" : ""}`;
+
     return (
         <div className="header">
             <img alt="logo" src={imgLogo} />
             <div className="header___container_link">
-                <NavLink to="/movies" className={linkClass}>Фильмы</NavLink>
-                <NavLink to="/saved-movies" className={linkClass}>Сохранённые фильмы</NavLink>
+                <NavLink to="/movies" className={linkClassNav}>Фильмы</NavLink>
+                <NavLink to="/saved-movies" className={linkClassNav}>Сохранённые фильмы</NavLink>
             </div>
-            <div className="header__account_container">
+            <div className={`header__account_container ${accountClass || ""}`}>
                 <Link to="/profile" className="header__account_link">Аккаунт</Link>
                 <img alt="Аккаунт" className="header__account_img" src={imgAccountButton} />
             </div>
