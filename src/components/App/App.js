@@ -8,6 +8,7 @@ import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
+import PageNotFound from '../PageNotFound/PageNotFound';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/saved-movies" element={<SavedMovies />} />
           <Route path="/signin" element={<Login />} />
           <Route path="/signup" element={<Register />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
     </CurrentUserContext.Provider >
