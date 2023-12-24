@@ -12,7 +12,7 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
 
 const App = () => {
 
-  const [currentUser, setCurrentUser] = React.useState({ name: '', about: '', email: '' });
+  const [currentUser, setCurrentUser] = React.useState({ name: 'Виталий', about: '', email: 'mail@mail.ru' });
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
