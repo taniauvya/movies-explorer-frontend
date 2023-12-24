@@ -7,6 +7,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 65px;
+}
+
+.footer__title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.73px;
+    color: #E8E8E8;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
 }
 
 .footer__container_bottom {
@@ -14,8 +29,28 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    padding-top: 7px;
 }
 
 .footer__year {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.73px;
     margin: 0;
 }
+
+.footer__container_link {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+}
+
+.footer___link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #000;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.73px;
+}
+

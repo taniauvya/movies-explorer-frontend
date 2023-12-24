@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer = () => {
@@ -11,8 +11,8 @@ const Footer = () => {
                 <div className="footer__container_bottom">
                     <p className="footer__year">© 2023</p>
                     <div className="footer__container_link">
-                        <a className="footer___link_practicum" href="https://practicum.yandex.ru">Яндекс.Практикум</a>
-                        <a className="footer___link_github" href="https://github.com/taniauvya">Github</a>
+                        <Link className="footer___link" to="https://practicum.yandex.ru">Яндекс.Практикум</Link>
+                        <Link className="footer___link" to="https://github.com">Github</Link>
                     </div>
                 </div>
             </div>
