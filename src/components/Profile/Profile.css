@@ -59,9 +59,9 @@
     line-height: 15.73px;
 }
 
-.profile__link_logout {
-    text-decoration: none;
-    outline-color: transparent;
+.profile__button_logout {
+    border: none;
+    background-color: transparent;
     color: #FF3055;
     font-weight: 500;
     font-size: 13px;

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import './Profile.css';
 import Header from '../Header/Header';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
@@ -28,7 +27,7 @@ const Profile = ({ username, email }) => {
                             Редактировать
                         </button>
                     </form>
-                    <Link to="/logout" className='profile__link_logout'>Выйти из аккаунта</Link>
+                    <button className='profile__button_logout'>Выйти из аккаунта</button>
                 </div>
             </div>
         </div>
