@@ -65,3 +65,35 @@
     width: 12px;
     height: 12px;
 }
+
+.header__container_login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__register_link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.header__login_link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #2BE080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 32px;
+    border-radius: 3px;
+}
