@@ -1,13 +1,12 @@
 .techs {
     background-color: #F5F5F5;
     height: 625px;
-
 }
 
 .techs__container_main {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 100px;
 }
 
 .techs__container {
@@ -15,12 +14,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 86px;
+}
+
+.techs__container_title_main {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -4%;
+    margin: 0;
+}
+
+.techs__container_text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -4%;
+    margin: 0;
+    padding-top: 30px;
 }
 
 .techs__list {
     display: flex;
     gap: 10px;
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-left: 0px;
+    margin: 0;
 }
 
 .techs__list_item {
