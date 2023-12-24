@@ -1,7 +1,14 @@
-.header {
+.header__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 17px;
+}
+
+.header___container_link {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .header__link_active {

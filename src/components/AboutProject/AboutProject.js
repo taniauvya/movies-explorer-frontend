@@ -4,7 +4,7 @@ import MainTitle from '../MainTitle/MainTitle'
 
 const AboutProject = () => {
     return (
-        <div className="aboutproject">
+        <div id="aboutproject" className="aboutproject">
             <div className="aboutproject__content_main">
                 <MainTitle title="О проекте" />
                 <div className='aboutproject__content'>
