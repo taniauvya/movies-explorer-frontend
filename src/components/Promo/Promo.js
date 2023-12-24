@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import './Promo.css'
 import Header from '../Header/Header';
-import { Link } from 'react-router-dom';
 import imgWorldLogo from '../../images/logo-world.svg'
 
 const Promo = () => {

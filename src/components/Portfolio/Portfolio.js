@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import './Portfolio.css'
 
 const Portfolio = (props) => {
@@ -8,7 +8,7 @@ const Portfolio = (props) => {
                 <h1 className="portfolio__title">
                     {props.title}
                 </h1>
-                <a className="portfolio__link" href={props.link}></a>
+                <Link className="portfolio__link" to={props.link}></Link>
             </div>
             <div className="portfolio__underline" />
         </div>

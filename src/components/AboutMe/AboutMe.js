@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
 import './AboutMe.css'
 import MainTitle from '../MainTitle/MainTitle'
 import Portfolio from '../Portfolio/Portfolio'
@@ -23,7 +23,7 @@ const AboutMe = () => {
                             2015 года работал в компании «СКБ Контур». После того, как прошёл курс по<br />
                             веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.
                         </p>
-                        <a className="aboutme__p" href="https://github.com/taniauvya">Github</a>
+                        <Link className="aboutme__link" to="https://github.com/taniauvya">Github</Link>
                     </div>
                     <img alt="Аватар" src={imgAvatar} />
                 </div>

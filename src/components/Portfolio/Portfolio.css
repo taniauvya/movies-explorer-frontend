@@ -1,9 +1,20 @@
+.portfolio {
+    padding-top: 17px;
+}
+
 .portfolio__line {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.portfolio__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -4%;
+    margin: 0;
+}
 
 .portfolio__link {
     display: block;
@@ -15,6 +26,7 @@
 }
 
 .portfolio__underline {
+    padding-top: 10px;
     border-bottom: 1px solid;
     width: 100%;
     display: block;
