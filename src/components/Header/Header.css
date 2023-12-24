@@ -34,6 +34,7 @@
     border-radius: 40px;
     width: 100px;
     height: 32px;
+    box-shadow: 0 0 50px #ccc;
 }
 
 .header__account_link {
