@@ -16,7 +16,9 @@ const Header = ({linkClass, accountClass}) => {
             </div>
             <div className={`header__account_container ${accountClass || ""}`}>
                 <Link to="/profile" className="header__account_link">Аккаунт</Link>
-                <img alt="Аккаунт" className="header__account_img" src={imgAccountButton} />
+                <div className="header__container_account_img">
+                    <img alt="Аккаунт" className="header__account_img" src={imgAccountButton} />
+                </div>
             </div>
         </div>
     )

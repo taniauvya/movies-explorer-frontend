@@ -8,12 +8,6 @@
     font-weight: 700 !important;
 }
 
-.header__account_container {
-    border-radius: 40px;
-    width: 100px;
-    height: 32px;
-}
-
 .header__link {
     text-decoration: none;
     outline-color: transparent;
@@ -21,4 +15,43 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
+}
+
+.header__account_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    width: 100px;
+    height: 32px;
+}
+
+.header__account_link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #000;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    padding-left: 10px;
+    position: relative;
+    top: -2px;
+}
+
+.header__container_account_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: #F9F9F9;
+    position: relative;
+    right: 5px;
+}
+
+.header__account_img {
+    width: 12px;
+    height: 12px;
 }
