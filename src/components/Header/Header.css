@@ -8,7 +8,9 @@
 .header___container_link {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 16px;
+    align-items: center;
+    padding-left: 55px;
 }
 
 .header__link_active {

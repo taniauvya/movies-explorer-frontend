@@ -4,13 +4,42 @@
     width: 270px;
 }
 
+.moviescard__img {
+    width: 270px;
+    height: 151px;
+}
+
 .moviescard__row1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.moviescard__row1 {
+    padding-top: 13px;
+    padding-bottom: 24px;
+}
+
+.moviescard__title {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15.73px;
+    margin: 0;
+}
+
+.moviescard__duration {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13.31px;
+    color: #A0A0A0;
+    margin: 0;
+    padding-top: 3px;
+    display: block;
+    border-top: 1px solid;
+}
+
 .moviescard__like {
     width: 24px;
     height: 24px;
 }
+

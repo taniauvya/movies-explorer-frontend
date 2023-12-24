@@ -13,7 +13,9 @@ const Main = () => {
             <AboutProject />
             <Techs />
             <AboutMe />
-            <Footer />
+            <div className='main__container_footer'>
+                <Footer />
+            </div>
         </>
     )
 };

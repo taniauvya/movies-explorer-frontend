@@ -11,7 +11,7 @@ import Login from '../Login/Login';
 
 const App = () => {
   return (
-    <>
+    <div className='app'>
       <ScrollToAnchor />
       <Routes>
         <Route path="/" element={<Main />} />
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Register />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

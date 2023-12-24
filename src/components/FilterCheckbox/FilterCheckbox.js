@@ -1,5 +1,5 @@
 import React from 'react'
-import './Checkbox.css'
+import './FilterCheckbox.css'
 
 const Checkbox = ({ name }) => {
     return (

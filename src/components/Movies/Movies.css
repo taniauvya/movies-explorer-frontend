@@ -1,5 +1,39 @@
 .movies__container {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.movies__container_searchform {
+    padding-top: 86px;
+}
+
+.movies__container_cardlist {
+    padding-top: 117px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.movies__container_footer {
+    padding-top: 146px;
+}
+
+.movies__container_load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 62px;
+}
+
+.movies__button_load {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.52px;
+    width: 320px;
+    height: 36px;
+    background-color: #F9F9F9;
+    border: none;
+}
+
+.movies__container_preloader {
+    display: none;
 }
