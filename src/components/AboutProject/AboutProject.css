@@ -3,15 +3,16 @@
 }
 
 .aboutproject__content_main {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 110px;
 }
 
 .aboutproject__content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding-top: 48px;
+    gap: 188px;
 }
 
 .aboutproject__col_title_1 {
@@ -25,18 +26,19 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    padding-top: 7px;
 }
 
 .aboutproject__timeline {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 81px;
 }
 
 .aboutproject__timeline_backend {
     text-align: center;
-    flex-basis: 25%;
+    flex-basis: 20%;
 }
 
 .aboutproject__timeline_frontend {
@@ -46,10 +48,19 @@
 
 .aboutproject__timeline_backend_week {
     background-color: #2BE080;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .aboutproject__timeline_frontend_week {
     background-color: #F2F2F2;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutproject__timeline_bottom_text {

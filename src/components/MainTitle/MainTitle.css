@@ -1,8 +1,10 @@
 .maintitle {
+    display: block;
     font-weight: 400;
     font-size: 22px;
     line-height: 26.63px;
     border-bottom: 1px solid;
+    padding-bottom: 24px;
     width: 100%;
-    display: block;
+    margin: 0;
 }
