@@ -1,0 +1,18 @@
+.savedmovies__container {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.savedmovies__container_searchform {
+    padding-top: 86px;
+}
+
+.savedmovies__container_cardlist {
+    padding-top: 117px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.savedmovies__container_footer {
+    padding-top: 306px;
+}
