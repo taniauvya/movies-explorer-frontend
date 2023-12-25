@@ -14,12 +14,12 @@ const Promo = () => {
                 <div className="promo__container_content">
                     <div className="promo__container_title">
                         <h1 className="promo__title_main">
-                            Учебный проект студента<br />
-                            факультета<br />
-                            Веб-разработки.
+                            Учебный проект студента
+                            факультета
+                            Веб&#8209;разработки.
                         </h1>
                         <h2 className="promo__text">
-                            Листайте ниже, чтобы узнать больше про этот<br />
+                            Листайте ниже, чтобы узнать больше про этот
                             проект и его создателя.
                         </h2>
                     </div>

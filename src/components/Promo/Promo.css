@@ -23,6 +23,7 @@
     font-size: 50px;
     line-height: 58px;
     margin: 0;
+    max-width: 640px;
 }
 
 .promo__text {
@@ -32,6 +33,7 @@
     font-size: 13px;
     line-height: 15.73px;
     padding-top: 29px;
+    max-width: 310px;
 }
 
 .promo__logo {
