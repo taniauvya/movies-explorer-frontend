@@ -51,6 +51,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
 }
 
 .aboutproject__timeline_frontend_week {
@@ -59,8 +62,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
 }
 
 .aboutproject__timeline_bottom_text {
     color: #A0A0A0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@media (max-width: 768px) {
+    .aboutproject {
+        height: 585px;
+    }
+
+    .aboutproject__content_main {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 88px;
+      }
+
+      .aboutproject__content {
+        display: flex;
+        flex-direction: row;
+        padding-top: 48px;
+        gap: 45px;
+    }
+
+    .aboutproject__col_title_2 {
+        padding-top: 2px;
+    }
+
+    .aboutproject__timeline {
+        padding-top: 60px;
+    }
 }
