@@ -1,28 +1,33 @@
+import { Link } from 'react-router-dom';
 import './LoginRegisterForm.css';
 import imgLogo from '../../images/logo.svg'
 
-const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, linkText, children }) => {
+const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, linkText, linkAddress, children }) => {
     return (
         <div className="loginregister" tabIndex="0">
-            <img className="loginregister__logo" src={imgLogo} />
-            <h1 className="loginregister__title">{title}</h1>
+            <div className="loginregister__container">
+                <div className="loginregister__container_logo">
+                    <img className="loginregister__logo" src={imgLogo} />
+                    <h1 className="loginregister__title">{title}</h1>
+                </div>
 
-            <form name={formName} className="loginregister__form" onSubmit={onSubmit}>
+                <form name={formName} className="loginregister__form" onSubmit={onSubmit}>
 
-                {children}
+                    <div className="loginregister__container_input">
+                        {children}
+                    </div>
+                    <p className="loginregister__error" />
+                    <div className='c123'/>
+                    <button aria-label={buttonText} className="loginregister__submit" type="submit">
+                        {buttonText}
+                    </button>
+                </form>
 
-                <button aria-label={buttonText} className="loginregister__submit" type="submit">
-                    {buttonText}
-                </button>
-            </form>
-
-            <div className="loginregister__error" />
-
-            <div className="loginregister__link">
-                <p className='loginregister__link_title'>{linkTitle}</p>
-                <a href="/login">{linkText}</a>
+                <div className="loginregister___container_link">
+                    <p className='loginregister__link_title'>{linkTitle}</p>
+                    <Link to={linkAddress} className='loginregister__link'>{linkText}</Link>
+                </div>
             </div>
-
         </div>
 
     );

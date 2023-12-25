@@ -1,0 +1,28 @@
+.loginregisterinput {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.loginregisterinput__label {
+    color: #A0A0A0;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12.1px;
+}
+
+.loginregisterinput__input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #E8E8E8;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+    padding-bottom: 12px;
+}
+
+.loginregisterinput__input:focus {
+    border-bottom: 1px solid #3456F3;
+}

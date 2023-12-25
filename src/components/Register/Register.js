@@ -9,7 +9,8 @@ const Register = () => {
             formName="register"
             buttonText="Зарегистрироваться"
             linkTitle="Уже зарегистрированы?"
-            linkText="Войти">
+            linkText="Войти"
+            linkAddress="/signin">
 
             <LoginRegisterInput
                 type="text"

@@ -1,0 +1,99 @@
+.loginregister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.c123 {
+flex-grow: 1;
+}
+
+.loginregister__container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 396px;
+    height: 100%;
+}
+ 
+.loginregister__container_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+}
+
+.loginregister__logo {
+    width: 38px;
+    height: 38px;
+}
+
+.loginregister__title {
+    padding-top: 38px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.05px;   
+    margin: 0;
+}
+
+.loginregister__form {
+    flex-grow: 1;
+    width: 100%;
+    padding-top: 43px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginregister__container_input {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.loginregister__space {
+    flex-grow: 1;
+    min-height: 100px;
+}
+
+.loginregister__submit {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    background-color: #3456F3;
+    border: none;
+    height: 45px;
+    color: #fff;
+}
+
+.loginregister___container_link {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 16px;
+    padding-bottom: 181px;
+}
+
+.loginregister__link_title {
+    color: #A0A0A0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+    margin: 0;
+}
+
+.loginregister__link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #3456F3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+
+.loginregister__error {
+    display: none;
+}

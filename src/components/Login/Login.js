@@ -9,19 +9,21 @@ const Login = () => {
             formName="login"
             buttonText="Войти"
             linkTitle="Ещё не зарегистрированы?"
-            linkText="Регистрация">
-
-            <LoginRegisterInput
-                type="text"
-                name="name"
-                title="Имя"
-            />
+            linkText="Регистрация"
+            linkAddress="/signup">
 
             <LoginRegisterInput
                 type="email"
                 name="email"
                 title="E-mail"
             />
+
+            <LoginRegisterInput
+                type="password"
+                name="password"
+                title="Пароль"
+            />
+
         </LoginRegisterForm>
     );
 }
