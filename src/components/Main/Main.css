@@ -3,3 +3,11 @@
     padding-right: 70px;
     padding-top: 65px;
 }
+
+@media (max-width: 768px) {
+    .main__container_footer {
+        padding-left: 30px;
+        padding-right: 29px;
+        padding-top: 74px;
+    }
+}

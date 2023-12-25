@@ -19,7 +19,6 @@
     font-weight: 400;
     font-size: 50px;
     line-height: 58px;
-    letter-spacing: -4%;
     margin: 0;
 }
 
@@ -40,6 +39,10 @@
     max-width: 599px;
 }
 
+.aboutme__portfolio {
+    padding-top: 100px;
+}
+
 .aboutme__portfolio_title {
     font-weight: 400;
     font-size: 18px;
@@ -58,10 +61,6 @@
     display: block;
 }
 
-.aboutme__portfolio {
-    padding-top: 100px;
-}
-
 .aboutme__portfolio_title {
     font-weight: 400;
     font-size: 18px;
@@ -70,4 +69,63 @@
     margin: 0;
     display: block;
     padding-bottom: 35px;
+}
+
+.aboutme__about_avatar {
+    width: 270px;
+    height: 327px;
+}
+
+@media (max-width: 768px) {
+    .aboutme {
+        height: 994px;
+    }
+
+    .aboutme__container {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 92px;
+    }
+
+    .aboutme__h1 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+        margin: 0;
+    }
+    
+    .aboutme__h2 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0;
+        padding-top: 20px; 
+    }
+    
+    .aboutme__p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0;
+        padding-top: 20px;
+        max-width: 599px;
+    }
+
+    .aboutme__about_avatar {
+        width: 255px;
+        height: 307px;
+    }
+
+    .aboutme__p {
+        max-width: 364px;
+    }
+
+    .aboutme__link {
+        padding-top: 88px;
+    }
+
+    .aboutme__portfolio {
+        padding-top: 93px;
+    }
+    
 }

@@ -25,7 +25,7 @@ const AboutMe = () => {
                         </p>
                         <Link className="aboutme__link" to="https://github.com/taniauvya">Github</Link>
                     </div>
-                    <img alt="Аватар" src={imgAvatar} />
+                    <img alt="Аватар" src={imgAvatar} className='aboutme__about_avatar' />
                 </div>
                 <div className="aboutme__portfolio">
                     <p className="aboutme__portfolio_title">Портфолио</p>
