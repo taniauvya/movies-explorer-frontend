@@ -20,6 +20,44 @@
     display: none;
 }
 
+.header__container_login {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+.header__container_login_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.header__register_link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.header__login_link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #2BE080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 32px;
+    border-radius: 3px;
+}
+
 @media (max-width: 768px) {
 
     .header {
