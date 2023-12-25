@@ -14,7 +14,9 @@ const SearchForm = () => {
                 </div>
                 <div className="searchform__form_underline" />
                 <div className="searchform__form_line2">
-                    <FilterCheckbox name="shortCheck" />
+                    <FilterCheckbox
+                        name="shortCheck"
+                        orderClass="searchform__order_checkbox" />
                     <label className="searchform__short_label">Короткометражки</label>
                 </div>
             </form>

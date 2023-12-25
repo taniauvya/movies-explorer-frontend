@@ -1,7 +1,6 @@
 .moviescard {
     display: flex;
     flex-direction: column;
-    width: 270px;
 }
 
 .moviescard__img {
@@ -43,3 +42,10 @@
     height: 24px;
 }
 
+@media (max-width: 768px) {
+
+    .moviescard__img {
+        width: 339px;
+        height: 190px;
+    }
+}

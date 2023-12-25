@@ -23,6 +23,7 @@
 }
 
 .searchform__submit {
+    color:#fff; 
     background-color: #3456F3;
     border-radius: 15px;
     border: none;
@@ -52,4 +53,19 @@
     font-size: 13px;
     line-height: 18px;
     padding-left: 14px;
+}
+
+@media (max-width: 768px) {
+    .searchform__form_line2 {
+        justify-content: end;
+        gap: 15px;
+    }
+
+    .searchform__order_checkbox {
+        order: 2;
+    }
+
+    .searchform__short_label {
+        order: 1;
+    }
 }

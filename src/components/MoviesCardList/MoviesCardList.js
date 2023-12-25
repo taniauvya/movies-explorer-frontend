@@ -1,51 +1,30 @@
 import React from 'react'
 import './MoviesCardList.css'
 import MoviesCard from '../MoviesCard/MoviesCard'
+import imgLikeUnchecked from '../../images/like-unchecked.svg'
+import imgLikeChecked from '../../images/like-checked.svg'
+import imgRemoveSaved from '../../images/remove-saved.svg'
 
-const MoviesCardList = () => {
+const MoviesCardList = ({ movies, savedList }) => {
+
     return (
         <div className="moviescardlist">
             <ul className="moviescardlist__list">
-                <MoviesCard
-                    link="https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    title="Киноальманах «100 лет дизайна»"
-                    duration="1ч 42м"
-                    isLiked={false} />
-                <MoviesCard
-                    link="https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    title="Киноальманах «100 лет дизайна»"
-                    duration="1ч 42м"
-                    isLiked={true} />
-                <MoviesCard
-                    link="https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    title="Киноальманах «100 лет дизайна»"
-                    duration="1ч 42м"
-                    isLiked={false} />
-                <MoviesCard
-                    link="https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    title="Киноальманах «100 лет дизайна»"
-                    duration="1ч 42м"
-                    isLiked={false} />
-                <MoviesCard
-                    link="https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    title="Киноальманах «100 лет дизайна»"
-                    duration="1ч 42м"
-                    isLiked={false} />
-                <MoviesCard
-                    link="https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    title="Киноальманах «100 лет дизайна»"
-                    duration="1ч 42м"
-                    isLiked={false} />
-                <MoviesCard
-                    link="https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    title="Киноальманах «100 лет дизайна»"
-                    duration="1ч 42м"
-                    isLiked={false} />
-                <MoviesCard
-                    link="https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    title="Киноальманах «100 лет дизайна»"
-                    duration="1ч 42м"
-                    isLiked={false} />
+                {movies.map(movie => {
+
+                    const actionImg = savedList ? imgRemoveSaved :
+                        (movie.isLiked ? imgLikeChecked : imgLikeUnchecked);
+
+                    return (
+                        <MoviesCard
+                            link={movie.link}
+                            title={movie.title}
+                            duration={movie.duration}
+                            key={movie._id}
+                            actionImg={actionImg} />
+                    );
+                })}
+
             </ul>
         </div>
     )

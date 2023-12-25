@@ -37,3 +37,20 @@
 .movies__container_preloader {
     display: none;
 }
+
+@media (max-width: 768px) {
+    .movies__container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .movies__container_searchform {
+        padding-top: 96px;
+    }
+
+    .movies__container_cardlist {
+        padding-top: 120px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

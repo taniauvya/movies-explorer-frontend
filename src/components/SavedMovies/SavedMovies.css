@@ -16,3 +16,24 @@
 .savedmovies__container_footer {
     padding-top: 306px;
 }
+
+@media (max-width: 768px) {
+    .savedmovies__container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .savedmovies__container_searchform {
+        padding-top: 96px;
+    }
+
+    .savedmovies__container_cardlist {
+        padding-top: 120px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .savedmovies__container_footer {
+        padding-top: 220px;
+    }
+}
