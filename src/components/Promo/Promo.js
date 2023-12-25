@@ -7,7 +7,7 @@ const Promo = () => {
     return (
         <div className="promo">
             <div className="promo__container">
-                <Header accountClass="header_account_color" linkClass="header_link_color" />
+                <Header navigationAccountClass="navigation_account_color" navigationLinkClass="navigation_link_color" />
                 <div className="promo__container_content">
                     <div className="promo__container_title">
                         <h1 className="promo__title_main">

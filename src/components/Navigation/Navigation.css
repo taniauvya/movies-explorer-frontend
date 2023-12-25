@@ -1,0 +1,104 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.navigation___container_link {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    /* position: relative;
+    left: calc(50%); */
+}
+
+.navigation__link_active {
+    font-weight: 900 !important;
+}
+
+.navigation__link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #000;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.navigation__account_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    width: 100px;
+    height: 32px;
+    box-shadow: 0 0 50px #ccc;
+}
+
+.navigation__account_link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #000;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    padding-left: 10px;
+    position: relative;
+    top: -2px;
+}
+
+.navigation__container_account_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: #F9F9F9;
+    position: relative;
+    right: 5px;
+}
+
+.navigation__account_img {
+    width: 12px;
+    height: 12px;
+}
+
+.navigation__container_login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.navigation__register_link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.navigation__login_link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #2BE080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 32px;
+    border-radius: 3px;
+}
+
+.navigation__space {
+    flex-basis: 64px;
+}

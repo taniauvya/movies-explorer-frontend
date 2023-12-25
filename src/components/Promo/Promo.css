@@ -62,11 +62,11 @@
     line-height: 16px;
 }
 
-.header_account_color {
+.navigation_account_color {
     background-color: #2BE080;
     box-shadow: none !important;
 }
 
-.header_link_color {
+.navigation_link_color {
     color: #fff !important;
 }
