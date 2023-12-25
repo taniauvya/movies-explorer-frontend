@@ -5,21 +5,14 @@
     height: 100vh;
 }
 
-
-.c123 {
-flex-grow: 1;
-}
-
 .loginregister__container {
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width: 396px;
-    height: 100%;
+    flex-grow: 1;
 }
- 
+
 .loginregister__container_logo {
     display: flex;
     flex-direction: column;
@@ -36,7 +29,7 @@ flex-grow: 1;
     padding-top: 38px;
     font-weight: 500;
     font-size: 24px;
-    line-height: 29.05px;   
+    line-height: 29.05px;
     margin: 0;
 }
 
@@ -56,7 +49,6 @@ flex-grow: 1;
 
 .loginregister__space {
     flex-grow: 1;
-    min-height: 100px;
 }
 
 .loginregister__submit {
@@ -74,7 +66,6 @@ flex-grow: 1;
     flex-direction: row;
     gap: 10px;
     padding-top: 16px;
-    padding-bottom: 181px;
 }
 
 .loginregister__link_title {
@@ -96,4 +87,30 @@ flex-grow: 1;
 
 .loginregister__error {
     display: none;
+}
+
+.loginregister__space_top {
+    flex-grow: 1;
+    flex-basis: 70px;
+    max-height: 70px;
+}
+
+.loginregister__space_bottom {
+    flex-grow: 1;
+    flex-basis: 140px;
+    max-height: 140px;
+}
+
+@media (max-width: 768px) {
+
+    .loginregister__space_top {
+        flex-basis: 233px;
+        max-height: 233px;
+    }
+
+    .loginregister__space_bottom {
+        flex-basis: 230px;
+        max-height: 230px;
+    }
+
 }
