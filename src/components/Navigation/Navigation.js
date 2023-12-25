@@ -29,7 +29,7 @@ const Navigation = ({ linkClass, accountClass }) => {
 
     return (
         <div className="navigation">
-            <div className='navigation__space'/>
+            <div className='navigation__space' />
             {(currentUser?.name !== '') &&
                 <div className="navigation___container_link">
                     <NavLink to="/movies" className={linkClassNav}>Фильмы</NavLink>

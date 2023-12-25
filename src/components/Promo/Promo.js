@@ -7,7 +7,10 @@ const Promo = () => {
     return (
         <div className="promo">
             <div className="promo__container">
-                <Header navigationAccountClass="navigation_account_color" navigationLinkClass="navigation_link_color" />
+                <Header
+                    navigationAccountClass="navigation_account_color"
+                    navigationLinkClass="navigation_link_color"
+                    isBlackLineNavMenu={false} />
                 <div className="promo__container_content">
                     <div className="promo__container_title">
                         <h1 className="promo__title_main">

@@ -10,12 +10,10 @@
     flex-direction: row;
     gap: 16px;
     align-items: center;
-    /* position: relative;
-    left: calc(50%); */
 }
 
 .navigation__link_active {
-    font-weight: 900 !important;
+    font-weight: 500 !important;
 }
 
 .navigation__link {
@@ -23,7 +21,7 @@
     outline-color: transparent;
     color: #000;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 18px;
 }
 

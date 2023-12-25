@@ -68,3 +68,19 @@
     line-height: 15.73px;
     padding-top: 15px;
 }
+
+@media (max-width: 768px) {
+    .profile__container {
+        padding-left: 26px;
+        padding-right: 43px;
+    }
+
+    .profile__container_content {
+        padding-top: 240px;
+    }
+
+    .profile__form {
+        padding-top: 80px;
+    }
+    
+}
