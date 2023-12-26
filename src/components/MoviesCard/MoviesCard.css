@@ -43,9 +43,15 @@
 }
 
 @media (max-width: 768px) {
-
     .moviescard__img {
         width: 339px;
         height: 190px;
+    }
+}
+
+@media (max-width: 768px) {
+    .moviescard__img {
+        width: 300px;
+        height: 168px;
     }
 }

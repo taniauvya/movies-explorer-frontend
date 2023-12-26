@@ -72,7 +72,7 @@
 @media (max-width: 768px) {
     .profile__container {
         padding-left: 26px;
-        padding-right: 43px;
+        padding-right: 26px;
     }
 
     .profile__container_content {
@@ -87,7 +87,7 @@
 @media (max-width: 320px) {
     .profile__container {
         padding-left: 10px;
-        padding-right: 27px;
+        padding-right: 10px;
     }
 
     .profile__container_content {

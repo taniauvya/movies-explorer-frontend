@@ -10,6 +10,7 @@
     font-size: 28px;
     line-height: 33.89px;
     color: #A0A0A0;
+    min-width: 0;
 }
 
 .checkbox__input {
@@ -32,6 +33,7 @@
     line-height: 18px;
     width: 58.65px;
     height: 34px;
+    flex-shrink: 0;
 }
 
 .searchform__form_underline {
@@ -68,4 +70,31 @@
     .searchform__short_label {
         order: 1;
     }
+}
+
+
+@media (max-width: 320px) {
+
+    .searchform__form {
+        min-width: 292px;
+    }
+
+    .searchform__film {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21.78px;
+    }
+
+    .searchform__form_line2 {
+        justify-content: center;
+        padding-top: 33px;
+    }
+
+    .searchform__short_label {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 18px;
+        padding-left: 0px;
+    }
+
 }

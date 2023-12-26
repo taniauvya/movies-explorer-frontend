@@ -14,3 +14,10 @@
         gap: 30px 23px;
     }
 }
+
+@media (max-width: 320px) {
+    .moviescardlist__list {
+        grid-template-columns: repeat(auto-fit, 300px);
+        gap: 33px;
+    }
+}

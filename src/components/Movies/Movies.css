@@ -54,3 +54,21 @@
         padding-right: 0px;
     }
 }
+
+
+@media (max-width: 320px) {
+    .movies__container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .movies__container_searchform {
+        padding-top: 100px;
+    }
+
+    .movies__container_cardlist {
+        padding-top: 87px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

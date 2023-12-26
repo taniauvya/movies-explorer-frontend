@@ -37,3 +37,20 @@
         padding-top: 220px;
     }
 }
+
+@media (max-width: 320px) {
+    .savedmovies__container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .savedmovies__container_searchform {
+        padding-top: 100px;
+    }
+
+    .savedmovies__container_cardlist {
+        padding-top: 87px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
