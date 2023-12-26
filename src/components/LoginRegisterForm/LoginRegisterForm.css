@@ -20,11 +20,6 @@
     width: 100%;
 }
 
-.loginregister__logo {
-    width: 38px;
-    height: 38px;
-}
-
 .loginregister__title {
     padding-top: 38px;
     font-weight: 500;
@@ -119,7 +114,6 @@
     }
 
     .loginregister__container_logo {
-        /* justify-content: center; */
         align-items: center;
         width: auto;
     }

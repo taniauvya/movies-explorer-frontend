@@ -3,6 +3,7 @@
     height: 20px;
     display: block;
     position: relative;
+    z-index: 1;
 }
 
 .checkbox__span {
@@ -13,8 +14,10 @@
     height: 100%;
     background-image: url("../../images/smalltumboff.svg");
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .checkbox__input:checked+.checkbox__span {
     background-image: url("../../images/smalltumb.svg");
+    z-index: 1;
 }

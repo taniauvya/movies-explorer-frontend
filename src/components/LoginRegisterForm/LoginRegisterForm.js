@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './LoginRegisterForm.css';
 import imgLogo from '../../images/logo.svg'
+import Logo from '../Logo/Logo'
+
 
 const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, linkText, linkAddress, children }) => {
     return (
@@ -11,7 +13,7 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
             <div className="loginregister__container">
 
                 <div className="loginregister__container_logo">
-                    <img className="loginregister__logo" src={imgLogo} />
+                    <Logo />
                     <h1 className="loginregister__title">{title}</h1>
                 </div>
 

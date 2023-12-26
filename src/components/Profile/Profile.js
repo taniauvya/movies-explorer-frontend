@@ -16,12 +16,12 @@ const Profile = ({ handleNavigationMenuClick }) => {
                     <form className="profile__form">
                         <div className="profile__input_container">
                             <label className="profile__form_label">Имя</label>
-                            <input className="profile__form_input" type="text" name="email" value={currentUser.name} />
+                            <input className="profile__form_input" type="text" name="email" defaultValue={currentUser.name} />
                         </div>
                         <div className="profile__input_separator" />
                         <div className="profile__input_container">
                             <label className="profile__form_label">E-mail</label>
-                            <input className="profile__form_input" type="email" name="email" value={currentUser.email} />
+                            <input className="profile__form_input" type="email" name="email" defaultValue={currentUser.email} />
                         </div>
                         <button aria-label="Редактировать" className="profile__submit" type="submit">
                             Редактировать

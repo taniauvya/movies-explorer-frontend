@@ -7,7 +7,7 @@ const SearchForm = () => {
         <div className="searchform">
             <form name="searchform" className="searchform__form">
                 <div className="searchform__form_line1">
-                    <input className="searchform__film" type="text" value="Фильм" />
+                    <input className="searchform__film" type="text" defaultValue="Фильм" />
                     <button aria-label="Найти" className="searchform__submit" type="submit">
                         Найти
                     </button>

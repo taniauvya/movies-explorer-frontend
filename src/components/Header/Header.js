@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
-import imgLogo from '../../images/logo.svg'
 import Navigation from '../Navigation/Navigation';
 import NavigationMenu from '../NavigationMenu/NavigationMenu'
+import Logo from '../Logo/Logo'
 import { CurrentUserContext } from '../../contexts/CurrentUserContext.js'
 
 const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMenu = true, handleNavigationMenuClick }) => {
@@ -39,7 +39,7 @@ const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMen
 
     return (
         <div className="header">
-            <img alt="logo" src={imgLogo} className='header__logo' />
+            <Logo />
 
             {linksElem}
         </div>
