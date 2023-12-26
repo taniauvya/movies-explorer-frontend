@@ -42,6 +42,10 @@
     height: 24px;
 }
 
+.moviescard__like:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .moviescard__img {
         width: 339px;

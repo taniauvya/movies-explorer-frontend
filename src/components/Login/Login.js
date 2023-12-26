@@ -16,12 +16,14 @@ const Login = () => {
                 type="email"
                 name="email"
                 title="E-mail"
+                required={true}
             />
 
             <LoginRegisterInput
                 type="password"
                 name="password"
                 title="Пароль"
+                required={true}
             />
 
         </LoginRegisterForm>

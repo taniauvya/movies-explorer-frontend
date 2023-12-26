@@ -24,7 +24,7 @@ const Promo = ({ handleNavigationMenuClick }) => {
                             проект и его создателя.
                         </h2>
                     </div>
-                    <img alt="logo" src={imgWorldLogo} className="promo__logo" />
+                    <img alt="Логотип" src={imgWorldLogo} className="promo__logo" />
                 </div>
                 <div className="promo__container_more">
                     <Link to="#aboutproject" className="promo__link_more">Узнать больше</Link>

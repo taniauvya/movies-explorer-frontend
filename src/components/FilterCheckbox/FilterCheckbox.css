@@ -4,6 +4,7 @@
     display: block;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 
 .checkbox__span {
@@ -17,7 +18,7 @@
     z-index: 1;
 }
 
-.checkbox__input:checked+.checkbox__span {
+.checkbox__input:checked + .checkbox__span {
     background-image: url("../../images/smalltumb.svg");
     z-index: 1;
 }

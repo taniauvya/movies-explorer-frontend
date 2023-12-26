@@ -16,18 +16,21 @@ const Register = () => {
                 type="text"
                 name="name"
                 title="Имя"
+                required={true}
             />
 
             <LoginRegisterInput
                 type="email"
                 name="email"
                 title="E-mail"
+                required={true}
             />
 
             <LoginRegisterInput
                 type="password"
                 name="password"
                 title="Пароль"
+                required={true}
             />
 
         </LoginRegisterForm>

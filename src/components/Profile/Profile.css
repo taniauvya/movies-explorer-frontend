@@ -57,6 +57,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 15.73px;
+    cursor: pointer;
 }
 
 .profile__button_logout {
@@ -67,6 +68,7 @@
     font-size: 13px;
     line-height: 15.73px;
     padding-top: 15px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {

@@ -21,6 +21,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid;
+    border-color: #E8E8E8;
+    padding-bottom: 13px;
+}
+
+.searchform__form_line1:focus-within {
+    border-color:#3456F3;   
 }
 
 .searchform__submit {
@@ -34,14 +41,7 @@
     width: 58.65px;
     height: 34px;
     flex-shrink: 0;
-}
-
-.searchform__form_underline {
-    border-bottom: 1px solid;
-    width: 100%;
-    display: block;
-    border-color: #E8E8E8;
-    padding-top: 13px;
+    cursor: pointer;
 }
 
 .searchform__form_line2 {
