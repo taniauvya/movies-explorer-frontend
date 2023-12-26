@@ -21,14 +21,16 @@
     font-weight: 400;
     font-size: 50px;
     line-height: 58px;
+    letter-spacing: -0.04em;
     margin: 0;
 }
 
-.techs__container_text{
+.techs__container_text {
     text-align: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    letter-spacing: -0.04em;
     margin: 0;
     padding-top: 30px;
 }
@@ -48,6 +50,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16.94px;
+    letter-spacing: -0.04em;
     background-color: #E8E8E8;
     width: 90px;
     height: 60px;
@@ -62,28 +65,14 @@
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 90px;
-      }
-
-      .aboutproject__content {
-        display: flex;
-        flex-direction: row;
-        padding-top: 48px;
-        gap: 45px;
     }
 
-    .aboutproject__col_title_2 {
-        padding-top: 2px;
-    }
-
-    .aboutproject__timeline {
-        padding-top: 60px;
-    }
-
-    .techs__container_text{
+    .techs__container_text {
         text-align: center;
         font-weight: 400;
         font-size: 12px;
         line-height: 18px;
+        letter-spacing: -0.04em;
         text-align: center;
         padding-top: 25px;
     }
@@ -94,6 +83,60 @@
         padding-top: 80px;
         padding-left: 0px;
         margin: 0;
+    }
+
+    .techs__list_item {
+        width: 84px;
+        height: 57px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.52px;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .techs {
+        background-color: #fff;
+        height: 651px;
+    }
+
+    .techs__container_main {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 71px;
+    }
+
+    .techs__container {
+        padding-top: 60px;
+    }
+
+    .techs__container_title_main {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36.31px;
+        letter-spacing: -0.04em;
+    }
+
+    .techs__container_text {
+        text-align: center;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: -0.04em;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .techs__list {
+        display: grid;
+        gap: 10px;
+        padding-top: 50px;
+        padding-left: 0px;
+        margin: 0;
+        grid-template-columns: 84px 84px;
+        gap: 10px 10px;
     }
 
     .techs__list_item {

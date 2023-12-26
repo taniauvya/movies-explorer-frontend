@@ -12,7 +12,7 @@
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     margin: 0;
 }
 
@@ -31,4 +31,26 @@
     width: 100%;
     display: block;
     border-color: #E8E8E8;
+}
+
+@media (max-width: 320px) {
+    .portfolio__title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.04em;
+        margin: 0;
+    }
+
+    .portfolio__link{
+        width: 18px;
+        height: 28px;
+        background: url("../../images/portfolio-link-small.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .portfolio__underline {
+        padding-top: 18px;
+    }
 }

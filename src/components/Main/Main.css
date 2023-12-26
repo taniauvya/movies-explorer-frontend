@@ -7,7 +7,15 @@
 @media (max-width: 768px) {
     .main__container_footer {
         padding-left: 30px;
-        padding-right: 29px;
+        padding-right: 30px;
         padding-top: 74px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main__container_footer {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 59px;
     }
 }

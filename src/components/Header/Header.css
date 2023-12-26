@@ -77,3 +77,27 @@
         flex-grow: 1;
     }
 }
+
+@media (max-width: 320px) {
+    .header__register_link {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .header__login_link {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 16px;
+        width: 54px;
+        height: 26px;
+        border-radius: 3px;
+    }
+
+    .header__container_login_links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+}

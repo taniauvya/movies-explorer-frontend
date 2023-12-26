@@ -66,6 +66,7 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 14.52px;
+        min-width: 300px;
     }
 
     .footer___link {
