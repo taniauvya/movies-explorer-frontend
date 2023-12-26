@@ -17,3 +17,9 @@
 .navigationmenu__line_white {
     border-color: #fff;
 }
+
+@media (max-width: 320px) {
+    .navigationmenu {
+        width: 22px;
+    }    
+}

@@ -82,5 +82,25 @@
     .profile__form {
         padding-top: 80px;
     }
+}
+
+@media (max-width: 320px) {
+    .profile__container {
+        padding-left: 10px;
+        padding-right: 27px;
+    }
+
+    .profile__container_content {
+        padding-top: 73px;
+    }
+
+    .profile__form {
+        min-width: 260px;
+        padding-top: 61px;
+    }
+
+    .profile__submit {
+        padding-top: 360px;
+    }
     
 }
