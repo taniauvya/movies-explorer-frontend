@@ -3,8 +3,8 @@
     width: 100%;
     font-weight: 400;
     font-size: 22px;
-    line-height: 26.63px;
-    letter-spacing: -0.04em;
+    line-height: normal;
+    letter-spacing: -0.88px;
     border-bottom: 1px solid;
     padding-bottom: 24px;
     margin: 0;
@@ -12,10 +12,10 @@
 
 @media (max-width: 320px) {
     .maintitle {
-        font-weight: 400;
         font-size: 18px;
-        line-height: 21.78px;
-        letter-spacing: -0.04em;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.72px;
         padding-bottom: 28px;
     }
 }

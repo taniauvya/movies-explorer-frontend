@@ -18,19 +18,19 @@
 }
 
 .techs__container_title_main {
-    font-weight: 400;
     font-size: 50px;
-    line-height: 58px;
-    letter-spacing: -0.04em;
+    font-weight: 400;
+    line-height: 58px; /* 116% */
+    letter-spacing: -2px;
     margin: 0;
 }
 
 .techs__container_text {
     text-align: center;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.04em;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.56px; 
     margin: 0;
     padding-top: 30px;
     max-width: 460px;
@@ -47,11 +47,11 @@
 .techs__list_item {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 400;
+    justify-content: center;  
     font-size: 14px;
-    line-height: 16.94px;
-    letter-spacing: -0.04em;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.56px;
     background-color: #E8E8E8;
     width: 90px;
     height: 60px;
@@ -116,8 +116,8 @@
     .techs__container_title_main {
         font-weight: 400;
         font-size: 30px;
-        line-height: 36.31px;
-        letter-spacing: -0.04em;
+        line-height: normal;
+        letter-spacing: -1.2px;
     }
 
     .techs__container_text {
@@ -125,7 +125,7 @@
         font-weight: 400;
         font-size: 11px;
         line-height: 16px;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.44px;
         text-align: center;
         padding-top: 25px;
     }
@@ -145,7 +145,8 @@
         height: 57px;
         font-weight: 400;
         font-size: 12px;
-        line-height: 14.52px;
+        line-height: normal;
+        letter-spacing: -0.48px;
         border-radius: 10px;
     }
 }
