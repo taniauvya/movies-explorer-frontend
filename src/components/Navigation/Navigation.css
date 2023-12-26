@@ -98,7 +98,7 @@
         height: 100vh;
     }
 
-    .navigation__space_separate{
+    .navigation__space_separate {
         display: flex;
         flex-grow: 1;
         height: 100%;

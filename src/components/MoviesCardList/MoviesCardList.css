@@ -6,9 +6,9 @@
     gap: 40px 18px;
     justify-content: center;
     list-style-type: none;
- }
+}
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .moviescardlist__list {
         grid-template-columns: repeat(auto-fit, 339px);
         gap: 30px 23px;

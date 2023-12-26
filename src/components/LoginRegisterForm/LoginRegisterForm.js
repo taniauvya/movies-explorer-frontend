@@ -21,9 +21,9 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
                         {children}
                     </div>
                     <p className="loginregister__error" />
-                    
-                    <div className='loginregister__space'/>
-                    
+
+                    <div className='loginregister__space' />
+
                     <button aria-label={buttonText} className="loginregister__submit" type="submit">
                         {buttonText}
                     </button>
@@ -36,7 +36,7 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
 
             </div>
 
-            <div className='loginregister__space_bottom'/>
+            <div className='loginregister__space_bottom' />
         </div>
 
     );

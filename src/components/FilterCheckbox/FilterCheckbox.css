@@ -15,6 +15,6 @@
     background-repeat: no-repeat;
 }
 
-.checkbox__input:checked + .checkbox__span {
+.checkbox__input:checked+.checkbox__span {
     background-image: url("../../images/smalltumb.svg");
 }

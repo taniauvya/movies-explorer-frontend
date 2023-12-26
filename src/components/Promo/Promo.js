@@ -3,7 +3,7 @@ import './Promo.css'
 import Header from '../Header/Header';
 import imgWorldLogo from '../../images/logo-world.svg'
 
-const Promo = ({handleNavigationMenuClick}) => {
+const Promo = ({ handleNavigationMenuClick }) => {
     return (
         <div className="promo">
             <div className="promo__container">
