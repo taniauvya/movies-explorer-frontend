@@ -6,14 +6,15 @@
 }
 
 .footer__title {
+    color: #A0A0A0;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-weight: 400;
     font-size: 13px;
-    line-height: 15.73px;
-    color: #E8E8E8;
+    line-height: normal;
     display: block;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #E8E8E8;
     padding-bottom: 20px;
 }
 
@@ -26,9 +27,10 @@
 }
 
 .footer__year {
+    font-feature-settings: 'clig' off, 'liga' off;
     font-weight: 400;
     font-size: 13px;
-    line-height: 15.73px;
+    line-height: normal;
     margin: 0;
 }
 
@@ -42,17 +44,33 @@
     text-decoration: none;
     outline-color: transparent;
     color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
     font-weight: 400;
     font-size: 13px;
-    line-height: 15.73px;
+    line-height: normal;
 }
-
 
 @media (max-width: 320px) {
     .footer__container_bottom {
         flex-direction: column;
         align-items: center;
         padding-top: 20px;
+    }
+
+    .footer__title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+        min-width: 300px;
+    }
+
+    .footer__year {
+        order: 2;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+        color: #A0A0A0;
+        padding-top: 30px;
     }
 
     .footer__container_link {
@@ -62,26 +80,9 @@
         gap: 10px;
     }
 
-    .footer__title {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14.52px;
-        min-width: 300px;
-    }
-
     .footer___link {
         font-weight: 400;
         font-size: 12px;
-        line-height: 14.52px;
+        line-height: normal;
     }
-
-    .footer__year {
-        order: 2;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14.52px;
-        color: #A0A0A0;
-        padding-top: 30px;
-    }
-
 }

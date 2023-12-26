@@ -8,7 +8,7 @@
     outline: none;
     font-weight: 500;
     font-size: 28px;
-    line-height: 33.89px;
+    line-height: normal;
     color: #A0A0A0;
     min-width: 0;
 }
@@ -82,7 +82,7 @@
     .searchform__film {
         font-weight: 500;
         font-size: 18px;
-        line-height: 21.78px;
+        line-height: normal;
     }
 
     .searchform__form_line2 {

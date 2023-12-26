@@ -14,7 +14,7 @@
 .profile__title {
     font-weight: 500;
     font-size: 24px;
-    line-height: 29.05px;
+    line-height: normal;
 }
 
 .profile__form {
@@ -28,7 +28,7 @@
 .profile__form_label {
     font-weight: 500;
     font-size: 11px;
-    line-height: 13.31px;
+    line-height: normal;
 }
 
 .profile__form_input {
@@ -36,7 +36,7 @@
     outline: none;
     font-weight: 400;
     font-size: 11px;
-    line-height: 13.31px;
+    line-height: normal;
     text-align: right;
 }
 
@@ -56,7 +56,7 @@
     padding-top: 201px;
     font-weight: 400;
     font-size: 13px;
-    line-height: 15.73px;
+    line-height: normal;
     cursor: pointer;
 }
 
@@ -66,7 +66,7 @@
     color: #FF3055;
     font-weight: 500;
     font-size: 13px;
-    line-height: 15.73px;
+    line-height: normal;
     padding-top: 15px;
     cursor: pointer;
 }

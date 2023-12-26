@@ -27,7 +27,7 @@
 .movies__button_load {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14.52px;
+    line-height: normal;
     width: 320px;
     height: 36px;
     background-color: #F9F9F9;

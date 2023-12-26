@@ -65,7 +65,7 @@
     .techs__container_main {
         padding-left: 50px;
         padding-right: 50px;
-        padding-top: 90px;
+        padding-top: 81px;
     }
 
     .techs__container_text {
@@ -73,15 +73,15 @@
         font-weight: 400;
         font-size: 12px;
         line-height: 18px;
-        letter-spacing: -0.04em;
+        letter-spacing: -0.48px;
         text-align: center;
-        padding-top: 25px;
+        padding-top: 23px;
     }
 
     .techs__list {
         display: flex;
         gap: 10px;
-        padding-top: 80px;
+        padding-top: 82px;
         padding-left: 0px;
         margin: 0;
     }
@@ -91,7 +91,7 @@
         height: 57px;
         font-weight: 400;
         font-size: 12px;
-        line-height: 14.52px;
+        line-height: normal;
         border-radius: 10px;
     }
 }

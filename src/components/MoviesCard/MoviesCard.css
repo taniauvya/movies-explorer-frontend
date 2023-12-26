@@ -22,14 +22,14 @@
 .moviescard__title {
     font-weight: 500;
     font-size: 13px;
-    line-height: 15.73px;
+    line-height: normal;
     margin: 0;
 }
 
 .moviescard__duration {
     font-weight: 400;
     font-size: 11px;
-    line-height: 13.31px;
+    line-height: normal;
     color: #A0A0A0;
     margin: 0;
     padding-top: 3px;

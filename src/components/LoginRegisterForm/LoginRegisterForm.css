@@ -24,7 +24,7 @@
     padding-top: 38px;
     font-weight: 500;
     font-size: 24px;
-    line-height: 29.05px;
+    line-height: normal;
     margin: 0;
 }
 
@@ -49,7 +49,7 @@
 .loginregister__submit {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16.94px;
+    line-height: normal;
     background-color: #3456F3;
     border: none;
     height: 45px;
@@ -68,7 +68,7 @@
     color: #A0A0A0;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16.94px;
+    line-height: normal;
     margin: 0;
 }
 
@@ -78,7 +78,7 @@
     color: #3456F3;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16.94px;
+    line-height: normal;
 }
 
 .loginregister__error {
@@ -141,18 +141,18 @@
     .loginregister__submit {
         font-weight: 500;
         font-size: 12px;
-        line-height: 14.52px;
+        line-height: normal;
     }
 
     .loginregister__link_title {
         font-weight: 400;
         font-size: 12px;
-        line-height: 14.52px;
+        line-height: normal;
     }
 
     .loginregister__link {
         font-weight: 400;
         font-size: 12px;
-        line-height: 14.52px;
+        line-height: normal;
     }
 }

@@ -57,7 +57,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding-top: 100px;
+    padding-top: 103px;
     display: block;
 }
 
@@ -87,14 +87,14 @@
     .aboutme__container {
         padding-left: 50px;
         padding-right: 50px;
-        padding-top: 92px;
+        padding-top: 88px;
     }
 
     .aboutme__h1 {
         font-weight: 400;
         font-size: 40px;
         line-height: 40px;
-        letter-spacing: -0.04em;
+        letter-spacing: -1.6px;
         margin: 0;
     }
 
@@ -103,7 +103,7 @@
         font-size: 12px;
         line-height: 18px;
         margin: 0;
-        padding-top: 20px;
+        padding-top: 16px;
     }
 
     .aboutme__p {
@@ -121,11 +121,11 @@
     }
 
     .aboutme__link {
-        padding-top: 88px;
+        padding-top: 86px;
     }
 
     .aboutme__portfolio {
-        padding-top: 93px;
+        padding-top: 89px;
     }
 }
 
@@ -151,8 +151,8 @@
     .aboutme__h1 {
         font-weight: 400;
         font-size: 30px;
-        line-height: 36.31px;
-        letter-spacing: -0.04em;
+        line-height: normal;
+        letter-spacing: -1.2px;
         margin: 0;
     }
 
@@ -196,6 +196,6 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-        padding-bottom: 35px;
+        padding-bottom: 25px;
     }
 }
