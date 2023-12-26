@@ -102,7 +102,6 @@
 }
 
 @media (max-width: 768px) {
-
     .loginregister__space_top {
         flex-basis: 233px;
         max-height: 233px;
@@ -112,5 +111,53 @@
         flex-basis: 230px;
         max-height: 230px;
     }
+}
 
+@media (max-width: 320px) {
+    .loginregister__container {
+        width: 260px;
+    }
+
+    .loginregister__container_logo {
+        /* justify-content: center; */
+        align-items: center;
+        width: auto;
+    }
+
+    .loginregister__space_top {
+        flex-grow: 1;
+        flex-basis: 50px;
+        max-height: 50px;
+    }
+
+    .loginregister__space_bottom {
+        flex-basis: 30px;
+        max-height: 30px;
+    }
+
+    .loginregister__title {
+        padding-top: 50px;
+    }
+
+    .loginregister__form {
+        padding-top: 80px;
+    }
+
+    .loginregister__submit {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14.52px;
+    }
+
+    .loginregister__link_title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.52px;
+    }
+
+    .loginregister__link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.52px;
+    }
 }
