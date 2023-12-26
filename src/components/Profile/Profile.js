@@ -3,14 +3,14 @@ import './Profile.css';
 import Header from '../Header/Header';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
 
-const Profile = ({ username, email }) => {
+const Profile = ({ handleNavigationMenuClick }) => {
 
     const currentUser = React.useContext(CurrentUserContext);
 
     return (
         <div className="profile">
             <div className="profile__container">
-                <Header />
+                <Header handleNavigationMenuClick={handleNavigationMenuClick} />
                 <div className="profile__container_content">
                     <h1 className="profile__title">{`Привет, ${currentUser.name}!`}</h1>
                     <form className="profile__form">

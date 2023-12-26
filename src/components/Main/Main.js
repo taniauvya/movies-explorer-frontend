@@ -6,10 +6,10 @@ import Techs from '../Techs/Techs';
 import AboutMe from '../AboutMe/AboutMe';
 import Footer from '../Footer/Footer';
 
-const Main = () => {
+const Main = ({handleNavigationMenuClick}) => {
     return (
         <>
-            <Promo />
+            <Promo handleNavigationMenuClick={handleNavigationMenuClick} />
             <AboutProject />
             <Techs />
             <AboutMe />

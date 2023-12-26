@@ -1,11 +1,11 @@
 import './NavigationMenu.css'
 
-const NavigationMenu = ({ isBlack }) => {
+const NavigationMenu = ({ isBlack, onClick }) => {
 
     const lineColor = isBlack ? "navigationmenu__line_black" : "navigationmenu__line_white";
     const lineClass = `navigationmenu__line ${lineColor}`;
     return (
-        <div className="navigationmenu">
+        <div onClick={onClick} className="navigationmenu">
             <div className={lineClass} />
             <div className={lineClass} />
             <div className={lineClass} />

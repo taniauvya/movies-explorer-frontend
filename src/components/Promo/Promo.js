@@ -3,14 +3,15 @@ import './Promo.css'
 import Header from '../Header/Header';
 import imgWorldLogo from '../../images/logo-world.svg'
 
-const Promo = () => {
+const Promo = ({handleNavigationMenuClick}) => {
     return (
         <div className="promo">
             <div className="promo__container">
                 <Header
                     navigationAccountClass="navigation_account_color"
                     navigationLinkClass="navigation_link_color"
-                    isBlackLineNavMenu={false} />
+                    isBlackLineNavMenu={false}
+                    handleNavigationMenuClick={handleNavigationMenuClick} />
                 <div className="promo__container_content">
                     <div className="promo__container_title">
                         <h1 className="promo__title_main">

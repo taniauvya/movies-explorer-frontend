@@ -4,9 +4,9 @@ import './Header.css'
 import imgLogo from '../../images/logo.svg'
 import Navigation from '../Navigation/Navigation';
 import NavigationMenu from '../NavigationMenu/NavigationMenu'
-import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
+import { CurrentUserContext } from '../../contexts/CurrentUserContext.js'
 
-const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMenu = true }) => {
+const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMenu = true, handleNavigationMenuClick }) => {
 
     const currentUser = React.useContext(CurrentUserContext);
 
@@ -25,11 +25,14 @@ const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMen
             <>
                 <div className='header__container_nav_large'>
                     <Navigation
+                        isOpen={true}
                         linkClass={navigationLinkClass}
                         accountClass={navigationAccountClass} />
                 </div>
                 <div className='header__container_nav_medium'>
-                    <NavigationMenu isBlack={isBlackLineNavMenu} />
+                    <NavigationMenu
+                        isBlack={isBlackLineNavMenu}
+                        onClick={handleNavigationMenuClick} />
                 </div>
             </>
     }
