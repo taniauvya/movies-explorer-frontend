@@ -2,23 +2,30 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
 }
 
-.header__container {
+.profile__header {
     padding-left: 70px;
     padding-right: 70px;
-    flex-grow: 0;
 }
 
-.profile__container {
-    padding-left: 70px;
-    padding-right: 70px;
+.profile__main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 91px;
     flex-grow: 1;
+    padding-top: 95px;
+    width: 100%;
+}
+
+.profile__container_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 410px;
 }
 
 .profile__title {
@@ -31,19 +38,17 @@
 .profile__form {
     display: flex;
     flex-direction: column;
-    min-width: 410px;
+    width: 100%;
+    max-width: 410px;
     padding-top: 123px;
-    justify-content: space-between;
 }
 
-.profile__space {
-    flex-grow: 1;
-}
 
-.profile__container_buttons {
+.profile__footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     padding-bottom: 70px;
 }
 
@@ -51,7 +56,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    flex-grow: 0;
 }
 
 .profile__form_label {
@@ -79,24 +83,25 @@
     border-bottom: 1px solid #E8E8E8;
 }
 
-.profile__container_edit {
+.profile__edit {
     display: none;
 }
 
-.profile__container_edit_visible {
+.profile__edit_visible {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.profile__container_submit {
+.profile__submit {
     display: none;
 }
 
-.profile__container_submit_visible {
+.profile__submit_visible {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .profile__button_edit {
@@ -136,7 +141,7 @@
     height: 45px;
     color: #fff;
     cursor: pointer;
-    width: 410px;
+    width: 100%;
 }
 
 .profile__button_submit:hover {
@@ -149,50 +154,44 @@
 
 @media (max-width: 768px) {
 
-    .header__container {
+    .profile__header {
         padding-left: 26px;
         padding-right: 26px;
     }
 
-    .profile__container {
-        padding-left: 26px;
-        padding-right: 26px;
-        padding-top: 253px;
+    .profile__main {
+        padding-top: 255px;
     }
 
     .profile__form {
         padding-top: 95px;
     }
 
-    .profile__container_buttons {
+    .profile__footer {
         padding-bottom: 269px;
     }
-
 }
 
 @media (max-width: 410px) {
 
-    .header__container {
+    .profile__container_top {
+        max-width: 260px;
+    }
+
+    .profile__header {
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .profile__container {
-        padding-left: 10px;
-        padding-right: 10px;
+    .profile__main {
         padding-top: 90px;
     }
 
     .profile__form {
-        min-width: 260px;
         padding-top: 80px;
     }
 
-    .profile__button_submit {
-        width: 260px;
-    }
-
-    .profile__container_buttons {
+    .profile__footer {
         padding-bottom: 40px;
     }
 }

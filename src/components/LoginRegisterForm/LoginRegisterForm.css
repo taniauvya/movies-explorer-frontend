@@ -3,25 +3,28 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-}
-
-.loginregister__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 396px;
-    flex-grow: 1;
-}
-
-.loginregister__container_logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
     width: 100%;
 }
 
+.loginregister__header {
+    display: flex;
+    flex-direction: row;
+    max-width: 396px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.loginregister__main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 40px;
+    max-width: 396px;
+    width: 100%;
+    padding-top: 40px;
+}
+
 .loginregister__title {
-    padding-top: 38px;
     font-weight: 500;
     font-size: 24px;
     line-height: normal;
@@ -29,21 +32,17 @@
 }
 
 .loginregister__form {
-    flex-grow: 1;
     width: 100%;
-    padding-top: 43px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .loginregister__container_input {
     display: flex;
     flex-direction: column;
     gap: 26px;
-}
-
-.loginregister__space {
-    flex-grow: 1;
 }
 
 .loginregister__submit {
@@ -55,6 +54,7 @@
     height: 45px;
     color: #fff;
     cursor: pointer;
+    width: 100%;
 }
 
 .loginregister__submit:hover {
@@ -93,52 +93,41 @@
     display: none;
 }
 
-.loginregister__space_top {
-    flex-grow: 1;
-    flex-basis: 70px;
-    max-height: 70px;
-}
-
-.loginregister__space_bottom {
+.loginregister__footer {
     flex-grow: 0;
-    flex-basis: 70px;
-    max-height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 396px;
+    width: 100%;
+    padding-bottom: 70px;
 }
 
 @media (max-width: 768px) {
-    .loginregister__space_top {
-        flex-basis: 233px;
-        max-height: 233px;
+    .loginregister__header {
+        padding-top: 232px;
     }
 
-    .loginregister__space_bottom {
-        flex-basis: 232px;
-        max-height: 232px;
+    .loginregister__footer {
+        padding-bottom: 232px;
     }
 }
 
-@media (max-width: 320px) {
-    .loginregister__container {
-        width: 260px;
-    }
-
-    .loginregister__container_logo {
-        align-items: center;
+@media (max-width: 396px) {
+    .loginregister__header {
+        max-width: 260px;
+        padding-top: 50px;
         width: auto;
     }
 
-    .loginregister__space_top {
-        flex-grow: 1;
-        flex-basis: 50px;
-        max-height: 50px;
+    .loginregister__footer {
+        max-width: 260px;
+        padding-bottom: 30px;
     }
 
-    .loginregister__space_bottom {
-        flex-basis: 30px;
-        max-height: 30px;
-    }
-
-    .loginregister__title {
+    .loginregister__main {
+        max-width: 260px;
+        align-items: center;
         padding-top: 50px;
     }
 

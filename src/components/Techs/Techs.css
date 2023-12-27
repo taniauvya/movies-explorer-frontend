@@ -84,6 +84,7 @@
         padding-top: 82px;
         padding-left: 0px;
         margin: 0;
+        flex-wrap: wrap;
     }
 
     .techs__list_item {
