@@ -71,4 +71,8 @@
         padding-left: 0px;
         padding-right: 0px;
     }
+
+    .movies__button_load {
+        width: 240px;
+    }
 }

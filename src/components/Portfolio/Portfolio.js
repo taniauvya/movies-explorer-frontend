@@ -5,10 +5,10 @@ const Portfolio = (props) => {
     return (
         <div className="portfolio">
             <div className="portfolio__line">
-                <h1 className="portfolio__title">
+                <Link className="portfolio__title" to={props.link} target="_blank">
                     {props.title}
-                </h1>
-                <Link className="portfolio__link" to={props.link}></Link>
+                </Link>
+                <Link className="portfolio__link" to={props.link} target="_blank"></Link>
             </div>
             <div className="portfolio__underline" />
         </div>
