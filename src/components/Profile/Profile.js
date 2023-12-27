@@ -26,8 +26,10 @@ const Profile = ({ handleNavigationMenuClick }) => {
             </header>
 
             <main className="profile__main">
-                <div className="profile__container_top">
+                <div className="profile__container_main">
+                    <div className='profile__space_title'/>
                     <h1 className="profile__title">{`Привет, ${currentUser.name}!`}</h1>
+                    <div className='profile__space_form'/>
                     <form name="profile_edit" id="profile_edit" className="profile__form">
                         <div className="profile__inputs_container">
                             <div className="profile__input_container">
@@ -45,7 +47,7 @@ const Profile = ({ handleNavigationMenuClick }) => {
             </main>
 
             <footer className='profile__footer'>
-                <div className="profile__container_top">
+                <div className="profile__container_footer">
                     <div ref={containerEditRef} className='profile__edit profile__edit_visible'>
                         <button aria-label="Редактировать" type="button" className="profile__button_edit" onClick={handleEnableSubmitClick}>
                             Редактировать
@@ -57,6 +59,7 @@ const Profile = ({ handleNavigationMenuClick }) => {
                         <button className='profile__button_submit' form="profile_edit" type="submit">Сохранить</button>
                     </div>
                 </div>
+                <div className='profile__space_footer'/>                
             </footer>
         </div>
     )

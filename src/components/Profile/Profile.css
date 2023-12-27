@@ -1,3 +1,14 @@
+
+/* profile__container_top */
+
+.profile__space_title {
+    flex-basis: 95px;
+}
+
+.profile__space_form {
+    flex-basis: 123px;
+}
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -15,17 +26,25 @@
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    padding-top: 95px;
     width: 100%;
 }
 
-.profile__container_top {
+.profile__container_main {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
     width: 100%;
     max-width: 410px;
+}
+
+.profile__container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 410px;
+    min-height: auto;
 }
 
 .profile__title {
@@ -40,16 +59,19 @@
     flex-direction: column;
     width: 100%;
     max-width: 410px;
-    padding-top: 123px;
+    min-height: auto;
 }
-
 
 .profile__footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-bottom: 70px;
+    min-height: 102px;
+}
+
+.profile__space_footer {
+    flex-basis: 70px;
 }
 
 .profile__inputs_container {
@@ -159,22 +181,26 @@
         padding-right: 26px;
     }
 
-    .profile__main {
-        padding-top: 255px;
+    .profile__space_title {
+        flex-basis: 255px;
     }
 
-    .profile__form {
-        padding-top: 95px;
+    .profile__space_form {
+        flex-basis: 95px;
     }
 
-    .profile__footer {
-        padding-bottom: 269px;
+    .profile__space_footer {
+        flex-basis: 269px;
     }
 }
 
 @media (max-width: 410px) {
 
-    .profile__container_top {
+    .profile__container_main {
+        max-width: 260px;
+    }
+
+    .profile__container_footer {
         max-width: 260px;
     }
 
@@ -183,15 +209,21 @@
         padding-right: 10px;
     }
 
-    .profile__main {
-        padding-top: 90px;
+    .profile__space_title {
+        flex-basis: 90px;
     }
 
-    .profile__form {
-        padding-top: 80px;
+    .profile__space_form {
+        flex-basis: 80px;
     }
+
 
     .profile__footer {
-        padding-bottom: 40px;
+        max-height: 89px;
+        min-height: 89px;
+    }
+
+    .profile__space_footer {
+        flex-basis: 0px;
     }
 }
