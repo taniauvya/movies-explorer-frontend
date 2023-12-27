@@ -92,9 +92,9 @@
 }
 
 .loginregister__space_bottom {
-    flex-grow: 1;
-    flex-basis: 140px;
-    max-height: 140px;
+    flex-grow: 0;
+    flex-basis: 70px;
+    max-height: 70px;
 }
 
 @media (max-width: 768px) {
@@ -104,8 +104,8 @@
     }
 
     .loginregister__space_bottom {
-        flex-basis: 230px;
-        max-height: 230px;
+        flex-basis: 232px;
+        max-height: 232px;
     }
 }
 
