@@ -57,6 +57,10 @@
     cursor: pointer;
 }
 
+.loginregister__submit:hover {
+    opacity: 80%;
+}
+
 .loginregister___container_link {
     display: flex;
     flex-direction: row;
@@ -79,6 +83,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: normal;
+}
+
+.loginregister__link:hover {
+    opacity: 70%;
 }
 
 .loginregister__error {

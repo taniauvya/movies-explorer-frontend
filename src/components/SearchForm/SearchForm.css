@@ -27,7 +27,7 @@
 }
 
 .searchform__form_line1:focus-within {
-    border-color:#3456F3;   
+    border-color: #3456F3;
 }
 
 .searchform__submit {
@@ -42,6 +42,10 @@
     height: 34px;
     flex-shrink: 0;
     cursor: pointer;
+}
+
+.searchform__submit:hover {
+    opacity: 80%;
 }
 
 .searchform__form_line2 {

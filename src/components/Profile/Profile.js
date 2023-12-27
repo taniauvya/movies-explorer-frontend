@@ -5,31 +5,54 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
 
 const Profile = ({ handleNavigationMenuClick }) => {
 
+    const containerSubmitRef = React.useRef();
+    const containerEditRef = React.useRef();
+    const inputNameRef = React.useRef();
+    const inputEmailRef = React.useRef();
+
     const currentUser = React.useContext(CurrentUserContext);
+
+    const handleEnableSubmitClick = () => {
+        containerEditRef.current.classList.remove('profile__container_edit_visible');
+        containerSubmitRef.current.classList.add('profile__container_submit_visible');
+        inputNameRef.current.disabled = false;
+        inputEmailRef.current.disabled = false;
+    }
 
     return (
         <div className="profile">
-            <div className="profile__container">
+            <header className='header__container'>
                 <Header handleNavigationMenuClick={handleNavigationMenuClick} />
-                <div className="profile__container_content">
-                    <h1 className="profile__title">{`Привет, ${currentUser.name}!`}</h1>
-                    <form className="profile__form">
+            </header>
+            <main className="profile__container">
+                <h1 className="profile__title">{`Привет, ${currentUser.name}!`}</h1>
+                <form name="profile_edit" id="profile_edit" className="profile__form">
+                    <div className="profile__inputs_container">
                         <div className="profile__input_container">
                             <label className="profile__form_label">Имя</label>
-                            <input className="profile__form_input" type="text" name="email" defaultValue={currentUser.name} />
+                            <input ref={inputNameRef} className="profile__form_input" type="text" name="email" defaultValue={currentUser.name} required disabled />
                         </div>
                         <div className="profile__input_separator" />
                         <div className="profile__input_container">
                             <label className="profile__form_label">E-mail</label>
-                            <input className="profile__form_input" type="email" name="email" defaultValue={currentUser.email} />
+                            <input ref={inputEmailRef} className="profile__form_input" type="email" name="email" defaultValue={currentUser.email} required disabled />
                         </div>
-                        <button aria-label="Редактировать" className="profile__submit" type="submit">
-                            Редактировать
-                        </button>
-                    </form>
-                    <button className='profile__button_logout'>Выйти из аккаунта</button>
+                    </div>
+                </form>
+                <div className='profile__space' />
+            </main>
+            <footer className='profile__container_buttons'>
+                <div ref={containerEditRef} className='profile__container_edit profile__container_edit_visible'>
+                    <button aria-label="Редактировать" type="button" className="profile__button_edit" onClick={handleEnableSubmitClick}>
+                        Редактировать
+                    </button>
+                    <button className='profile__button_logout' type="button">Выйти из аккаунта</button>
                 </div>
-            </div>
+                <div ref={containerSubmitRef} className='profile__container_submit'>
+                    <span className='profile__error_submit' />
+                    <button className='profile__button_submit' for="profile_edit" type="submit">Сохранить</button>
+                </div>
+            </footer>
         </div>
     )
 };

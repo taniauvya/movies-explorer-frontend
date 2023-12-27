@@ -33,6 +33,10 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
                         <img alt="Аккаунт" className="navigation__account_img" src={imgAccountButton} />
                     </div>
                 </div>
+
+                {isSidePanel &&
+                    <div className="navigation__space_footer"/>
+                }
             </div>
         </div>
     )
