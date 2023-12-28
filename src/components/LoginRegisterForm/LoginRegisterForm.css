@@ -6,22 +6,65 @@
     width: 100%;
 }
 
+.loginregister__space_logo {
+    flex-grow: 1;
+    flex-basis: 70px;
+    flex-shrink: 20;
+}
+
+.loginregister__space_main_title {
+    flex-shrink: 10;
+    flex-basis: 40px;
+}
+
+.loginregister__space_main_form {
+    flex-basis: 40px;
+}
+
+.loginregister__space_footer {
+    flex-grow: 1;
+    flex-shrink: 20;
+    flex-basis: 70px;
+}
+
+.loginregister__container_footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
 .loginregister__header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     max-width: 396px;
     width: 100%;
-    padding-top: 70px;
+    flex-grow: 1;
+    flex-basis: 108px;
 }
 
 .loginregister__main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding-top: 40px;
     max-width: 396px;
     width: 100%;
-    padding-top: 40px;
+    min-height: 222px;
+    flex-basis: 444px;
+}
+
+.loginregister__footer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 110px;
+    max-width: 396px;
+    flex-basis: 148px;
 }
 
 .loginregister__title {
@@ -33,10 +76,10 @@
 
 .loginregister__form {
     width: 100%;
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .loginregister__container_input {
@@ -66,6 +109,7 @@
     flex-direction: row;
     gap: 10px;
     padding-top: 16px;
+    flex-wrap: wrap;
 }
 
 .loginregister__link_title {
@@ -93,46 +137,68 @@
     display: none;
 }
 
-.loginregister__footer {
-    flex-grow: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 396px;
-    width: 100%;
-    padding-bottom: 70px;
-}
 
 @media (max-width: 768px) {
-    .loginregister__header {
-        padding-top: 232px;
+
+    .loginregister__space_logo {
+        flex-basis: 232px;
     }
 
+    .loginregister__header {
+        flex-basis: 270px;
+    }
+    
+    .loginregister__space_footer {
+        flex-basis: 232px;
+    }
+    
     .loginregister__footer {
-        padding-bottom: 232px;
+        flex-basis: 310px;
     }
 }
 
 @media (max-width: 396px) {
-    .loginregister__header {
-        max-width: 260px;
-        padding-top: 50px;
-        width: auto;
+
+    .loginregister {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .loginregister__footer {
+    .loginregister__space_logo {
+        flex-basis: 56px;
+    }
+
+    .loginregister__space_main_form {
+        flex-basis: 80px;
+    }
+
+    .loginregister__header {
+        align-items: center;
         max-width: 260px;
-        padding-bottom: 30px;
+        flex-basis: 93px;
+    }
+
+    .loginregister__space_main_title {
+        flex-basis: 50px;
+    }
+    
+    .loginregister__space_footer {
+        flex-basis: 30px;
     }
 
     .loginregister__main {
         max-width: 260px;
-        align-items: center;
-        padding-top: 50px;
+        flex-basis: 581px;
+    }
+    
+    .loginregister__footer {
+        max-width: 260px;
+        flex-basis: 104px;
+        min-height: 104px;
     }
 
-    .loginregister__form {
-        padding-top: 80px;
+    .loginregister__title {
+        text-align: center;
     }
 
     .loginregister__submit {

@@ -7,12 +7,14 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
     return (
         <div className="loginregister" tabIndex="0">
             <header className='loginregister__header'>
+                <div className='loginregister__space_logo' />
                 <Logo />
             </header>
 
             <main className="loginregister__main">
+                <div className='loginregister__space_main_title' />
                 <h1 className="loginregister__title">{title}</h1>
-
+                <div className='loginregister__space_main_form' />
                 <form name={formName} id={formName} className="loginregister__form" onSubmit={onSubmit}>
                     <div className="loginregister__container_input">
                         {children}
@@ -22,13 +24,16 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
             </main>
 
             <footer className="loginregister__footer">
-                <button aria-label={buttonText} form={formName} className="loginregister__submit" type="submit">
-                    {buttonText}
-                </button>
-                <div className="loginregister___container_link">
-                    <p className='loginregister__link_title'>{linkTitle}</p>
-                    <Link to={linkAddress} className='loginregister__link'>{linkText}</Link>
+                <div className="loginregister__container_footer">
+                    <button aria-label={buttonText} form={formName} className="loginregister__submit" type="submit">
+                        {buttonText}
+                    </button>
+                    <div className="loginregister___container_link">
+                        <p className='loginregister__link_title'>{linkTitle}</p>
+                        <Link to={linkAddress} className='loginregister__link'>{linkText}</Link>
+                    </div>
                 </div>
+                <div className='loginregister__space_footer' />
             </footer>
         </div>
 
