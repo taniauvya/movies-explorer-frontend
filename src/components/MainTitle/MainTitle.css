@@ -4,11 +4,7 @@
     width: 100%;
     border-bottom: 1px solid;
     padding-bottom: 23px;
-}
-
-.maintitle__space {
-    flex-shrink: 20;
-    flex-basis: 110px;
+    flex-shrink: 0;
 }
 
 .maintitle__title {
@@ -20,20 +16,10 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .maintitle__space {
-        flex-basis: 90px;
-    }
-}
-
 @media (max-width: 320px) {
 
     .maintitle {
         padding-bottom: 28px;
-    }
-
-    .maintitle__space {
-        flex-basis: 70px;
     }
 
     .maintitle__title {

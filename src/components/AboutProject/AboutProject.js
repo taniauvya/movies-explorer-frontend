@@ -6,6 +6,7 @@ const AboutProject = () => {
         <div id="aboutproject" className="aboutproject">
 
             <header className='aboutproject__header'>
+                <div className='aboutproject__space aboutproject__space_header_top' />
                 <MainTitle title="О проекте" />
             </header>
 
