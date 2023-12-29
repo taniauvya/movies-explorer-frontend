@@ -1,19 +1,37 @@
 .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 1079px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.aboutme__header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.aboutme__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
 }
 
 .aboutme__container {
-    padding-left: 70px;
-    padding-right: 70px;
     padding-top: 107px;
 }
 
 .aboutme__about {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 65px;
+    gap: 10px;
 }
 
 .aboutme__h1 {
@@ -76,8 +94,7 @@
 }
 
 .aboutme__about_avatar {
-    width: 270px;
-    height: 327px;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
