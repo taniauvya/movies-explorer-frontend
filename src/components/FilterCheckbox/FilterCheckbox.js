@@ -1,14 +1,13 @@
-import React from 'react'
 import './FilterCheckbox.css'
 
-const Checkbox = ({ name, orderClass }) => {
+const FilterCheckbox = ({ name, orderClass }) => {
 
     return (
-        <label className={`checkbox__label ${orderClass}`}>
-            <input className="checkbox__input" type="checkbox" name={name} />
-            <span className="checkbox__span" />
+        <label className={`filtercheckbox__label ${orderClass}`}>
+            <input className="filtercheckbox__input" type="checkbox" name={name} />
+            <span className="filtercheckbox__span" />
         </label>
     )
 };
 
-export default Checkbox
+export default FilterCheckbox

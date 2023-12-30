@@ -1,9 +1,6 @@
 import React from 'react'
 import './MoviesCardList.css'
 import MoviesCard from '../MoviesCard/MoviesCard'
-import imgLikeUnchecked from '../../images/like-unchecked.svg'
-import imgLikeChecked from '../../images/like-checked.svg'
-import imgRemoveSaved from '../../images/remove-saved.svg'
 
 const MoviesCardList = ({ movies, savedList }) => {
 
@@ -12,8 +9,8 @@ const MoviesCardList = ({ movies, savedList }) => {
             <ul className="moviescardlist__list">
                 {movies.map(movie => {
 
-                    const actionImg = savedList ? imgRemoveSaved :
-                        (movie.isLiked ? imgLikeChecked : imgLikeUnchecked);
+                    const actionImgClass = savedList ? 'movies__button-unsave' :
+                        (movie.isLiked ? 'movies__button-like' : 'movies__button-dislike');
 
                     return (
                         <MoviesCard
@@ -21,7 +18,7 @@ const MoviesCardList = ({ movies, savedList }) => {
                             title={movie.title}
                             duration={movie.duration}
                             key={movie._id}
-                            actionImg={actionImg} />
+                            actionImgClass={actionImgClass} />
                     );
                 })}
 

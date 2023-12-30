@@ -94,10 +94,19 @@
 
 .navigation__button_close {
     position: absolute;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url("../../images/nav-close.svg");
     top: 19px;
     right: 19px;
     width: 32px;
     height: 32px;
+    cursor: pointer;
+}
+
+.navigation__button_close:hover {
+    opacity: 0.8;
 }
 
 @media (max-width: 768px) {

@@ -8,6 +8,18 @@
     list-style-type: none;
 }
 
+.movies__button-like {
+    background-image: url("../../images/like-checked.svg");
+}
+
+.movies__button-dislike {
+    background-image: url("../../images/like-unchecked.svg");
+}
+
+.movies__button-unsave {
+    background-image: url("../../images/remove-saved.svg");
+}
+
 @media (max-width: 768px) {
     .moviescardlist__list {
         grid-template-columns: repeat(auto-fit, 339px);

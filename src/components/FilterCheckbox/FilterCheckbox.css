@@ -1,4 +1,4 @@
-.checkbox__label {
+.filtercheckbox__label {
     width: 36px;
     height: 20px;
     display: block;
@@ -7,7 +7,15 @@
     cursor: pointer;
 }
 
-.checkbox__span {
+.filtercheckbox__input {
+    display: none;
+}
+
+.filtercheckbox__label:hover {
+    opacity: 0.8;
+}
+
+.filtercheckbox__span {
     position: absolute;
     left: 0;
     top: 0;
@@ -18,7 +26,7 @@
     z-index: 1;
 }
 
-.checkbox__input:checked + .checkbox__span {
+.filtercheckbox__input:checked + .filtercheckbox__span {
     background-image: url("../../images/smalltumb.svg");
     z-index: 1;
 }

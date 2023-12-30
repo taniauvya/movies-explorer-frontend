@@ -31,7 +31,7 @@ const Movies = ({ handleNavigationMenuClick }) => {
                         movies={movies} />
                 </div>
                 <div className='movies__container_load'>
-                    <button className='movies__button_load'>
+                    <button className='movies__button_load' aria-label="Еще">
                         Ещё
                     </button>
                     <div className='movies__container_preloader'>

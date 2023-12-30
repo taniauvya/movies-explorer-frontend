@@ -52,11 +52,11 @@ const Profile = ({ handleNavigationMenuClick }) => {
                         <button aria-label="Редактировать" type="button" className="profile__button_edit" onClick={handleEnableSubmitClick}>
                             Редактировать
                         </button>
-                        <button className='profile__button_logout' type="button">Выйти из аккаунта</button>
+                        <button aria-label="Выйти" className='profile__button_logout' type="button">Выйти из аккаунта</button>
                     </div>
                     <div ref={containerSubmitRef} className='profile__submit'>
                         <span className='profile__error_submit' />
-                        <button className='profile__button_submit' form="profile_edit" type="submit">Сохранить</button>
+                        <button aria-label="Сохранить" className='profile__button_submit' form="profile_edit" type="submit">Сохранить</button>
                     </div>
                 </div>
                 <div className='profile__space_footer'/>                
