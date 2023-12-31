@@ -15,19 +15,23 @@ const SavedMovies = ({ handleNavigationMenuClick }) => {
 
     return (
         <div className="savedmovies">
-            <div className="savedmovies__container">
-                <Header handleNavigationMenuClick={handleNavigationMenuClick} />
-                <div className='savedmovies__container_searchform'>
-                    <SearchForm />
-                </div>
-                <div className='savedmovies__container_cardlist'>
-                    <MoviesCardList
-                        savedList={true}
-                        movies={movies} />
-                </div>
-                <div className='savedmovies__container_footer'>
+            <div className="savedmovies__content">
+                <header className='savedmovies__header'>
+                    <Header handleNavigationMenuClick={handleNavigationMenuClick} />
+                </header>
+                <main className="savedmovies__main">
+                    <div className='savedmovies__container_searchform'>
+                        <SearchForm />
+                    </div>
+                    <div className='savedmovies__container_cardlist'>
+                        <MoviesCardList
+                            savedList={true}
+                            movies={movies} />
+                    </div>
+                </main>
+                <footer className='savedmovies__footer'>
                     <Footer />
-                </div>
+                </footer>
             </div>
         </div>
     );

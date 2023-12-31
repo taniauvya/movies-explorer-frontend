@@ -60,6 +60,7 @@
 @media (max-width: 768px) {
     .searchform__form_line2 {
         justify-content: end;
+        padding-top: 28px;
         gap: 15px;
     }
 
@@ -91,7 +92,8 @@
 
     .searchform__form_line2 {
         justify-content: center;
-        padding-top: 33px;
+        padding-top: 36px;
+        padding-left: 4px;
     }
 
     .searchform__short_label {

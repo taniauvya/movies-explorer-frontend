@@ -20,27 +20,31 @@ const Movies = ({ handleNavigationMenuClick }) => {
 
     return (
         <div className="movies">
-            <div className="movies__container">
-                <Header handleNavigationMenuClick={handleNavigationMenuClick} />
-                <div className='movies__container_searchform'>
-                    <SearchForm />
-                </div>
-                <div className='movies__container_cardlist'>
-                    <MoviesCardList
-                        savedList={false}
-                        movies={movies} />
-                </div>
-                <div className='movies__container_load'>
-                    <button className='movies__button_load' aria-label="Еще">
-                        Ещё
-                    </button>
-                    <div className='movies__container_preloader'>
-                        <Preloader />
+            <div className="movies__content">
+                <header className="movies__header">
+                    <Header handleNavigationMenuClick={handleNavigationMenuClick} />
+                </header>
+                <main className="movies__main">
+                    <div className='movies__container_searchform'>
+                        <SearchForm />
                     </div>
-                </div>
-                <div className='movies__container_footer'>
+                    <div className='movies__container_cardlist'>
+                        <MoviesCardList
+                            savedList={false}
+                            movies={movies} />
+                    </div>
+                    <div className='movies__container_load'>
+                        <button className='movies__button_load' aria-label="Еще">
+                            Ещё
+                        </button>
+                        <div className='movies__container_preloader'>
+                            <Preloader />
+                        </div>
+                    </div>
+                </main>
+                <footer className='movies__footer'>
                     <Footer />
-                </div>
+                </footer>
             </div>
         </div>
     )
