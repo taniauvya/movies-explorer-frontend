@@ -1,7 +1,6 @@
 .aboutme {
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 1079px;
     padding-left: 70px;
     padding-right: 70px;
@@ -17,14 +16,55 @@
 .aboutme__main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     max-width: 1140px;
 }
 
-.aboutme__container {
-    padding-top: 107px;
+.aboutme__container_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 918px;
+}
+
+.aboutme__space {
+    flex-shrink: 20;
+}
+
+.aboutme__space_header_top {
+    flex-basis: 110px;
+}
+
+.aboutme__space_main_top {
+    flex-basis: 66px;
+}
+
+.aboutme__space_h1 {
+    display: none;
+}
+
+.aboutme__space_h2 {
+    flex-basis: 18px;
+}
+
+.aboutme__space_p {
+    flex-basis: 26px;
+}
+
+.aboutme__space_link {
+    flex-basis: 99px;
+}
+
+.aboutme__space_portfolio_title {
+    flex-basis: 101px;
+}
+
+.aboutme__space_portfolio {
+    flex-basis: 50px;
+}
+
+.aboutme__space_main_bottom {
+    flex-basis: 115px;
 }
 
 .aboutme__about {
@@ -32,6 +72,16 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
+    width: 100%;
+}
+
+.aboutme__about_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme__about_avatar {
+    object-fit: contain;
 }
 
 .aboutme__h1 {
@@ -48,7 +98,6 @@
     line-height: 20px;
     font-feature-settings: 'clig' off, 'liga' off;
     margin: 0;
-    padding-top: 20px;
 }
 
 .aboutme__p {
@@ -58,14 +107,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    /* 157.143% */
     margin: 0;
-    padding-top: 25px;
     max-width: 599px;
-}
-
-.aboutme__portfolio {
-    padding-top: 100px;
 }
 
 .aboutme__link {
@@ -76,7 +119,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding-top: 103px;
     display: block;
 }
 
@@ -89,23 +131,63 @@
     line-height: 20px; /* 111.111% */ 
     color: #A0A0A0;
     margin: 0;
-    /* display: block; */
-    padding-bottom: 35px;
 }
 
-.aboutme__about_avatar {
-    object-fit: contain;
+.aboutme__portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    width: 100%;
 }
+
 
 @media (max-width: 768px) {
     .aboutme {
         height: 994px;
-    }
-
-    .aboutme__container {
         padding-left: 50px;
         padding-right: 50px;
-        padding-top: 88px;
+    }    
+
+    .aboutme__container_main {
+        flex-basis: 853px;
+    }
+    
+    .aboutme__space_header_top {
+        flex-basis: 90px;
+    }
+    
+    .aboutme__space_main_top {
+        flex-basis: 66px;
+    }
+    
+    .aboutme__space_h2 {
+        flex-basis: 16px;
+    }
+    
+    .aboutme__space_p {
+        flex-basis: 20px;
+    }
+    
+    .aboutme__space_link {
+        flex-basis: 87px;
+    }
+    
+    .aboutme__space_portfolio_title {
+        flex-basis: 90px;
+    }
+    
+    .aboutme__space_portfolio {
+        flex-basis: 50px;
+    }
+    
+    .aboutme__space_main_bottom {
+        flex-basis: 80px;
+    }
+
+    .aboutme__about_avatar {
+        object-fit: contain;
+        width: 255px;
+        height: 307px;         
     }
 
     .aboutme__h1 {
@@ -121,7 +203,6 @@
         font-size: 12px;
         line-height: 18px;
         margin: 0;
-        padding-top: 16px;
     }
 
     .aboutme__p {
@@ -129,21 +210,7 @@
         font-size: 12px;
         line-height: 18px;
         margin: 0;
-        padding-top: 20px;
         max-width: 364px;
-    }
-
-    .aboutme__about_avatar {
-        width: 255px;
-        height: 307px;
-    }
-
-    .aboutme__link {
-        padding-top: 86px;
-    }
-
-    .aboutme__portfolio {
-        padding-top: 89px;
     }
 }
 
@@ -151,19 +218,62 @@
 @media (max-width: 320px) {
     .aboutme {
         height: 1198px;
-    }
-
-    .aboutme__container {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 71px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 
     .aboutme__about {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: 58px;
+        gap: 0px;
+    }
+
+    .aboutme__container_main {
+        flex-basis: 1077px;
+    }
+    
+    .aboutme__space_header_top {
+        flex-basis: 70px;
+    }
+    
+    .aboutme__space_main_top {
+        flex-basis: 60px;
+    }
+
+    .aboutme__space_h1 {
+        display: block;
+        flex-basis: 40px;
+    }
+    
+    .aboutme__space_h2 {
+        flex-basis: 20px;
+    }
+    
+    .aboutme__space_p {
+        flex-basis: 20px;
+    }
+    
+    .aboutme__space_link {
+        flex-basis: 40px;
+    }
+    
+    .aboutme__space_portfolio_title {
+        flex-basis: 70px;
+    }
+    
+    .aboutme__space_portfolio {
+        flex-basis: 40px;
+    }
+    
+    .aboutme__space_main_bottom {
+        flex-basis: 70px;
+    }
+
+    .aboutme__about_avatar {
+        object-fit: contain;
+        width: 100%;
+        height: 352px;         
     }
 
     .aboutme__h1 {
@@ -171,49 +281,32 @@
         font-size: 30px;
         line-height: normal;
         letter-spacing: -1.2px;
-        margin: 0;
     }
 
     .aboutme__h2 {
         font-weight: 500;
         font-size: 11px;
         line-height: 16px;
-        margin: 0;
-        padding-top: 20px;
     }
 
     .aboutme__p {
         font-weight: 400;
         font-size: 11px;
         line-height: 16px;
-        margin: 0;
-        padding-top: 20px;
         max-width: 292px;
     }
 
     .aboutme__about_text {
         order: 2;
-        padding-top: 40px;
-    }
-
-    .aboutme__about_avatar {
-        order: 1;
-        width: 292px;
-        height: 352px;
-    }
-
-    .aboutme__link {
-        padding-top: 40px;
-    }
-
-    .aboutme__portfolio {
-        padding-top: 70px;
     }
 
     .aboutme__portfolio_title {
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-        padding-bottom: 25px;
+    }
+
+    .aboutme__portfolio {
+        gap: 21px;
     }
 }

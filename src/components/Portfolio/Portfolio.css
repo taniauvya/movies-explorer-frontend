@@ -1,7 +1,3 @@
-.portfolio {
-    padding-top: 17px;
-}
-
 .portfolio__line {
     display: flex;
     flex-direction: row;
@@ -20,6 +16,10 @@
     margin: 0;
 }
 
+.portfolio__title:hover {
+    opacity: 0.7;
+}
+
 .portfolio__link {
     display: block;
     background: url("../../images/portfolio-link.svg");
@@ -27,6 +27,10 @@
     background-repeat: no-repeat;
     width: 29px;
     height: 60px;
+}
+
+.portfolio__link:hover {
+    opacity: 0.7;
 }
 
 .portfolio__underline {
@@ -48,11 +52,6 @@
 
 
 @media (max-width: 320px) {
-
-    .portfolio {
-        padding-top: 20px;
-    }
-
     .portfolio__title {
         font-size: 18px;
         font-weight: 400;
