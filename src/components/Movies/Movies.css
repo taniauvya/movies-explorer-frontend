@@ -45,6 +45,11 @@
     height: 36px;
     background-color: #F9F9F9;
     border: none;
+    cursor: pointer;
+}
+
+.movies__button_load:hover {
+    opacity: 0.8;
 }
 
 .movies__container_preloader {
@@ -72,22 +77,24 @@
 @media (max-width: 320px) {
     .movies {
         padding-left: 0px;
-        padding-right: 15px;
+        padding-right: 0px;
     }
 
     .movies__header {
         padding-left: 15px;
+        padding-right: 15px;
     }
 
     .movies__container_searchform {
         padding-top: 104px;
-        padding-left: 12px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 
     .movies__container_cardlist {
         padding-top: 90px;
-        padding-right: 0px;
-        padding-left: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     .movies__button_load {
@@ -96,12 +103,9 @@
 
     .movies__footer {
         padding-top: 148px;
-        padding-left: 22px;
-        padding-right: 10px;
     }
 
     .movies__container_load {
         padding-top: 60px;
-        padding-left: 15px;
     }
 }

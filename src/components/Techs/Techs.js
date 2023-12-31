@@ -5,7 +5,7 @@ import MainTitle from '../MainTitle/MainTitle'
 const Techs = () => {
     return (
         <div className="techs">
-            <header className='aboutproject__header'>
+            <header className='techs__header'>
                 <div className='techs__space techs__space_header_top' />
                 <MainTitle title="Технологии" />
             </header>

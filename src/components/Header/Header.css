@@ -15,10 +15,6 @@
     display: none;
 }
 
-.header__container_nav_menu {
-    padding-bottom: 5px;
-}
-
 .header__container_login {
     display: flex;
     flex-grow: 1;
@@ -75,6 +71,9 @@
         align-items: center;
         flex-grow: 1;
         padding-right: 10px;
+        position: relative;
+        top: -2px;
+        right: -15px;
     }
 }
 
@@ -102,6 +101,7 @@
     }
 
     .header__container_nav_medium {
-        padding-right: 8px;
+        top: 3px;
+        right: -11px;
     }
 }
