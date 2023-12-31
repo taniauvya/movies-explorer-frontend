@@ -34,12 +34,12 @@ const Profile = ({ handleNavigationMenuClick, onLogout }) => {
                         <div className="profile__inputs_container">
                             <div className="profile__input_container">
                                 <label className="profile__form_label">Имя</label>
-                                <input ref={inputNameRef} className="profile__form_input" type="text" name="email" defaultValue={currentUser.name} required disabled />
+                                <input ref={inputNameRef} className="profile__form_input" type="text" placeholder='Имя' name="name" defaultValue={currentUser.name} required minLength="2" disabled />
                             </div>
                             <div className="profile__input_separator" />
                             <div className="profile__input_container">
                                 <label className="profile__form_label">E-mail</label>
-                                <input ref={inputEmailRef} className="profile__form_input" type="email" name="email" defaultValue={currentUser.email} required disabled />
+                                <input ref={inputEmailRef} className="profile__form_input" type="email" name="email" placeholder='E-mail' defaultValue={currentUser.email} required disabled />
                             </div>
                         </div>
                     </form>

@@ -16,7 +16,7 @@
 }
 
 .savedmovies__container_searchform {
-    padding-top: 90px;
+    padding-top: 88px;
 }
 
 .savedmovies__container_cardlist {
@@ -26,7 +26,7 @@
 }
 
 .savedmovies__footer {
-    padding-top: 20px;
+    padding-top: 145px;
     padding-bottom: 20px;
 }
 
@@ -37,7 +37,7 @@
     }
 
     .savedmovies__container_searchform {
-        padding-top: 96px;
+        padding-top: 100px;
     }
 
     .savedmovies__container_cardlist {
@@ -49,17 +49,28 @@
 
 @media (max-width: 320px) {
     .savedmovies {
-        padding-left: 10px;
+        padding-left: 0px;
         padding-right: 15px;
     }
 
+    .savedmovies__header {
+        padding-left: 15px;
+    }
+
     .savedmovies__container_searchform {
-        padding-top: 100px;
+        padding-top: 104px;
+        padding-left: 12px;
     }
 
     .savedmovies__container_cardlist {
         padding-top: 90px;
-        padding-left: 0px;
         padding-right: 0px;
+        padding-left: 15px;
+    }
+
+    .savedmovies__footer {
+        padding-top: 217px;
+        padding-left: 22px;
+        padding-right: 10px;
     }
 }

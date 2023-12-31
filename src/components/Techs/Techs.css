@@ -86,6 +86,7 @@
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(50px, 90px));
     grid-auto-rows: minmax(30px, 60px);
+    justify-content: center;
 }
 
 .techs__list_item {

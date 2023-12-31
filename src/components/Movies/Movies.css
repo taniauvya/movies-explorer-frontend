@@ -16,7 +16,7 @@
 }
 
 .movies__container_searchform {
-    padding-top: 90px;
+    padding-top: 88px;
 }
 
 .movies__container_cardlist {
@@ -26,7 +26,7 @@
 }
 
 .movies__footer {
-    padding-top: 20px;
+    padding-top: 145px;
     padding-bottom: 20px;
 }
 
@@ -58,7 +58,7 @@
     }
 
     .movies__container_searchform {
-        padding-top: 96px;
+        padding-top: 100px;
     }
 
     .movies__container_cardlist {
@@ -71,21 +71,37 @@
 
 @media (max-width: 320px) {
     .movies {
-        padding-left: 10px;
+        padding-left: 0px;
         padding-right: 15px;
     }
 
+    .movies__header {
+        padding-left: 15px;
+    }
+
     .movies__container_searchform {
-        padding-top: 119px;
+        padding-top: 104px;
+        padding-left: 12px;
     }
 
     .movies__container_cardlist {
         padding-top: 90px;
-        padding-left: 0px;
         padding-right: 0px;
+        padding-left: 15px;
     }
 
     .movies__button_load {
         width: 240px;
+    }
+
+    .movies__footer {
+        padding-top: 148px;
+        padding-left: 22px;
+        padding-right: 10px;
+    }
+
+    .movies__container_load {
+        padding-top: 60px;
+        padding-left: 15px;
     }
 }
