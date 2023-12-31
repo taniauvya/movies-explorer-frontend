@@ -59,7 +59,7 @@
 
 @media (max-width: 768px) {
     .searchform__form_line2 {
-        justify-content: end;
+        justify-content: flex-end;
         padding-top: 28px;
         gap: 15px;
     }

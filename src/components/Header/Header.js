@@ -30,9 +30,11 @@ const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMen
                         accountClass={navigationAccountClass} />
                 </div>
                 <div className='header__container_nav_medium'>
-                    <NavigationMenu
-                        isBlack={isBlackLineNavMenu}
-                        onClick={handleNavigationMenuClick} />
+                    <div className='header__container_nav_menu'>
+                        <NavigationMenu
+                            isBlack={isBlackLineNavMenu}
+                            onClick={handleNavigationMenuClick} />
+                    </div>
                 </div>
             </>
     }

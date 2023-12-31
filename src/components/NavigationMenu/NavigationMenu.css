@@ -1,30 +1,9 @@
 .navigationmenu {
     background-color: transparent;
-    width: 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+    border: none;
     cursor: pointer;
 }
 
-.navigationmenu:hover .navigationmenu__line {
+.navigationmenu:hover {
     opacity: 0.8;
-}
-
-.navigationmenu__line {
-    border-top: 3px solid;
-}
-
-.navigationmenu__line_black {
-    border-color: #000;
-}
-
-.navigationmenu__line_white {
-    border-color: #fff;
-}
-
-@media (max-width: 320px) {
-    .navigationmenu {
-        width: 22px;
-    }
 }

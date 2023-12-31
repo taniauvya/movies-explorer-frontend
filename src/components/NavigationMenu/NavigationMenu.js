@@ -1,15 +1,15 @@
 import './NavigationMenu.css'
+import imgWhite from '../../images/nav-menu-white.svg';
+import imgBlack from '../../images/nav-menu-black.svg';
 
 const NavigationMenu = ({ isBlack, onClick }) => {
 
-    const lineColor = isBlack ? "navigationmenu__line_black" : "navigationmenu__line_white";
-    const lineClass = `navigationmenu__line ${lineColor}`;
+    const img = isBlack ? imgBlack : imgWhite;
+
     return (
-        <div onClick={onClick} className="navigationmenu">
-            <div className={lineClass} />
-            <div className={lineClass} />
-            <div className={lineClass} />
-        </div>
+        <button aria-label="Меню" onClick={onClick} className="navigationmenu">
+            <img className='navigationmenu__image' alt="Меню" src={img} />
+        </button>
     )
 };
 

@@ -15,10 +15,14 @@
     display: none;
 }
 
+.header__container_nav_menu {
+    padding-bottom: 5px;
+}
+
 .header__container_login {
     display: flex;
     flex-grow: 1;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .header__container_login_links {
@@ -67,7 +71,7 @@
     .header__container_nav_medium {
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
         flex-grow: 1;
         padding-right: 10px;
