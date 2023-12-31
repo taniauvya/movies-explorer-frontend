@@ -14,11 +14,11 @@ const AboutMe = () => {
             </header>
 
             <main className="aboutme__main">
-                <div className="aboutme__container_main">
+                <section className="aboutme__container_main">
                     <div className='aboutme__space aboutme__space_main_top' />
-                    <div className="aboutme__about">
-                        <div className="aboutme__about_text">
-                        <div className='aboutme__space aboutme__space_h1' />
+                    <section className="aboutme__about">
+                        <section className="aboutme__about_text">
+                            <div className='aboutme__space aboutme__space_h1' />
                             <h1 className="aboutme__h1">
                                 Виталий
                             </h1>
@@ -35,21 +35,21 @@ const AboutMe = () => {
                             </p>
                             <div className='aboutme__space aboutme__space_link' />
                             <Link className="aboutme__link" to="https://github.com/taniauvya" target="_blank">Github</Link>
-                        </div>
+                        </section>
                         <img alt="Аватар" src={imgAvatar} className='aboutme__about_avatar' />
-                    </div>
-                    
+                    </section>
+
                     <div className='aboutme__space aboutme__space_portfolio_title' />
                     <p className="aboutme__portfolio_title">Портфолио</p>
-                    
+
                     <div className='aboutme__space aboutme__space_portfolio' />
-                    <div className="aboutme__portfolio">
+                    <section className="aboutme__portfolio">
                         <Portfolio title="Статичный сайт" link="https://github.com/" />
                         <Portfolio title="Адаптивный сайт" link="https://github.com/" />
                         <Portfolio title="Одностраничное приложение" link="https://github.com/" hasUnderline={false} />
-                    </div>
+                    </section>
                     <div className='aboutme__space aboutme__space_main_bottom' />
-                </div>
+                </section>
             </main>
         </div>
     )

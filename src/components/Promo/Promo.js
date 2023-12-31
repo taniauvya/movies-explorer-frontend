@@ -14,10 +14,10 @@ const Promo = ({ handleNavigationMenuClick }) => {
                     handleNavigationMenuClick={handleNavigationMenuClick} />
             </header>
             <main className='promo__main'>
-                <div className="promo__container_main">
+                <section className="promo__container_main">
                     <div className="promo__space_main_top" />
-                    <div className="promo__container_content">
-                        <div className="promo__container_title">
+                    <section className="promo__container_content">
+                        <section className="promo__container_title">
                             <div className="promo__space_main_title" />
                             <h1 className="promo__title_main">
                                 Учебный проект студента
@@ -29,12 +29,12 @@ const Promo = ({ handleNavigationMenuClick }) => {
                                 Листайте ниже, чтобы узнать больше про этот
                                 проект и его создателя.
                             </h2>
-                        </div>
+                        </section>
                         <img alt="Логотип" src={imgWorldLogo} className="promo__logo" />
-                    </div>
+                    </section>
                     <div className="promo__space_more" />
                     <Link to="#aboutproject" className="promo__link_more">Узнать больше</Link>
-                </div>
+                </section>
             </main>
         </div>
     )

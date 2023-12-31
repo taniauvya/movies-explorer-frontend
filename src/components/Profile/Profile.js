@@ -26,7 +26,7 @@ const Profile = ({ handleNavigationMenuClick }) => {
             </header>
 
             <main className="profile__main">
-                <div className="profile__container_main">
+                <section className="profile__container_main">
                     <div className='profile__space_title'/>
                     <h1 className="profile__title">{`Привет, ${currentUser.name}!`}</h1>
                     <div className='profile__space_form'/>
@@ -43,7 +43,7 @@ const Profile = ({ handleNavigationMenuClick }) => {
                             </div>
                         </div>
                     </form>
-                </div>
+                </section>
             </main>
 
             <footer className='profile__footer'>

@@ -11,7 +11,7 @@ const Techs = () => {
             </header>
 
             <main className="techs__main">
-                <div className="techs__container_main">
+                <section className="techs__container_main">
                     <div className='techs__space techs__space_main_top' />
                     <h1 className="techs__title">7 технологий</h1>
                     <p className="techs__text">
@@ -29,7 +29,7 @@ const Techs = () => {
                         <li className="techs__list_item">mongoDB</li>
                     </ul>
                     <div className='techs__space techs__space_main_bottom' />
-                </div>
+                </section>
             </main>
         </div>
     )
