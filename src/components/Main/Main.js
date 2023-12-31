@@ -8,15 +8,17 @@ import Footer from '../Footer/Footer';
 
 const Main = ({ handleNavigationMenuClick }) => {
     return (
-        <>
-            <Promo handleNavigationMenuClick={handleNavigationMenuClick} />
-            <AboutProject />
-            <Techs />
-            <AboutMe />
-            <div className='main__container_footer'>
+        <div className='main'>
+            <main className='main__main'>
+                <Promo handleNavigationMenuClick={handleNavigationMenuClick} />
+                <AboutProject />
+                <Techs />
+                <AboutMe />
+            </main>
+            <footer className='main__footer'>
                 <Footer />
-            </div>
-        </>
+            </footer>
+        </div>
     )
 };
 

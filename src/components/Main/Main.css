@@ -1,21 +1,21 @@
-.main__container_footer {
+.main__footer {
     padding-left: 70px;
     padding-right: 70px;
-    padding-top: 65px;
+    padding-top: 66px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
-    .main__container_footer {
+    .main__footer {
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 74px;
     }
 }
 
 @media (max-width: 320px) {
-    .main__container_footer {
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 59px;
+    .main__footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 59px;
     }
 }
