@@ -70,6 +70,7 @@
         justify-content: end;
         align-items: center;
         flex-grow: 1;
+        padding-right: 10px;
     }
 }
 
@@ -94,5 +95,9 @@
         flex-direction: row;
         align-items: center;
         gap: 15px;
+    }
+
+    .header__container_nav_medium {
+        padding-right: 8px;
     }
 }

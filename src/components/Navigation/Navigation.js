@@ -19,9 +19,11 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
                 {isSidePanel &&
                     <button aria-label="Закрыть" className='navigation__button_close' onClick={onCloseClick} />
                 }
+                
                 {!isSidePanel &&
                     <div className='navigation__space' />
                 }
+                
                 <div className="navigation___container_link">
                     {isSidePanel &&
                         <NavLink {...linkNavAttrs} to="/" className={linkClassNav}>Главная</NavLink>

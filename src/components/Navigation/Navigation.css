@@ -9,11 +9,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     flex-grow: 1;
 }
 
 .navigation__space {
-    flex-basis: 83px;
+    flex-basis: 61px;
 }
 
 .navigation__space_footer {
@@ -25,6 +26,7 @@
     flex-direction: row;
     gap: 16px;
     align-items: center;
+    padding-bottom: 8px;
 }
 
 .navigation__link_active {
@@ -35,8 +37,8 @@
     text-decoration: none;
     outline-color: transparent;
     color: #000;
+    font-size: 13px;
     font-weight: 400;
-    font-size: 14px;
     line-height: 18px;
 }
 
