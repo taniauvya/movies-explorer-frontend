@@ -2,7 +2,13 @@ import './Login.css';
 import LoginRegisterForm from '../LoginRegisterForm/LoginRegisterForm';
 import LoginRegisterInput from '../LoginRegisterInput/LoginRegisterInput';
 
-const Login = () => {
+const Login = ({onLogin}) => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onLogin();
+    }
+
     return (
         <LoginRegisterForm
             title="Рады видеть!"
@@ -10,20 +16,21 @@ const Login = () => {
             buttonText="Войти"
             linkTitle="Ещё не зарегистрированы?"
             linkText="Регистрация"
-            linkAddress="/signup">
+            linkAddress="/signup"
+            onSubmit={handleSubmit}>
 
             <LoginRegisterInput
                 type="email"
                 name="email"
                 title="E-mail"
-                required={true}
+                validationAttrs = {{ required: true }}
             />
 
             <LoginRegisterInput
                 type="password"
                 name="password"
                 title="Пароль"
-                required={true}
+                validationAttrs = {{ required: true, minlength: 2 }}
             />
 
         </LoginRegisterForm>

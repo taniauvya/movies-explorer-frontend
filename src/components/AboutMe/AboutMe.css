@@ -102,7 +102,6 @@
 
 .aboutme__p {
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -124,7 +123,6 @@
 
 .aboutme__portfolio_title {
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

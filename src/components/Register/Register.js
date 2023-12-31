@@ -16,21 +16,21 @@ const Register = () => {
                 type="text"
                 name="name"
                 title="Имя"
-                required={true}
+                validationAttrs = {{ required: true, minlength: 2 }}
             />
 
             <LoginRegisterInput
                 type="email"
                 name="email"
                 title="E-mail"
-                required={true}
+                validationAttrs = {{ required: true }}
             />
 
             <LoginRegisterInput
                 type="password"
                 name="password"
                 title="Пароль"
-                required={true}
+                validationAttrs = {{ required: true, minlength: 2 }}
             />
 
         </LoginRegisterForm>

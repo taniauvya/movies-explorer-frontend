@@ -8,7 +8,7 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
     const linkNavAttrs = {};
     if (isSidePanel) {
         linkNavAttrs.onClick = onCloseClick;
-    } 
+    }
 
     return (
         <div className={`navigation ${isOpen ? "" : "navigation_closed"}`}>
@@ -19,11 +19,11 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
                 {isSidePanel &&
                     <button aria-label="Закрыть" className='navigation__button_close' onClick={onCloseClick} />
                 }
-                
+
                 {!isSidePanel &&
                     <div className='navigation__space' />
                 }
-                
+
                 <div className="navigation___container_link">
                     {isSidePanel &&
                         <NavLink {...linkNavAttrs} to="/" className={linkClassNav}>Главная</NavLink>
@@ -32,15 +32,17 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
                     <NavLink {...linkNavAttrs} to="/saved-movies" className={linkClassNav}>Сохранённые фильмы</NavLink>
                 </div>
 
-                <div className={`navigation__account_container ${accountClass || ""}`}>
-                    <Link {...linkNavAttrs} to="/profile" className="navigation__account_link">Аккаунт</Link>
+
+                <Link {...linkNavAttrs} to="/profile" className={`navigation__account_container navigation__account_link ${accountClass || ""}`}>
+                    Аккаунт
                     <div className="navigation__container_account_img">
                         <img alt="Аккаунт" className="navigation__account_img" src={imgAccountButton} />
                     </div>
-                </div>
+                </Link>
+
 
                 {isSidePanel &&
-                    <div className="navigation__space_footer"/>
+                    <div className="navigation__space_footer" />
                 }
             </div>
         </div>

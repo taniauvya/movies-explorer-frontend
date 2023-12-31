@@ -3,7 +3,7 @@ import './Profile.css';
 import Header from '../Header/Header';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
 
-const Profile = ({ handleNavigationMenuClick }) => {
+const Profile = ({ handleNavigationMenuClick, onLogout }) => {
 
     const containerSubmitRef = React.useRef();
     const containerEditRef = React.useRef();
@@ -52,7 +52,7 @@ const Profile = ({ handleNavigationMenuClick }) => {
                         <button aria-label="Редактировать" type="button" className="profile__button_edit" onClick={handleEnableSubmitClick}>
                             Редактировать
                         </button>
-                        <button aria-label="Выйти" className='profile__button_logout' type="button">Выйти из аккаунта</button>
+                        <button aria-label="Выйти" className='profile__button_logout' type="button" onClick={onLogout}>Выйти из аккаунта</button>
                     </div>
                     <div ref={containerSubmitRef} className='profile__submit'>
                         <span className='profile__error_submit' />
