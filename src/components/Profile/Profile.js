@@ -20,18 +20,18 @@ const Profile = ({ handleNavigationMenuClick, onLogout }) => {
     }
 
     return (
-        <div className="profile">
+        <section className="profile">
             <header className='profile__header'>
-                <Header handleNavigationMenuClick={handleNavigationMenuClick} />
+                <div className='profile__header_wrapper'>
+                    <Header handleNavigationMenuClick={handleNavigationMenuClick} />
+                </div>
             </header>
 
             <main className="profile__main">
-                <section className="profile__container_main">
-                    <div className='profile__space_title'/>
+                <section className="profile__wrapper">
                     <h1 className="profile__title">{`Привет, ${currentUser.name}!`}</h1>
-                    <div className='profile__space_form'/>
                     <form name="profile_edit" id="profile_edit" className="profile__form">
-                        <div className="profile__inputs_container">
+                        <section className="profile__inputs_container">
                             <div className="profile__input_container">
                                 <label className="profile__form_label">Имя</label>
                                 <input ref={inputNameRef} className="profile__form_input" type="text" placeholder='Имя' name="name" defaultValue={currentUser.name} required minLength="2" disabled />
@@ -41,27 +41,23 @@ const Profile = ({ handleNavigationMenuClick, onLogout }) => {
                                 <label className="profile__form_label">E-mail</label>
                                 <input ref={inputEmailRef} className="profile__form_input" type="email" name="email" placeholder='E-mail' defaultValue={currentUser.email} required disabled />
                             </div>
-                        </div>
+                        </section>
+                        <section className="profile__button_container">
+                            <div ref={containerEditRef} className='profile__edit profile__edit_visible'>
+                                <button aria-label="Редактировать" type="button" className="profile__button_edit button-common" onClick={handleEnableSubmitClick}>
+                                    Редактировать
+                                </button>
+                                <button aria-label="Выйти" className='profile__button_logout button-common' type="button" onClick={onLogout}>Выйти из аккаунта</button>
+                            </div>
+                            <div ref={containerSubmitRef} className='profile__submit'>
+                                <span className='profile__error_submit' />
+                                <button aria-label="Сохранить" className='profile__button_submit button-common' form="profile_edit" type="submit">Сохранить</button>
+                            </div>
+                        </section>
                     </form>
                 </section>
             </main>
-
-            <footer className='profile__footer'>
-                <div className="profile__container_footer">
-                    <div ref={containerEditRef} className='profile__edit profile__edit_visible'>
-                        <button aria-label="Редактировать" type="button" className="profile__button_edit button-common" onClick={handleEnableSubmitClick}>
-                            Редактировать
-                        </button>
-                        <button aria-label="Выйти" className='profile__button_logout button-common' type="button" onClick={onLogout}>Выйти из аккаунта</button>
-                    </div>
-                    <div ref={containerSubmitRef} className='profile__submit'>
-                        <span className='profile__error_submit' />
-                        <button aria-label="Сохранить" className='profile__button_submit button-common' form="profile_edit" type="submit">Сохранить</button>
-                    </div>
-                </div>
-                <div className='profile__space_footer'/>                
-            </footer>
-        </div>
+        </section>
     )
 };
 
