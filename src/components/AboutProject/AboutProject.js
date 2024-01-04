@@ -3,16 +3,15 @@ import MainTitle from '../MainTitle/MainTitle'
 
 const AboutProject = () => {
     return (
-        <div id="aboutproject" className="aboutproject">
+        <article id="aboutproject" className="aboutproject">
 
-            <header className='aboutproject__header'>
-                <div className='aboutproject__space aboutproject__space_header_top' />
-                <MainTitle title="О проекте" />
-            </header>
+            <section className='aboutproject__wrapper'>
 
-            <main className="aboutproject__main">
-                <section className="aboutproject__container_main">
-                    <div className='aboutproject__space aboutproject__space_main_top' />
+                <header className='aboutproject__header'>
+                    <MainTitle title="О проекте" />
+                </header>
+
+                <section className="aboutproject__main">
                     <section className='aboutproject__content'>
                         <section className='aboutproject__col'>
                             <p className='aboutproject__col_title_1'>Дипломный проект включал 5 этапов</p>
@@ -29,16 +28,15 @@ const AboutProject = () => {
                             </p>
                         </section>
                     </section>
-                    <div className='aboutproject__space aboutproject__space_main_timeline' />
                     <section className='aboutproject__timeline'>
                         <p className='aboutproject__timeline_period aboutproject__timeline_period_backend'>1 неделя</p>
                         <p className='aboutproject__timeline_text aboutproject__timeline_text_backend'>Back-end</p>
-                        <p className='aboutproject__timeline_period aboutproject__timeline_period_frontend'>4 неделя</p>
+                        <p className='aboutproject__timeline_period aboutproject__timeline_period_frontend'>4 недели</p>
                         <p className='aboutproject__timeline_text aboutproject__timeline_text_frontend'>Front-end</p>
                     </section>
                 </section>
-            </main>
-        </div>
+            </section>
+        </article>
     )
 };
 

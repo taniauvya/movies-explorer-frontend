@@ -49,14 +49,14 @@ const Profile = ({ handleNavigationMenuClick, onLogout }) => {
             <footer className='profile__footer'>
                 <div className="profile__container_footer">
                     <div ref={containerEditRef} className='profile__edit profile__edit_visible'>
-                        <button aria-label="Редактировать" type="button" className="profile__button_edit" onClick={handleEnableSubmitClick}>
+                        <button aria-label="Редактировать" type="button" className="profile__button_edit button-common" onClick={handleEnableSubmitClick}>
                             Редактировать
                         </button>
-                        <button aria-label="Выйти" className='profile__button_logout' type="button" onClick={onLogout}>Выйти из аккаунта</button>
+                        <button aria-label="Выйти" className='profile__button_logout button-common' type="button" onClick={onLogout}>Выйти из аккаунта</button>
                     </div>
                     <div ref={containerSubmitRef} className='profile__submit'>
                         <span className='profile__error_submit' />
-                        <button aria-label="Сохранить" className='profile__button_submit' form="profile_edit" type="submit">Сохранить</button>
+                        <button aria-label="Сохранить" className='profile__button_submit button-common' form="profile_edit" type="submit">Сохранить</button>
                     </div>
                 </div>
                 <div className='profile__space_footer'/>                

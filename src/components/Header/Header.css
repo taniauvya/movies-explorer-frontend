@@ -1,7 +1,6 @@
 .header {
     display: flex;
     flex-direction: row;
-    padding-top: 17px;
 }
 
 .header__container_nav_large {

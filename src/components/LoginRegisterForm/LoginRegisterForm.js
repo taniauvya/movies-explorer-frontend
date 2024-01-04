@@ -25,7 +25,7 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
 
             <footer className="loginregister__footer">
                 <div className="loginregister__container_footer">
-                    <button aria-label={buttonText} form={formName} className="loginregister__submit" type="submit">
+                    <button aria-label={buttonText} form={formName} className="loginregister__submit button-common" type="submit">
                         {buttonText}
                     </button>
                     <div className="loginregister___container_link">

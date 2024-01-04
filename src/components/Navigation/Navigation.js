@@ -11,13 +11,13 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
     }
 
     return (
-        <div className={`navigation ${isOpen ? "" : "navigation_closed"}`}>
+        <nav className={`navigation ${isOpen ? "" : "navigation_closed"}`}>
             {isSidePanel &&
                 <div className='navigation__space_separate' />
             }
-            <div className="navigation__container">
+            <section className="navigation__container">
                 {isSidePanel &&
-                    <button aria-label="Закрыть" className='navigation__button_close' onClick={onCloseClick} />
+                    <button aria-label="Закрыть" className='navigation__button_close button-common' onClick={onCloseClick} />
                 }
 
                 {!isSidePanel &&
@@ -44,8 +44,8 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
                 {isSidePanel &&
                     <div className="navigation__space_footer" />
                 }
-            </div>
-        </div>
+            </section>
+        </nav>
     )
 };
 

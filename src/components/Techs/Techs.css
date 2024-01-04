@@ -1,29 +1,47 @@
 .techs {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    /* margin: 0 auto; */
     background-color: #F5F5F5;
     height: 625px;
-    padding-left: 70px;
-    padding-right: 70px;
+    /* padding-left: 70px;
+    padding-right: 70px; */
+    padding-top: 100px;
+}
+
+.techs__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(1280px - 70px - 70px + 10px + 10px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .techs__header {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1140px;
+    /* align-items: stretch; */
+    /* padding-left: 70px;
+    padding-right: 70px; */
+    /* width: calc(1280px - 70px - 70px);; */
 }
 
 .techs__main {
     display: flex;
     flex-direction: column;
+    margin-top: 90px;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1140px;
+    /* align-items: center;
+    justify-content: center; */
+    /* width: 100%; */
+    /* max-width: 1140px; */
 }
 
+
+
+/* 
 .techs__container_main {
     display: flex;
     flex-direction: column;
@@ -31,9 +49,9 @@
     justify-content: center;
     width: 100%;
     flex-basis: 474px;
-}
+} */
 
-.techs__space_header_top {
+/* .techs__space_header_top {
     flex-basis: 100px;
 }
 
@@ -51,7 +69,7 @@
 
 .techs__space_main_list {
     flex-basis: 100px;
-}
+} */
 
 .techs__title {
     font-size: 50px;
@@ -59,6 +77,7 @@
     line-height: 58px;
     letter-spacing: -2px;
     margin: 0;
+    text-align: center;
 }
 
 .techs__text {
@@ -67,21 +86,21 @@
     font-weight: 400;
     line-height: 20px;
     letter-spacing: -0.56px;
-    margin: 0;
     max-width: 460px;
-    padding-top: 26px;
+    margin-top: 25px;
 }
 
-.techs__container_list {
+/* .techs__container_list {
     display: flex;
     flex-direction: column;
     flex-basis: 60px;
-}
+} */
 
 .techs__list {
+    margin-top: 100px;
     display: grid;
     padding: 0;
-    margin: 0;
+    /* margin: 0 auto; */
     max-width: 690px;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(50px, 90px));
@@ -104,11 +123,24 @@
 @media (max-width: 768px) {
     .techs {
         height: 567px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-top: 90px;
+        /* padding-left: calc(50%*100/768);
+        padding-right: calc(50%*100/768); */
     }
 
-    .techs__container_main {
+    .techs__wrapper {
+        max-width: calc(768px - 50px - 50px + 10px + 10px);
+    }
+    
+    /* .techs__header {
+        max-width: calc(768px - 50px - 50px);
+    } */
+
+    .techs__main {
+        margin-top: 80px;
+    }
+
+    /* .techs__container_main {
         flex-basis: 426px;
     }
     
@@ -126,7 +158,7 @@
     
     .techs__space_main_list {
         flex-basis: 93px;
-    }
+    } */
 
     .techs__text {
         text-align: center;
@@ -135,11 +167,13 @@
         line-height: 18px;
         letter-spacing: -0.48px;
         text-align: center;
-        padding-top: 22px;
+        /* padding-top: 22px; */
+        margin-top: 22px;
     }
 
     .techs__list {
-        max-width: 648;
+        /* max-width: 648; */
+        margin-top: 83px;
         grid-template-columns: repeat(auto-fit, minmax(15px, 84px));
         grid-auto-rows: minmax(10px, 57px);
     }
@@ -156,10 +190,20 @@
     .techs {
         background-color: #fff;
         height: 651px;
-        padding-left: 18px;
-        padding-right: 18px;
+        padding-top: 70px;
     }
 
+    .techs__wrapper {
+        max-width: calc(320px - 18px - 18px + 5px + 5px);
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .techs__main {
+        margin-top: 60px;
+    }
+
+    /* 
     .techs__space_header_top {
         flex-basis: 70px;
     }
@@ -178,7 +222,7 @@
     
     .techs__space_main_list {
         flex-basis: 50px;
-    }
+    } */
 
     .techs__title {
         font-weight: 400;
@@ -194,13 +238,14 @@
         line-height: 16px;
         letter-spacing: -0.44px;
         text-align: center;
-        padding-top: 24px;
+        margin-top: 24px;
     }
 
     .techs__list {
         display: grid;
         grid-template-columns: 84px 84px;
         gap: 10px;
+        margin-top: 50px;
     }
 
     .techs__list_item {

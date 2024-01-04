@@ -8,7 +8,7 @@ const PageNotFound = () => {
         <div className="pagenotfound">
             <h1 className="pagenotfound__header">404</h1>
             <p className="pagenotfound__text">Страница не найдена</p>
-            <button aria-label="Назад" className='pagenotfound__link' onClick={() => navigate(-1)}>Назад</button>
+            <button aria-label="Назад" className='pagenotfound__link button-common' onClick={() => navigate(-1)}>Назад</button>
         </div>
     )
 };
