@@ -3,7 +3,7 @@ import './Logo.css'
 
 const Logo = () => {
     return (
-        <Link to="/" className='logo' />
+        <Link to="/" className='logo link-common' />
     )
 };
 

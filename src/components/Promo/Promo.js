@@ -20,7 +20,7 @@ const Promo = () => {
                     </section>
                     <img alt="Логотип" src={imgWorldLogo} className="promo__logo" />
                 </section>
-                <Link to="#aboutproject" className="promo__link_more">Узнать больше</Link>
+                <Link to="#aboutproject" className="promo__link_more link-common">Узнать больше</Link>
             </section>
         </article>
     )

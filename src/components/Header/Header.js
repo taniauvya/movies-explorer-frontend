@@ -15,8 +15,8 @@ const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMen
         linksElem =
             <div className="header__container_login">
                 <div className="header__container_login_links">
-                    <Link to="/signup" className="header__register_link">Регистрация</Link>
-                    <Link to="/signin" className="header__login_link">Войти</Link>
+                    <Link to="/signup" className="header__register_link link-common">Регистрация</Link>
+                    <Link to="/signin" className="header__login_link link-common">Войти</Link>
                 </div>
             </div>
     }

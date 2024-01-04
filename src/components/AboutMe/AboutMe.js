@@ -28,7 +28,7 @@ const AboutMe = () => {
                                 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по
                                 веб&#8209;разработке, начал заниматься фриланс&#8209;заказами и ушёл с постоянной работы.
                             </p>
-                            <Link className="aboutme__link" to="https://github.com/taniauvya" target="_blank">Github</Link>
+                            <Link className="aboutme__link link-common" to="https://github.com/taniauvya" target="_blank">Github</Link>
                         </section>
                         <img alt="Аватар" src={imgAvatar} className='aboutme__about_avatar' />
                     </section>

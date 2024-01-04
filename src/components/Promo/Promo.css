@@ -73,10 +73,6 @@
     margin-top: 85px;
 }
 
-.promo__link_more:hover {
-    opacity: 70%;
-}
-
 @media (max-width: 768px) {
     .promo {
         height: 868px;

@@ -3,7 +3,6 @@
     flex-direction: column;
     height: 1079px;
     padding-top: 110px;
-    /* padding-bottom: 204px; */
 }
 
 .aboutme__wrapper {
@@ -167,7 +166,6 @@
     .aboutme__about {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         gap: 0px;
     }
 

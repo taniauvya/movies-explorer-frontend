@@ -30,7 +30,7 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
                     </button>
                     <div className="loginregister___container_link">
                         <p className='loginregister__link_title'>{linkTitle}</p>
-                        <Link to={linkAddress} className='loginregister__link'>{linkText}</Link>
+                        <Link to={linkAddress} className='loginregister__link link-common'>{linkText}</Link>
                     </div>
                 </div>
                 <div className='loginregister__space_footer' />

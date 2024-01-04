@@ -42,10 +42,6 @@
     line-height: 18px;
 }
 
-.navigation__link:hover {
-    opacity: 70%;
-}
-
 .navigation__account_container {
     display: flex;
     flex-direction: row;
@@ -55,10 +51,6 @@
     width: 100px;
     height: 32px;
     box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
-}
-
-.navigation__account_container:hover {
-    opacity: 80%;
 }
 
 .navigation__account_link {
@@ -104,11 +96,6 @@
     right: 19px;
     width: 32px;
     height: 32px;
-    cursor: pointer;
-}
-
-.navigation__button_close:hover {
-    opacity: 0.8;
 }
 
 @media (max-width: 768px) {

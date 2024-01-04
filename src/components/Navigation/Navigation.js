@@ -33,7 +33,7 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
                 </div>
 
 
-                <Link {...linkNavAttrs} to="/profile" className={`navigation__account_container navigation__account_link ${accountClass || ""}`}>
+                <Link {...linkNavAttrs} to="/profile" className={`navigation__account_container navigation__account_link link-common ${accountClass || ""}`}>
                     Аккаунт
                     <div className="navigation__container_account_img">
                         <img alt="Аккаунт" className="navigation__account_img" src={imgAccountButton} />

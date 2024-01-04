@@ -40,11 +40,6 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
-    cursor: pointer;
-}
-
-.moviescard__button:hover {
-    opacity: 0.8;
 }
 
 @media (max-width: 768px) {

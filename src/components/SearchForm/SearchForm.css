@@ -37,11 +37,6 @@
     width: 58.65px;
     height: 34px;
     flex-shrink: 0;
-    cursor: pointer;
-}
-
-.searchform__submit:hover {
-    opacity: 80%;
 }
 
 .searchform__form_line2 {
