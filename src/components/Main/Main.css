@@ -15,7 +15,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: calc(1280px - 70px - 70px);
+    padding: 0 10px;
+    max-width: calc(1280px - 70px - 70px + 10px + 10px);
     margin: 0 auto;
 }
 
@@ -51,7 +52,7 @@
     }
 
     .main__header_wrapper {
-        max-width: calc(768px - 30px - 30px);
+        max-width: calc(768px - 30px - 30px + 10px + 10px);
     }
     
     .main__footer_wrapper {
@@ -70,7 +71,8 @@
     }
 
     .main__header_wrapper {
-        max-width: calc(320px - 14px - 14px);
+        padding: 0 5px;
+        max-width: calc(320px - 14px - 14px + 5px + 5px);
     }
 
     .main__footer_wrapper {
