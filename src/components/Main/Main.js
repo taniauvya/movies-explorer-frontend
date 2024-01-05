@@ -6,15 +6,12 @@ import Techs from '../Techs/Techs';
 import AboutMe from '../AboutMe/AboutMe';
 
 const Main = () => {
-
     return (
         <section className='main'>
-            <section className='main__content'>
                 <Promo />
                 <AboutProject />
                 <Techs />
                 <AboutMe />
-            </section>
         </section>
     )
 };

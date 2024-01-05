@@ -1,11 +1,9 @@
 import './Movies.css'
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import Preloader from '../Preloader/Preloader';
 
-const Movies = ({ handleNavigationMenuClick }) => {
+const Movies = () => {
 
     const movies = [
         { _id: 1, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
@@ -27,34 +25,26 @@ const Movies = ({ handleNavigationMenuClick }) => {
     ];
 
     return (
-        <div className="movies">
-            <div className="movies__content">
-                <header className="movies__header">
-                    <Header handleNavigationMenuClick={handleNavigationMenuClick} />
-                </header>
-                <main className="movies__main">
-                    <div className='movies__container_searchform'>
+        <section className="movies">
+            <section className="movies__wrapper">
+                    <section className='movies__searchform'>
                         <SearchForm />
-                    </div>
-                    <div className='movies__container_cardlist'>
+                    </section>
+                    <section className='movies__cardlist'>
                         <MoviesCardList
                             savedList={false}
                             movies={movies} />
-                    </div>
-                    <div className='movies__container_load'>
-                        <button className='movies__button_load button-common' aria-label="Еще">
+                    </section>
+                    <section className='movies__load'>
+                        <button className='movies__button-load button-common' aria-label="Еще">
                             Ещё
                         </button>
-                        <div className='movies__container_preloader'>
+                        <div className='movies__preloader'>
                             <Preloader />
                         </div>
-                    </div>
-                </main>
-                <footer className='movies__footer'>
-                    <Footer />
-                </footer>
-            </div>
-        </div>
+                    </section>
+            </section>
+        </section>
     )
 };
 

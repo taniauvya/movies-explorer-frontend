@@ -87,7 +87,7 @@
 
 @media (max-width: 320px) {
   .app__footer {
-      padding-bottom: 59px;
+      padding-bottom: 20px;
   }
 
   .app__header {

@@ -1,43 +1,35 @@
 .movies {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-top: 89px;
+}
+
+.movies__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(1140px + 10px + 10px);
+    width: 100%;
+    margin: 0 auto;
     align-items: center;
+    padding: 0 10px;
+}
+
+.movies__searchform {
     width: 100%;
 }
 
-.movies__content {
-    display: grid;
-    grid-auto-rows: auto 1fr auto;
-    min-height: 100vh;
-    width: 100%;
-    max-width: calc(1280px - 70px - 70px);
+.movies__cardlist {
+    margin-top: 115px;
 }
 
-.movies__container_searchform {
-    padding-top: 88px;
-}
-
-.movies__container_cardlist {
-    padding-top: 115px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.movies__footer {
-    padding-top: 145px;
+.movies__load {
+    display: flex;
+    flex-direction: row;
+    margin: 62px auto 0;
     padding-bottom: 20px;
 }
 
-.movies__container_load {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 62px;
-}
-
-.movies__button_load {
+.movies__button-load {
     font-weight: 500;
     font-size: 12px;
     line-height: normal;
@@ -47,60 +39,50 @@
     border: none;
 }
 
-.movies__container_preloader {
+.movies__preloader {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .movies {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
 
-    .movies__container_searchform {
-        padding-top: 100px;
-    }
-
-    .movies__container_cardlist {
-        padding-top: 129px;
-        padding-left: 0px;
-        padding-right: 0px;
+@media (max-width: 1220px) {
+    .movies__wrapper {
+        max-width: calc(850px + 10px + 10px);
+        padding: 0 10px;
     }
 }
 
+@media (max-width: 950px) {
 
-@media (max-width: 320px) {
     .movies {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-top: 97px;
     }
 
-    .movies__header {
-        padding-left: 15px;
-        padding-right: 15px;
+    .movies__cardlist {
+        margin-top: 130px;
     }
 
-    .movies__container_searchform {
-        padding-top: 104px;
-        padding-left: 14px;
-        padding-right: 14px;
+    .movies__wrapper {
+        max-width: calc(708px + 10px + 10px);
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .movies {
+        padding-top: 101px;
     }
 
-    .movies__container_cardlist {
-        padding-top: 90px;
-        padding-right: 10px;
-        padding-left: 10px;
+    .movies__cardlist {
+        margin-top: 91px;
     }
 
-    .movies__button_load {
+    .movies__wrapper {
+        max-width: calc(300px + 5px + 5px);
+        padding: 0 5px;
+    }
+
+    .movies__button-load {
         width: 240px;
-    }
-
-    .movies__footer {
-        padding-top: 148px;
-    }
-
-    .movies__container_load {
-        padding-top: 60px;
     }
 }

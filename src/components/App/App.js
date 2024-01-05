@@ -78,7 +78,7 @@ const App = () => {
   const headerExtClasses = getHeaderExtClasses(location.pathname);
 
   let header;
-  if (["/", "movies", "saved-movies", "/profile"].includes(location.pathname))
+  if (["/", "/movies", "/saved-movies", "/profile"].includes(location.pathname))
     header =
       <header className={`app__header ${headerExtClasses.background}`}>
         <div className="app__header_wrapper">
@@ -91,7 +91,7 @@ const App = () => {
       </header>;
 
   let footer;
-  if (["/", "movies", "saved-movies"].includes(location.pathname))
+  if (["/", "/movies", "/saved-movies"].includes(location.pathname))
     footer =
       <footer className='app__footer'>
         <div className="app__footer_wrapper">

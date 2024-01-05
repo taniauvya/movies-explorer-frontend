@@ -11,6 +11,7 @@
     line-height: normal;
     color: #A0A0A0;
     min-width: 0;
+    padding: 0;
 }
 
 .searchform__form_line1 {
@@ -52,7 +53,7 @@
     padding-left: 14px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .searchform__form_line2 {
         justify-content: flex-end;
         padding-top: 28px;
@@ -65,6 +66,7 @@
 
     .searchform__short_label {
         order: 1;
+        padding-top: 3px;
     }
 }
 
@@ -79,6 +81,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: normal;
+        padding: 0 0 0 3px;
     }
 
     .searchform__form_line1 {
@@ -97,6 +100,10 @@
         line-height: 18px;
         padding-top: 2px;
         padding-left: 0px;
+    }
+
+    .searchform__submit {
+        margin-right: 4px;
     }
 
 }
