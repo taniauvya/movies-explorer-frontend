@@ -1,7 +1,7 @@
 .aboutme {
     display: flex;
     flex-direction: column;
-    height: 1079px;
+    height: 1157px;
     padding-top: 110px;
 }
 
@@ -99,7 +99,7 @@
 
 @media (max-width: 768px) {
     .aboutme {
-        height: 994px;
+        height: 1072px;
         padding-top: 90px;
         padding-bottom: 80px;
     }
@@ -158,7 +158,7 @@
 
 @media (max-width: 320px) {
     .aboutme {
-        height: 1198px;
+        height: 1277px;
         padding-top: 70px;
         padding-bottom: 70px;
     }

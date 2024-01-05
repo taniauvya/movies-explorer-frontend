@@ -1,9 +1,8 @@
 import React from 'react'
 import './Profile.css';
-import Header from '../Header/Header';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext.js';
 
-const Profile = ({ handleNavigationMenuClick, onLogout }) => {
+const Profile = ({ onLogout }) => {
 
     const containerSubmitRef = React.useRef();
     const containerEditRef = React.useRef();
@@ -21,12 +20,6 @@ const Profile = ({ handleNavigationMenuClick, onLogout }) => {
 
     return (
         <section className="profile">
-            <header className='profile__header'>
-                <div className='profile__header_wrapper'>
-                    <Header handleNavigationMenuClick={handleNavigationMenuClick} />
-                </div>
-            </header>
-
             <main className="profile__main">
                 <section className="profile__wrapper">
                     <h1 className="profile__title">{`Привет, ${currentUser.name}!`}</h1>
