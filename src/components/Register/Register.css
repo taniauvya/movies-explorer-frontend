@@ -1,0 +1,9 @@
+.register__space {
+    padding-top: 154px;
+}
+
+@media (max-width: 420px) {
+    .register__space {
+        padding-top: 240px;
+    }
+}

@@ -17,11 +17,13 @@ const Login = ({onLogin}) => {
             linkTitle="Ещё не зарегистрированы?"
             linkText="Регистрация"
             linkAddress="/signup"
-            onSubmit={handleSubmit}>
+            onSubmit={handleSubmit}
+            submitSpaceClass="login__space">
 
             <LoginRegisterInput
                 type="email"
                 name="email"
+                placeholder="E-mail"
                 title="E-mail"
                 validationAttrs = {{ required: true }}
             />
@@ -30,6 +32,7 @@ const Login = ({onLogin}) => {
                 type="password"
                 name="password"
                 title="Пароль"
+                placeholder="Пароль"
                 validationAttrs = {{ required: true, minlength: 2 }}
             />
 

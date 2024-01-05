@@ -10,12 +10,14 @@ const Register = () => {
             buttonText="Зарегистрироваться"
             linkTitle="Уже зарегистрированы?"
             linkText="Войти"
-            linkAddress="/signin">
+            linkAddress="/signin"
+            submitSpaceClass="register__space">
 
             <LoginRegisterInput
                 type="text"
                 name="name"
                 title="Имя"
+                placeholder="Имя"
                 validationAttrs = {{ required: true, minlength: 2 }}
             />
 
@@ -23,6 +25,7 @@ const Register = () => {
                 type="email"
                 name="email"
                 title="E-mail"
+                placeholder="E-mail"
                 validationAttrs = {{ required: true }}
             />
 
@@ -30,6 +33,7 @@ const Register = () => {
                 type="password"
                 name="password"
                 title="Пароль"
+                placeholder="Пароль"
                 validationAttrs = {{ required: true, minlength: 2 }}
             />
 

@@ -2,41 +2,37 @@ import { Link } from 'react-router-dom';
 import './LoginRegisterForm.css';
 import Logo from '../Logo/Logo'
 
-
-const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, linkText, linkAddress, children }) => {
+const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, linkText, linkAddress, children, submitSpaceClass }) => {
     return (
-        <div className="loginregister" tabIndex="0">
-            <header className='loginregister__header'>
-                <div className='loginregister__space_logo' />
-                <Logo />
-            </header>
+        <section className="loginregister" tabIndex="0">
+            <section className="loginregister__wrapper">
+                <header className='loginregister__header'>
+                    <Logo />
+                </header>
 
-            <main className="loginregister__main">
-                <div className='loginregister__space_main_title' />
-                <h1 className="loginregister__title">{title}</h1>
-                <div className='loginregister__space_main_form' />
-                <form name={formName} id={formName} className="loginregister__form" onSubmit={onSubmit}>
-                    <div className="loginregister__container_input">
-                        {children}
-                    </div>
-                    <span className="loginregister__error" />
-                </form>
-            </main>
-
-            <footer className="loginregister__footer">
-                <div className="loginregister__container_footer">
-                    <button aria-label={buttonText} form={formName} className="loginregister__submit button-common" type="submit">
-                        {buttonText}
-                    </button>
-                    <div className="loginregister___container_link">
-                        <p className='loginregister__link_title'>{linkTitle}</p>
-                        <Link to={linkAddress} className='loginregister__link link-common'>{linkText}</Link>
-                    </div>
-                </div>
-                <div className='loginregister__space_footer' />
-            </footer>
-        </div>
-
+                <main className="loginregister__main">
+                    <h1 className="loginregister__title">{title}</h1>
+                    <form name={formName} id={formName} className="loginregister__form" onSubmit={onSubmit}>
+                        <div className="loginregister__container_input">
+                            {children}
+                        </div>
+                        <span className="loginregister__error" />
+                        
+                        <div className={submitSpaceClass}/>
+                        
+                        <div className="loginregister__container_button">
+                            <button aria-label={buttonText} form={formName} className="loginregister__submit button-common" type="submit">
+                                {buttonText}
+                            </button>
+                            <div className="loginregister___container_link">
+                                <p className='loginregister__link_title'>{linkTitle}</p>
+                                <Link to={linkAddress} className='loginregister__link link-common'>{linkText}</Link>
+                            </div>
+                        </div>
+                    </form>
+                </main>
+            </section>
+        </section>
     );
 }
 

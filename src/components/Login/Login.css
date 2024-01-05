@@ -1,0 +1,9 @@
+.login__space {
+    padding-top: 224px;
+}
+
+@media (max-width: 420px) {
+    .login__space {
+        padding-top: 312px;
+    }
+}
