@@ -19,12 +19,14 @@ function getHeaderExtClasses(route) {
   let cssClasses = {
     background: "",
     accButtonBackround: "",
-    linksFontColor: ""
+    linksFontColor: "",
+    navMenuBlack: true
   };
   if (route === '/') {
     cssClasses.background = "app__header_color_main";
     cssClasses.accButtonBackround = "navigation_account_color_main";
     cssClasses.linksFontColor = "navigation_link_color_main";
+    cssClasses.navMenuBlack = false;
   }
   else {
     cssClasses.background = "app__header_color_basic";
@@ -85,7 +87,7 @@ const App = () => {
           <Header
             navigationAccountClass={headerExtClasses.accButtonBackround}
             navigationLinkClass={headerExtClasses.linksFontColor}
-            isBlackLineNavMenu={false}
+            isBlackLineNavMenu={headerExtClasses.navMenuBlack}
             handleNavigationMenuClick={handleNavigationMenuClick} />
         </div>
       </header>;

@@ -1,76 +1,63 @@
 .savedmovies {
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
+}
+
+.savedmovies__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(1140px + 10px + 10px);
+    width: 100%;
+    margin: 0 auto;
     align-items: center;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 10px;
+}
+
+.savedmovies__searchform {
     width: 100%;
 }
 
-.savedmovies__content {
-    display: grid;
-    grid-auto-rows: auto 1fr auto;
-    min-height: 100vh;
-    width: 100%;
-    max-width: calc(1280px - 70px - 70px);
+.savedmovies__cardlist {
+    margin-top: 115px;
 }
 
-.savedmovies__container_searchform {
-    padding-top: 88px;
+
+@media (max-width: 1220px) {
+    .savedmovies__wrapper {
+        max-width: calc(850px + 10px + 10px);
+        padding: 0 10px;
+    }
 }
 
-.savedmovies__container_cardlist {
-    padding-top: 115px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
+@media (max-width: 950px) {
 
-.savedmovies__footer {
-    padding-top: 145px;
-    padding-bottom: 20px;
-}
-
-@media (max-width: 768px) {
     .savedmovies {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-top: 79px;
     }
 
-    .savedmovies__container_searchform {
-        padding-top: 100px;
+    .savedmovies__cardlist {
+        margin-top: 130px;
     }
 
-    .savedmovies__container_cardlist {
-        padding-top: 129px;
-        padding-left: 0px;
-        padding-right: 0px;
+    .savedmovies__wrapper {
+        max-width: calc(708px + 10px + 10px);
+        padding: 0 10px;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 750px) {
+
     .savedmovies {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-top: 84px;
     }
 
-    .savedmovies__header {
-        padding-left: 15px;
-        padding-right: 15px;
+    .savedmovies__cardlist {
+        margin-top: 91px;
     }
 
-    .savedmovies__container_searchform {
-        padding-top: 104px;
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-
-    .savedmovies__container_cardlist {
-        padding-top: 90px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .savedmovies__footer {
-        padding-top: 217px;
+    .savedmovies__wrapper {
+        max-width: calc(300px + 5px + 5px);
+        padding: 0 5px;
     }
 }

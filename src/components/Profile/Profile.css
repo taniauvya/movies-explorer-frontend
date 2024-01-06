@@ -1,8 +1,7 @@
-
-.profile__main {
+.profile {
     display: flex;
     flex-direction: column;
-    margin-top: 92px;
+    padding-top: 74px;
 }
 
 .profile__wrapper {
@@ -134,12 +133,12 @@
 
 @media (max-width: 768px) {
 
-    .profile__wrapper {
-        max-width: calc(768px - 30px - 30px + 10px + 10px);
+    .profile {
+        padding-top: 236px;
     }
 
-    .profile__main {
-        margin-top: 242px;
+    .profile__wrapper {
+        max-width: calc(768px - 30px - 30px + 10px + 10px);
     }
 
     .profile__button_container {
@@ -153,13 +152,13 @@
 
 @media (max-width: 320px) {
 
+    .profile {
+        padding-top: 72px;
+    }
+
     .profile__wrapper {
         padding: 0 5px;
         max-width: calc(320px - 30px - 30px + 10px + 10px);
-    }
-
-    .profile__main {
-        margin-top: 88px;
     }
 
     .profile__button_container {

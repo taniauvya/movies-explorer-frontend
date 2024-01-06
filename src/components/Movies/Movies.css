@@ -1,7 +1,7 @@
 .movies {
     display: flex;
     flex-direction: column;
-    padding-top: 89px;
+    padding-top: 70px;
 }
 
 .movies__wrapper {
@@ -54,7 +54,7 @@
 @media (max-width: 950px) {
 
     .movies {
-        padding-top: 97px;
+        padding-top: 79px;
     }
 
     .movies__cardlist {
@@ -70,7 +70,7 @@
 @media (max-width: 750px) {
 
     .movies {
-        padding-top: 101px;
+        padding-top: 84px;
     }
 
     .movies__cardlist {

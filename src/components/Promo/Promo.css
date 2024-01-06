@@ -1,9 +1,9 @@
 .promo {
     display: flex;
     flex-direction: column;
-    height: 593px;
+    height: 574px;
     background: #073042;
-    padding-top: 93px;
+    padding-top: 75px;
 }
 
 .promo__wrapper {
@@ -75,8 +75,8 @@
 
 @media (max-width: 768px) {
     .promo {
-        height: 868px;
-        padding-top: 157px;
+        height: 850px;
+        padding-top: 140px;
     }
     
     .promo__wrapper {
@@ -121,8 +121,8 @@
 
 @media (max-width: 320px) {
     .promo {
-        height: 653px;
-        padding-top: 87px;
+        height: 636px;
+        padding-top: 70px;
     } 
 
     .promo__logo {
