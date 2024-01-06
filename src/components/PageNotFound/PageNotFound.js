@@ -4,12 +4,16 @@ import './PageNotFound.css'
 const PageNotFound = () => {
     const navigate = useNavigate();
 
+    function handleBackOnClick() {
+        navigate(-1);
+    }
+
     return (
-        <div className="pagenotfound">
-            <h1 className="pagenotfound__header">404</h1>
-            <p className="pagenotfound__text">Страница не найдена</p>
-            <button aria-label="Назад" className='pagenotfound__link button-common' onClick={() => navigate(-1)}>Назад</button>
-        </div>
+        <section className="pagenotfound">
+            <h1 className="pagenotfound__title">404</h1>
+            <span className="pagenotfound__text">Страница не найдена</span>
+            <button aria-label="Назад" className='pagenotfound__button button-common' onClick={handleBackOnClick}>Назад</button>
+        </section>
     )
 };
 
