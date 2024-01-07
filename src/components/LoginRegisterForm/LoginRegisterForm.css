@@ -1,0 +1,166 @@
+.loginregister {
+    display: flex;
+    flex-direction: column;
+    padding-top: 69px;
+}
+
+.loginregister__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(396px + 10px + 10px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.loginregister__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.loginregister__main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 41px;
+}
+
+.loginregister__container-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.loginregister__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: normal;
+    margin: 0;
+}
+
+.loginregister__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.loginregister__container-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    border: none;
+    padding: 0;
+}
+
+.loginregister__button-submit {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
+    background-color: #3456F3;
+    border: none;
+    height: 45px;
+    color: #fff;
+    width: 100%;
+}
+
+.loginregister__container-link {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-top: 16px;
+}
+
+.loginregister__label-link {
+    color: #A0A0A0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    margin: 0;
+}
+
+.loginregister__link {
+    text-decoration: none;
+    outline-color: transparent;
+    color: #3456F3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.loginregister__error {
+    color: #FF3055;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4px;
+    visibility: hidden;
+}
+
+.loginregister__form:invalid .loginregister__error {
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .loginregister {
+        display: flex;
+        flex-direction: column;
+        padding-top: 232px;
+    }
+
+    .loginregister__container-link {
+        margin-top: 17px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .loginregister {
+        padding-top: 56px;
+    }
+
+    .loginregister__wrapper {
+        max-width: calc(260px + 5px + 5px);
+        padding: 0 5px;
+    }
+
+    .loginregister__main {
+        margin-top: 50px;
+    }
+
+    .loginregister__form {
+        margin-top: 80px;
+    }
+
+    .loginregister__header {
+        align-items: center;
+    }
+
+    .loginregister__title {
+        text-align: center;
+    }
+
+    .loginregister__button-submit {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .loginregister__label-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .loginregister__link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+    }
+
+
+    .loginregister__container-link {
+        margin-top: 12px;
+    }
+}

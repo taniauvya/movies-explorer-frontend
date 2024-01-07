@@ -1,0 +1,88 @@
+.movies {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.movies__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(1140px + 10px + 10px);
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.movies__searchform {
+    width: 100%;
+}
+
+.movies__cardlist {
+    margin-top: 115px;
+}
+
+.movies__load {
+    display: flex;
+    flex-direction: row;
+    margin: 62px auto 0;
+    padding-bottom: 20px;
+}
+
+.movies__button-load {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: normal;
+    width: 320px;
+    height: 36px;
+    background-color: #F9F9F9;
+    border: none;
+}
+
+.movies__preloader {
+    display: none;
+}
+
+
+@media (max-width: 1220px) {
+    .movies__wrapper {
+        max-width: calc(850px + 10px + 10px);
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .movies {
+        padding-top: 79px;
+    }
+
+    .movies__cardlist {
+        margin-top: 130px;
+    }
+
+    .movies__wrapper {
+        max-width: calc(708px + 10px + 10px);
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .movies {
+        padding-top: 84px;
+    }
+
+    .movies__cardlist {
+        margin-top: 91px;
+    }
+
+    .movies__wrapper {
+        max-width: calc(300px + 5px + 5px);
+        padding: 0 5px;
+    }
+
+    .movies__button-load {
+        width: 240px;
+    }
+}

@@ -1,0 +1,32 @@
+.filtercheckbox {
+    width: 36px;
+    height: 20px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.filtercheckbox__input {
+    display: none;
+}
+
+.filtercheckbox:hover {
+    opacity: 0.8;
+}
+
+.filtercheckbox__span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/smalltumboff.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.filtercheckbox__input:checked + .filtercheckbox__span {
+    background-image: url("../../images/smalltumb.svg");
+    z-index: 1;
+}

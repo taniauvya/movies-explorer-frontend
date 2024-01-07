@@ -1,0 +1,47 @@
+.loginregisterinput {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginregisterinput__label {
+    color: #A0A0A0;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: normal;
+}
+
+.loginregisterinput__input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 0;
+    margin-top: 4px;
+    padding-bottom: 12px;
+}
+
+.loginregisterinput__input_name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.loginregisterinput__input_email {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.loginregisterinput__input_password {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+
+.loginregisterinput__input:focus {
+    border-bottom: 1px solid #3456F3;
+}
+
+.loginregisterinput__input:invalid {
+    color: #f00;
+}

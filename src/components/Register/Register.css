@@ -1,0 +1,9 @@
+.register__space {
+    margin-top: 133px;
+}
+
+@media (max-width: 420px) {
+    .register__space {
+        margin-top: 223px;
+    }
+}
