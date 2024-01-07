@@ -114,7 +114,7 @@ const App = () => {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <section className={`app ${appColsClass}`}>
+      <div className={`app ${appColsClass}`}>
         <ScrollToAnchor />
         <div className='app__navigation'>
           <Navigation
@@ -137,7 +137,7 @@ const App = () => {
         </main>
 
         {footer || ""}
-      </section>
+      </div>
     </CurrentUserContext.Provider >
   );
 }

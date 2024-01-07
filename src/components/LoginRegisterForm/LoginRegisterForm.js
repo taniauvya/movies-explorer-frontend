@@ -10,7 +10,7 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
                     <Logo />
                 </header>
 
-                <main className="loginregister__main">
+                <section className="loginregister__main">
                     <h1 className="loginregister__title">{title}</h1>
                     <form name={formName} id={formName} className="loginregister__form" onSubmit={onSubmit}>
                         <div className="loginregister__container_input">
@@ -30,7 +30,7 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
                             </div>
                         </div>
                     </form>
-                </main>
+                </section>
             </section>
         </section>
     );
