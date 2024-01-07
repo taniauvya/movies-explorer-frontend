@@ -3,7 +3,6 @@
     flex-direction: row;
     align-items: center;
     height: 74px;
-    min-width: 230px;
 }
 
 .header__logo {

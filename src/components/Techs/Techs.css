@@ -55,7 +55,6 @@
     grid-template-columns: repeat(auto-fit, minmax(50px, 90px));
     grid-auto-rows: minmax(30px, 60px);
     justify-content: center;
-    padding-bottom: 10px;
 }
 
 .techs__list_item {
@@ -105,6 +104,12 @@
         font-size: 12px;
         line-height: normal;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 385px) {
+    .techs__list {
+        margin-top: 20px;
     }
 }
 

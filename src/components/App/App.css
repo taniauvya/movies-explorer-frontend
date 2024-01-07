@@ -11,7 +11,7 @@
 }
 
 .button-common:hover {
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 
 .link-common:hover {
@@ -42,6 +42,7 @@
 .app__header {
   display: flex;
   flex-direction: column;
+  min-width: 310px;
 }
 
 .app__header_wrapper {
@@ -72,6 +73,7 @@
 
 .app__footer {
   padding-bottom: 20px;
+  min-width: 310px;
 }
 
 .app__footer_wrapper {

@@ -17,7 +17,8 @@ const MoviesCardList = ({ movies, savedList }) => {
                             title={movie.title}
                             duration={movie.duration}
                             key={movie._id}
-                            actionImgClass={actionImgClass} />
+                            actionImgClass={actionImgClass}
+                            isSaved={savedList} />
                     );
                 })}
 

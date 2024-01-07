@@ -13,6 +13,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+    height: 100%;
 }
 
 .promo__container_content {
@@ -89,7 +90,8 @@
     }
 
     .promo__link_more {
-        margin-top: 92px;
+        margin-top: auto;
+        margin-bottom: 76px;
     } 
 
     .promo__logo {
@@ -119,6 +121,12 @@
     }
 }
 
+@media (max-width: 426px) {
+    .promo__link_more {
+        margin-bottom: 30px;
+    } 
+}
+
 @media (max-width: 320px) {
     .promo {
         height: 636px;
@@ -143,8 +151,4 @@
         max-width: 260px;
         margin: 24px 0 0 0;
     }
-
-    .promo__link_more {
-        margin-top: 80px;
-    } 
 }
