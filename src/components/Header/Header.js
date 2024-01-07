@@ -13,23 +13,23 @@ const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMen
     let linksElem;
     if (currentUser?.name === '') {
         linksElem =
-            <div className="header__container_login">
-                <div className="header__container_login_links">
-                    <Link to="/signup" className="header__register_link link-common">Регистрация</Link>
-                    <Link to="/signin" className="header__login_link link-common">Войти</Link>
+            <div className="header__container-login">
+                <div className="header__container-login-links">
+                    <Link to="/signup" className="header__link-register link-common">Регистрация</Link>
+                    <Link to="/signin" className="header__link-login link-common">Войти</Link>
                 </div>
             </div>
     }
     else {
         linksElem =
             <>
-                <div className='header__container_nav_large'>
+                <div className='header__container-nav-large'>
                     <Navigation
                         isOpen={true}
                         linkClass={navigationLinkClass}
                         accountClass={navigationAccountClass} />
                 </div>
-                <div className='header__container_nav_medium'>
+                <div className='header__container-nav-medium'>
                     <NavigationMenu
                         isBlack={isBlackLineNavMenu}
                         onClick={handleNavigationMenuClick} />

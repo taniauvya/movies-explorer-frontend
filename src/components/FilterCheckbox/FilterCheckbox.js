@@ -1,9 +1,9 @@
 import './FilterCheckbox.css'
 
-const FilterCheckbox = ({ name, orderClass }) => {
+const FilterCheckbox = ({ name }) => {
 
     return (
-        <label className={`filtercheckbox__label ${orderClass}`}>
+        <label className="filtercheckbox">
             <input className="filtercheckbox__input" type="checkbox" name={name} />
             <span className="filtercheckbox__span" />
         </label>

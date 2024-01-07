@@ -16,19 +16,19 @@
     height: 100%;
 }
 
-.promo__container_content {
+.promo__container-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
 
-.promo__container_title {
+.promo__container-title {
     display: flex;
     flex-direction: column;
 }
 
-.promo__title_main {
+.promo__title {
     color: #fff;
     font-feature-settings: 'clig' off, 'liga' off;
     font-weight: 400;
@@ -54,7 +54,7 @@
     height: 304px;
 }
 
-.promo__link_more {
+.promo__link-more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,12 +84,12 @@
         align-items: center;
     }
 
-    .promo__container_content {
+    .promo__container-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .promo__link_more {
+    .promo__link-more {
         margin-top: auto;
         margin-bottom: 76px;
     } 
@@ -100,7 +100,7 @@
         height: 304px;
     }
 
-    .promo__container_title {
+    .promo__container-title {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -108,7 +108,7 @@
         order: 2;
     }
 
-    .promo__title_main {
+    .promo__title {
         font-weight: 400;
         font-size: 40px;
         line-height: 50px;
@@ -122,7 +122,7 @@
 }
 
 @media (max-width: 426px) {
-    .promo__link_more {
+    .promo__link-more {
         margin-bottom: 30px;
     } 
 }
@@ -139,7 +139,7 @@
         height: 206px;
     }
 
-    .promo__title_main {
+    .promo__title {
         font-weight: 400;
         font-size: 30px;
         line-height: 38px;

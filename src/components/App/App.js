@@ -22,14 +22,15 @@ function getHeaderExtClasses(route) {
     linksFontColor: "",
     navMenuBlack: true
   };
+  
   if (route === '/') {
-    cssClasses.background = "app__header_color_main";
-    cssClasses.accButtonBackround = "navigation_account_color_main";
-    cssClasses.linksFontColor = "navigation_link_color_main";
+    cssClasses.background = "app__header_color-main";
+    cssClasses.accButtonBackround = "navigation__link-account_color";
+    cssClasses.linksFontColor = "navigation__link_color";
     cssClasses.navMenuBlack = false;
   }
   else {
-    cssClasses.background = "app__header_color_basic";
+    cssClasses.background = "app__header_color-basic";
   }
 
   return cssClasses;
@@ -83,7 +84,7 @@ const App = () => {
   if (["/", "/movies", "/saved-movies", "/profile"].includes(location.pathname))
     header =
       <header className={`app__header ${headerExtClasses.background}`}>
-        <div className="app__header_wrapper">
+        <div className="app__wrapper-header">
           <Header
             navigationAccountClass={headerExtClasses.accButtonBackround}
             navigationLinkClass={headerExtClasses.linksFontColor}
@@ -96,20 +97,20 @@ const App = () => {
   if (["/", "/movies", "/saved-movies"].includes(location.pathname))
     footer =
       <footer className='app__footer'>
-        <div className="app__footer_wrapper">
+        <div className="app__wrapper-footer">
           <Footer />
         </div>
       </footer>;
 
   let appColsClass;
   if (header && footer) {
-    appColsClass = "app-all";
+    appColsClass = "app_all";
   }
   else if (header) {
-    appColsClass = "app-header";
+    appColsClass = "app_header";
   }
   else {
-    appColsClass = "app-no-header-footer";
+    appColsClass = "app_no-header-footer";
   }
 
   return (

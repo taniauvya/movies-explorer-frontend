@@ -13,7 +13,7 @@
     flex-grow: 1;
 }
 
-.navigation___container_link {
+.navigation__container-link {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -34,7 +34,7 @@
     line-height: 18px;
 }
 
-.navigation__account_container {
+.navigation__container-account {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,7 +45,7 @@
     box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.08);
 }
 
-.navigation__account_link {
+.navigation__link-account {
     text-decoration: none;
     outline-color: transparent;
     color: #000;
@@ -57,7 +57,7 @@
     top: -2px;
 }
 
-.navigation__container_account_img {
+.navigation__container-account-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +69,7 @@
     right: 5px;
 }
 
-.navigation__account_img {
+.navigation__account-img {
     width: 12px;
     height: 12px;
 }
@@ -98,7 +98,7 @@
         background-color: #000;
     }
 
-    .navigation__button_close {
+    .navigation__button-close {
         position: absolute;
         border: none;
         background-color: transparent;
@@ -122,7 +122,7 @@
         z-index: 100;
     }
 
-    .navigation___container_link {
+    .navigation__container-link {
         display: flex;
         flex-direction: column;
         gap: 28px;
@@ -131,7 +131,7 @@
         margin-top: 158px;
     }
 
-    .navigation__account_container {
+    .navigation__container-account {
         margin-top: auto;
         margin-bottom: 90px;
     }
@@ -151,7 +151,7 @@
 
 @media (max-width: 320px) {
 
-    .navigation__button_close {
+    .navigation__button-close {
         position: absolute;
         top: 14px;
         right: 14px;
@@ -159,7 +159,7 @@
         height: 32px;
     }
 
-    .navigation___container_link {
+    .navigation__container-link {
         margin-top: 145px;
         gap: 24px;
     }
@@ -172,7 +172,7 @@
         text-underline-offset: 12px;
     }
 
-    .navigation__account_container {
+    .navigation__container-account {
         margin-bottom: 46px;
     }
 }

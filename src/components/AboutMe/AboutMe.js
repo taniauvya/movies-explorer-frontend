@@ -15,7 +15,7 @@ const AboutMe = () => {
 
                 <section className="aboutme__main">
                     <section className="aboutme__about">
-                        <section className="aboutme__about_text">
+                        <section className="aboutme__about-text">
                             <h1 className="aboutme__h1">
                                 Виталий
                             </h1>
@@ -30,10 +30,10 @@ const AboutMe = () => {
                             </p>
                             <Link className="aboutme__link link-common" to="https://github.com/taniauvya" target="_blank">Github</Link>
                         </section>
-                        <img alt="Аватар" src={imgAvatar} className='aboutme__about_avatar' />
+                        <img alt="Аватар" src={imgAvatar} className='aboutme__avatar' />
                     </section>
 
-                    <p className="aboutme__portfolio_title">Портфолио</p>
+                    <p className="aboutme__title-portfolio">Портфолио</p>
 
                     <section className="aboutme__portfolio">
                         <Portfolio title="Статичный сайт" link="https://github.com/" />

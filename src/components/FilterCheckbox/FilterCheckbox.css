@@ -1,4 +1,4 @@
-.filtercheckbox__label {
+.filtercheckbox {
     width: 36px;
     height: 20px;
     display: block;
@@ -11,7 +11,7 @@
     display: none;
 }
 
-.filtercheckbox__label:hover {
+.filtercheckbox:hover {
     opacity: 0.8;
 }
 

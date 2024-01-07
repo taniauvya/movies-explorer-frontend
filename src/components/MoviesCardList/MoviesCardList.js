@@ -8,8 +8,8 @@ const MoviesCardList = ({ movies, savedList }) => {
             <ul className="moviescardlist__list">
                 {movies.map(movie => {
 
-                    const actionImgClass = savedList ? 'movies__button-unsave' :
-                        (movie.isLiked ? 'movies__button-like' : 'movies__button-dislike');
+                    const actionImgClass = savedList ? 'moviescard__button_unsave' :
+                        (movie.isLiked ? 'moviescard__button_like' : 'moviescard__button_dislike');
 
                     return (
                         <MoviesCard

@@ -6,9 +6,9 @@ const Promo = () => {
     return (
         <article className="promo">
             <section className='promo__wrapper'>
-                <section className="promo__container_content">
-                    <section className="promo__container_title">
-                        <h1 className="promo__title_main">
+                <section className="promo__container-content">
+                    <section className="promo__container-title">
+                        <h1 className="promo__title">
                             Учебный проект студента
                             факультета
                             Веб&#8209;разработки.
@@ -20,7 +20,7 @@ const Promo = () => {
                     </section>
                     <img alt="Логотип" src={imgWorldLogo} className="promo__logo" />
                 </section>
-                <Link to="#aboutproject" className="promo__link_more link-common">Узнать больше</Link>
+                <Link to="#aboutproject" className="promo__link-more link-common">Узнать больше</Link>
             </section>
         </article>
     )

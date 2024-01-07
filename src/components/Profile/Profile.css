@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-.profile__button_container {
+.profile__container-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,19 +39,19 @@
     max-width: 410px;
 }
 
-.profile__inputs_container {
+.profile__container-inputs {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.profile__form_label {
+.profile__label {
     font-weight: 500;
     font-size: 11px;
     line-height: normal;
 }
 
-.profile__form_input {
+.profile__input {
     border: none;
     outline: none;
     font-weight: 400;
@@ -60,21 +60,21 @@
     text-align: right;
 }
 
-.profile__form_input:invalid {
+.profile__input:invalid {
     color: #f00;
 }
 
-.profile__form_input:disabled {
+.profile__input:disabled {
     color: #000;
 }
 
-.profile__input_container {
+.profile__container-input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.profile__input_separator {
+.profile__separator-input {
     border-bottom: 1px solid #E8E8E8;
 }
 
@@ -99,7 +99,7 @@
     width: 100%;
 }
 
-.profile__button_edit {
+.profile__button-edit {
     border: none;
     background-color: #fff;
     font-weight: 400;
@@ -107,7 +107,7 @@
     line-height: normal;
 }
 
-.profile__button_logout {
+.profile__button-logout {
     border: none;
     background-color: transparent;
     color: #FF3055;
@@ -117,7 +117,7 @@
     margin-top: 15px;
 }
 
-.profile__button_submit {
+.profile__button-submit {
     font-weight: 500;
     font-size: 14px;
     line-height: normal;
@@ -128,7 +128,7 @@
     width: 100%;
 }
 
-.profile__error {
+.profile__error-submit {
     display: none;
 }
 
@@ -142,7 +142,7 @@
         max-width: calc(768px - 30px - 30px + 10px + 10px);
     }
 
-    .profile__button_container {
+    .profile__container-buttons {
         margin: 208px auto 40px;
     }
 
@@ -162,7 +162,7 @@
         max-width: calc(320px - 30px - 30px + 10px + 10px);
     }
 
-    .profile__button_container {
+    .profile__container-buttons {
         margin: 378px auto 40px;
     }
 
@@ -171,19 +171,19 @@
         margin: 78px auto 0;
     }
 
-    .profile__button_edit {
+    .profile__button-edit {
         font-size: 12px;
         font-weight: 400;
         line-height: normal; 
     }
 
-    .profile__button_logout {
+    .profile__button-logout {
         font-size: 12px;
         font-weight: 400;
         line-height: normal; 
     }
 
-    .profile__button_submit {
+    .profile__button-submit {
         font-size: 12px;
         font-weight: 400;
         line-height: normal; 

@@ -7,15 +7,15 @@
     list-style-type: none;
 }
 
-.movies__button-like {
+.moviescard__button_like {
     background-image: url("../../images/like-checked.svg");
 }
 
-.movies__button-dislike {
+.moviescard__button_dislike {
     background-image: url("../../images/like-unchecked.svg");
 }
 
-.movies__button-unsave {
+.moviescard__button_unsave {
     background-image: url("../../images/remove-saved.svg");
 }
 

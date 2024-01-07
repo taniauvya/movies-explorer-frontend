@@ -13,19 +13,19 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
                 <section className="loginregister__main">
                     <h1 className="loginregister__title">{title}</h1>
                     <form name={formName} id={formName} className="loginregister__form" onSubmit={onSubmit}>
-                        <div className="loginregister__container_input">
+                        <div className="loginregister__container-inputs">
                             {children}
                         </div>
                         <span className="loginregister__error" />
                         
                         <div className={submitSpaceClass}/>
                         
-                        <div className="loginregister__container_button">
-                            <button aria-label={buttonText} form={formName} className="loginregister__submit button-common" type="submit">
+                        <div className="loginregister__container-submit">
+                            <button aria-label={buttonText} form={formName} className="loginregister__button-submit button-common" type="submit">
                                 {buttonText}
                             </button>
-                            <div className="loginregister___container_link">
-                                <p className='loginregister__link_title'>{linkTitle}</p>
+                            <div className="loginregister__container-link">
+                                <p className='loginregister__label-link'>{linkTitle}</p>
                                 <Link to={linkAddress} className='loginregister__link link-common'>{linkText}</Link>
                             </div>
                         </div>

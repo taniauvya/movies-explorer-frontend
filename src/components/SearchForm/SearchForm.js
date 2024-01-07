@@ -6,17 +6,17 @@ const SearchForm = () => {
     return (
         <div className="searchform">
             <form name="searchform" className="searchform__form">
-                <div className="searchform__form_line1">
-                    <input className="searchform__film" type="text" placeholder="Фильм" required />
-                    <button aria-label="Найти" className="searchform__submit button-common" type="submit">
+                <div className="searchform__line-1">
+                    <input className="searchform__input-film" type="text" placeholder="Фильм" required />
+                    <button aria-label="Найти" className="searchform__button-submit button-common" type="submit">
                         Найти
                     </button>
                 </div>
-                <div className="searchform__form_line2">
+                <div className="searchform__line-2">
                     <FilterCheckbox
                         name="shortCheck"
-                        orderClass="searchform__order_checkbox" />
-                    <label className="searchform__short_label">Короткометражки</label>
+                        orderClass="filtercheckbox_order" />
+                    <label className="searchform__label-filter-short">Короткометражки</label>
                 </div>
             </form>
         </div>

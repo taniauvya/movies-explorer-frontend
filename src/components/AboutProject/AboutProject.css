@@ -33,7 +33,7 @@
     flex-basis: 50%;
 }
 
-.aboutproject__col_title_1 {
+.aboutproject__col-title1 {
     font-weight: 400;
     font-size: 20px;
     line-height: normal;
@@ -41,7 +41,7 @@
     margin: 0;
 }
 
-.aboutproject__col_title_2 {
+.aboutproject__col-title2 {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -61,17 +61,17 @@
         'backend_text frontend_text';
 }
 
-.aboutproject__timeline_period_backend {
+.aboutproject__timeline-period_backend {
     grid-area: backend_timeline;
     background-color: #2BE080;
 }
 
-.aboutproject__timeline_period_frontend {
+.aboutproject__timeline-period_frontend {
     grid-area: frontend_timeline;
     background-color: #F2F2F2;
 }
 
-.aboutproject__timeline_period {
+.aboutproject__timeline-period {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@
     margin: 0;
 }
 
-.aboutproject__timeline_text {
+.aboutproject__timeline-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,11 +92,11 @@
     margin: 0;
 }
 
-.aboutproject__timeline_text_backend {
+.aboutproject__timeline-text_backend {
     grid-area: backend_text;
 }
 
-.aboutproject__timeline_text_frontend {
+.aboutproject__timeline-text_frontend {
     grid-area: frontend_text;
 }
 
@@ -120,14 +120,14 @@
         grid-template-columns: 140fr 528fr;
     }
 
-    .aboutproject__col_title_2 {
+    .aboutproject__col-title2 {
         font-size: 12px;
         font-weight: 400;
         line-height: 18px;
         margin-top: 22px;
     }
 
-    .aboutproject__timeline_text {
+    .aboutproject__timeline-text {
         color: #A0A0A0;
         font-size: 14px;
         font-style: normal;
@@ -161,27 +161,27 @@
         gap: 56px;
     }
 
-    .aboutproject__col_title_1 {
+    .aboutproject__col-title1 {
         font-size: 18px;
         font-weight: 400;
         line-height: normal;
         letter-spacing: -0.72px;
     }
 
-    .aboutproject__col_title_2 {
+    .aboutproject__col-title2 {
         font-weight: 400;
         font-size: 11px;
         line-height: 16px;
         margin-top: 16px;
     }
 
-    .aboutproject__timeline_period {
+    .aboutproject__timeline-period {
         font-weight: 400;
         font-size: 11px;
         line-height: normal;
     }
 
-    .aboutproject__timeline_text {
+    .aboutproject__timeline-text {
         font-weight: 400;
         font-size: 11px;
         line-height: normal;

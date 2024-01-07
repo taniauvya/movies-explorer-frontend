@@ -7,11 +7,11 @@ const Footer = () => {
             <p className="footer__title">
                 Учебный проект Яндекс.Практикум х BeatFilm.
             </p>
-            <div className="footer__container_bottom">
+            <div className="footer__container-bottom">
                 <p className="footer__year">© 2023</p>
-                <div className="footer__container_link">
-                    <Link className="footer___link link-common" to="https://practicum.yandex.ru" target="_blank">Яндекс.Практикум</Link>
-                    <Link className="footer___link link-common" to="https://github.com" target="_blank">Github</Link>
+                <div className="footer__container-links">
+                    <Link className="footer__link link-common" to="https://practicum.yandex.ru" target="_blank">Яндекс.Практикум</Link>
+                    <Link className="footer__link link-common" to="https://github.com" target="_blank">Github</Link>
                 </div>
             </div>
         </div>

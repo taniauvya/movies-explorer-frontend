@@ -17,10 +17,10 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
             }
             <section className="navigation__container">
                 {isSidePanel &&
-                    <button aria-label="Закрыть" className='navigation__button_close button-common' onClick={onCloseClick} />
+                    <button aria-label="Закрыть" className='navigation__button-close button-common' onClick={onCloseClick} />
                 }
 
-                <div className="navigation___container_link">
+                <div className="navigation__container-link">
                     {isSidePanel &&
                         <NavLink {...linkNavAttrs} to="/" className={linkClassNav}>Главная</NavLink>
                     }
@@ -28,11 +28,10 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
                     <NavLink {...linkNavAttrs} to="/saved-movies" className={linkClassNav}>Сохранённые фильмы</NavLink>
                 </div>
 
-
-                <Link {...linkNavAttrs} to="/profile" className={`navigation__account_container navigation__account_link link-common ${accountClass || ""}`}>
+                <Link {...linkNavAttrs} to="/profile" className={`navigation__container-account navigation__link-account link-common ${accountClass || ""}`}>
                     Аккаунт
-                    <div className="navigation__container_account_img">
-                        <img alt="Аккаунт" className="navigation__account_img" src={imgAccountButton} />
+                    <div className="navigation__container-account-img">
+                        <img alt="Аккаунт" className="navigation__account-img" src={imgAccountButton} />
                     </div>
                 </Link>
             </section>

@@ -57,7 +57,7 @@
     justify-content: center;
 }
 
-.techs__list_item {
+.techs__list-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +99,7 @@
         grid-auto-rows: minmax(10px, 57px);
     }
 
-    .techs__list_item {
+    .techs__list-item {
         font-weight: 400;
         font-size: 12px;
         line-height: normal;
@@ -154,7 +154,7 @@
         margin-top: 50px;
     }
 
-    .techs__list_item {
+    .techs__list-item {
         width: 84px;
         height: 57px;
         font-weight: 400;
