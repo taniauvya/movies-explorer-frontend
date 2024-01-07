@@ -13,13 +13,15 @@ const LoginRegisterForm = ({ title, formName, buttonText, onSubmit, linkTitle, l
                 <section className="loginregister__main">
                     <h1 className="loginregister__title">{title}</h1>
                     <form name={formName} id={formName} className="loginregister__form" onSubmit={onSubmit}>
-                        <div className="loginregister__container-inputs">
+                        <fieldset className="loginregister__container-inputs">
                             {children}
-                        </div>
-                        <span className="loginregister__error" />
-                        
-                        <div className={submitSpaceClass}/>
-                        
+                        </fieldset>
+                        <span className="loginregister__error">
+                            Что-то пошло не так...
+                        </span>
+
+                        <div className={submitSpaceClass} />
+
                         <div className="loginregister__container-submit">
                             <button aria-label={buttonText} form={formName} className="loginregister__button-submit button-common" type="submit">
                                 {buttonText}

@@ -20,6 +20,7 @@ const Register = () => {
                     title="Имя"
                     placeholder="Имя"
                     validationAttrs={{ required: true, minlength: 2 }}
+                    cssClass="loginregisterinput__input_name"
                 />
 
                 <LoginRegisterInput
@@ -28,6 +29,7 @@ const Register = () => {
                     title="E-mail"
                     placeholder="E-mail"
                     validationAttrs={{ required: true }}
+                    cssClass="loginregisterinput__input_email"
                 />
 
                 <LoginRegisterInput
@@ -36,6 +38,7 @@ const Register = () => {
                     title="Пароль"
                     placeholder="Пароль"
                     validationAttrs={{ required: true, minlength: 2 }}
+                    cssClass="loginregisterinput__input_password"
                 />
 
             </LoginRegisterForm>

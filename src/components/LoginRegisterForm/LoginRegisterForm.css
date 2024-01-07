@@ -48,7 +48,9 @@
 .loginregister__container-inputs {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 23px;
+    border: none;
+    padding: 0;
 }
 
 .loginregister__button-submit {
@@ -65,7 +67,7 @@
 .loginregister__container-link {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 7px;
     margin-top: 16px;
 }
 
@@ -87,7 +89,16 @@
 }
 
 .loginregister__error {
-    display: none;
+    color: #FF3055;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4px;
+    visibility: hidden;
+}
+
+.loginregister__form:invalid .loginregister__error {
+    visibility: visible;
 }
 
 @media (max-width: 768px) {
@@ -95,6 +106,11 @@
         display: flex;
         flex-direction: column;
         padding-top: 232px;
+    }
+
+    .loginregister__container-link {
+        margin-top: 17px;
+        gap: 8px;
     }
 }
 
@@ -141,5 +157,10 @@
         font-weight: 400;
         font-size: 12px;
         line-height: normal;
+    }
+
+
+    .loginregister__container-link {
+        margin-top: 12px;
     }
 }

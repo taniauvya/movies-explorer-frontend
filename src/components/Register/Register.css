@@ -1,9 +1,9 @@
 .register__space {
-    padding-top: 154px;
+    margin-top: 133px;
 }
 
 @media (max-width: 420px) {
     .register__space {
-        padding-top: 240px;
+        margin-top: 223px;
     }
 }

@@ -27,6 +27,7 @@ const Login = ({ onLogin }) => {
                     placeholder="E-mail"
                     title="E-mail"
                     validationAttrs={{ required: true }}
+                    cssClass="loginregisterinput__input_email"
                 />
 
                 <LoginRegisterInput
@@ -35,6 +36,7 @@ const Login = ({ onLogin }) => {
                     title="Пароль"
                     placeholder="Пароль"
                     validationAttrs={{ required: true, minlength: 2 }}
+                    cssClass="loginregisterinput__input_password"
                 />
 
             </LoginRegisterForm>

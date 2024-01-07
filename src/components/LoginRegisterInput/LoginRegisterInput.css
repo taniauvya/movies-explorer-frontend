@@ -14,13 +14,29 @@
     border: none;
     outline: none;
     border-bottom: 1px solid #E8E8E8;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: normal;
+    padding: 0;
+    margin-top: 4px;
     padding-bottom: 12px;
 }
+
+.loginregisterinput__input_name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.loginregisterinput__input_email {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.loginregisterinput__input_password {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal; 
+}
+
 
 .loginregisterinput__input:focus {
     border-bottom: 1px solid #3456F3;
