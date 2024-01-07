@@ -101,15 +101,27 @@ const App = () => {
         </div>
       </footer>;
 
+  let appColsClass;
+  if (header && footer) {
+    appColsClass = "app-all";
+  }
+  else if (header) {
+    appColsClass = "app-header";
+  }
+  else {
+    appColsClass = "app-no-header-footer";
+  }
+
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <section className='app'>
+      <section className={`app ${appColsClass}`}>
         <ScrollToAnchor />
-        <Navigation
-          isOpen={isNavOpen}
-          onCloseClick={handleNavigationClose}
-          isSidePanel={true} />
-
+        <div className='app__navigation'>
+          <Navigation
+            isOpen={isNavOpen}
+            onCloseClick={handleNavigationClose}
+            isSidePanel={true} />
+        </div>
         {header || ""}
 
         <main>

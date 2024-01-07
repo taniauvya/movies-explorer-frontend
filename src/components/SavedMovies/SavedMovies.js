@@ -12,7 +12,7 @@ const SavedMovies = () => {
     ];
 
     return (
-        <section className="savedmovies">
+        <section className="savedmovies page-width-common">
             <section className="savedmovies__wrapper">
                     <section className='savedmovies__searchform'>
                         <SearchForm />

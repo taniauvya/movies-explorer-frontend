@@ -3,6 +3,11 @@
     flex-direction: row;
     align-items: center;
     height: 74px;
+    min-width: 230px;
+}
+
+.header__logo {
+    flex-grow: 1;
 }
 
 .header__container_nav_large {
@@ -10,6 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 1;
+    margin-left: 64px;
 }
 
 .header__container_nav_medium {
@@ -18,7 +24,6 @@
 
 .header__container_login {
     display: flex;
-    flex-grow: 1;
     justify-content: flex-end;
 }
 

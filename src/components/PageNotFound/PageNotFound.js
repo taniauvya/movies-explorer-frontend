@@ -9,7 +9,7 @@ const PageNotFound = () => {
     }
 
     return (
-        <section className="pagenotfound">
+        <section className="pagenotfound page-width-common">
             <h1 className="pagenotfound__title">404</h1>
             <span className="pagenotfound__text">Страница не найдена</span>
             <button aria-label="Назад" className='pagenotfound__button button-common' onClick={handleBackOnClick}>Назад</button>

@@ -13,14 +13,6 @@
     flex-grow: 1;
 }
 
-.navigation__space {
-    flex-basis: 61px;
-}
-
-.navigation__space_footer {
-    flex-grow: 0;
-}
-
 .navigation___container_link {
     display: flex;
     flex-direction: row;
@@ -86,17 +78,6 @@
     display: none;
 }
 
-.navigation__button_close {
-    position: absolute;
-    border: none;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-image: url("../../images/nav-close.svg");
-    top: 19px;
-    right: 19px;
-    width: 32px;
-    height: 32px;
-}
 
 @media (max-width: 768px) {
     .navigation {
@@ -109,12 +90,24 @@
         z-index: 100;
     }
 
-    .navigation__space_separate {
+    .navigation__left {
         display: flex;
         flex-grow: 1;
         height: 100%;
         opacity: 30%;
         background-color: #000;
+    }
+
+    .navigation__button_close {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-image: url("../../images/nav-close.svg");
+        top: 21px;
+        right: 21px;
+        width: 32px;
+        height: 32px;
     }
 
     .navigation__container {
@@ -124,7 +117,7 @@
         align-items: center;
         flex-grow: 0;
         background-color: #fff;
-        height: 100%;
+        min-height: 450px;
         flex-basis: 520px;
         z-index: 100;
     }
@@ -134,8 +127,13 @@
         flex-direction: column;
         gap: 28px;
         align-items: center;
-        padding-top: 156px;
-        flex-grow: 1;
+        padding: 0;
+        margin-top: 158px;
+    }
+
+    .navigation__account_container {
+        margin-top: auto;
+        margin-bottom: 90px;
     }
 
     .navigation__link {
@@ -149,32 +147,32 @@
         text-decoration-thickness: 2px;
         text-underline-offset: 7px;
     }
-
-    .navigation__space_footer {
-        padding-bottom: 90px;
-    }
 }
 
 @media (max-width: 320px) {
 
     .navigation__button_close {
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 14px;
+        right: 14px;
         width: 32px;
         height: 32px;
     }
 
     .navigation___container_link {
-        padding-top: 145px;
+        margin-top: 145px;
         gap: 24px;
+    }
+
+    .navigation__link {
+        white-space: nowrap;
     }
 
     .navigation__link_active {
         text-underline-offset: 12px;
     }
 
-    .navigation__space_footer {
-        padding-bottom: 46px;
+    .navigation__account_container {
+        margin-bottom: 46px;
     }
 }

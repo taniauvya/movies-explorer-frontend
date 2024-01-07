@@ -13,15 +13,11 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
     return (
         <nav className={`navigation ${isOpen ? "" : "navigation_closed"}`}>
             {isSidePanel &&
-                <div className='navigation__space_separate' />
+                <div className='navigation__left' />
             }
             <section className="navigation__container">
                 {isSidePanel &&
                     <button aria-label="Закрыть" className='navigation__button_close button-common' onClick={onCloseClick} />
-                }
-
-                {!isSidePanel &&
-                    <div className='navigation__space' />
                 }
 
                 <div className="navigation___container_link">
@@ -39,11 +35,6 @@ const Navigation = ({ linkClass, accountClass, isOpen, isSidePanel = false, onCl
                         <img alt="Аккаунт" className="navigation__account_img" src={imgAccountButton} />
                     </div>
                 </Link>
-
-
-                {isSidePanel &&
-                    <div className="navigation__space_footer" />
-                }
             </section>
         </nav>
     )

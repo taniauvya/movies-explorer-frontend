@@ -25,7 +25,7 @@ const Movies = () => {
     ];
 
     return (
-        <section className="movies">
+        <section className="movies page-width-common">
             <section className="movies__wrapper">
                     <section className='movies__searchform'>
                         <SearchForm />

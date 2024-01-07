@@ -39,8 +39,10 @@ const Header = ({ navigationLinkClass, navigationAccountClass, isBlackLineNavMen
 
     return (
         <div className="header">
-            <Logo />
-
+            <div className='header__logo'>
+                <Logo />
+            </div>
+            
             {linksElem}
         </div>
     )

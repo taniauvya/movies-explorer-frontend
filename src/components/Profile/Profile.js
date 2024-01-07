@@ -19,7 +19,7 @@ const Profile = ({ onLogout }) => {
     }
 
     return (
-        <section className="profile">
+        <section className="profile page-width-common">
             <section className="profile__wrapper">
                 <h1 className="profile__title">{`Привет, ${currentUser.name}!`}</h1>
                 <form name="profile_edit" id="profile_edit" className="profile__form">

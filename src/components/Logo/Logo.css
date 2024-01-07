@@ -1,4 +1,5 @@
 .logo {
+    display: block;
     background-image: url("../../images/logo.svg");
     background-repeat: no-repeat;
     width: 38px;

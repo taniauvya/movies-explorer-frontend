@@ -7,7 +7,7 @@ import AboutMe from '../AboutMe/AboutMe';
 
 const Main = () => {
     return (
-        <section className='main'>
+        <section className='main page-width-common'>
                 <Promo />
                 <AboutProject />
                 <Techs />
