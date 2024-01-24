@@ -1,0 +1,11 @@
+.navigationmenu {
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 320px) {
+    .navigationmenu__image {
+        height: 35px;
+        width: 35px;
+    }
+}
