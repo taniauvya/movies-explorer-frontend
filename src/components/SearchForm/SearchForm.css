@@ -40,6 +40,11 @@
     flex-shrink: 0;
 }
 
+.searchform__button-submit_disabled {
+    background-color: #F8F8F8;
+    color: #C2C2C2;
+}
+
 .searchform__line-2 {
     display: flex;
     flex-direction: row;

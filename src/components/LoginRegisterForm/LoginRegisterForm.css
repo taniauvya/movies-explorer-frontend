@@ -64,6 +64,11 @@
     width: 100%;
 }
 
+.loginregister__button-submit_disabled {
+    background-color: #F8F8F8;
+    color: #C2C2C2;
+}
+
 .loginregister__container-link {
     display: flex;
     flex-direction: row;
@@ -97,7 +102,7 @@
     visibility: hidden;
 }
 
-.loginregister__form:invalid .loginregister__error {
+.loginregister__error_visible {
     visibility: visible;
 }
 

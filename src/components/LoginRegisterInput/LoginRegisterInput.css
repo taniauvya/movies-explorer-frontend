@@ -19,6 +19,19 @@
     padding-bottom: 12px;
 }
 
+.loginregisterinput__error {
+    color: #FF3055;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4px;
+    visibility: hidden;
+}
+
+.loginregister__error_visible {
+    visibility: visible;
+}
+
 .loginregisterinput__input_name {
     font-size: 14px;
     font-weight: 400;

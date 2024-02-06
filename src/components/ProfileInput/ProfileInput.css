@@ -1,0 +1,28 @@
+.profileinput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profileinput__label {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: normal;
+}
+
+.profileinput__input {
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: normal;
+    text-align: right;
+}
+
+.profileinput__input:invalid {
+    color: #f00;
+}
+
+.profileinput__input:disabled {
+    color: #000;
+}
