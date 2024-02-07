@@ -141,6 +141,7 @@ const App = () => {
 
   function handleSearchMovies() {
     if (movies.length > 0) {
+      localStorage.setItem('movies', JSON.stringify({ searchFormValues, movies }));
       return Promise.resolve();
     } else {
       return moviesApi.getMovies()
