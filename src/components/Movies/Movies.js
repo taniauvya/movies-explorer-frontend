@@ -55,10 +55,12 @@ const Movies = ({
         , []
     );
 
+    console.log('movies length', movies.length);
     const moviesFiltered = filterMovies(movies, searchFormValues);
     const cntDisplayMovies = Math.max(moviesDisplayParams.rows, movieRows) * moviesDisplayParams.perRow;
     const displayMovies = moviesFiltered.slice(0, cntDisplayMovies);
     const hasMore = (moviesFiltered.length > 0) && (displayMovies.length < moviesFiltered.length);
+    const moviesNotFound = displayMovies.length === 0 && movies.length > 0;
 
     let moviesElem;
     if (isMoviesSearchActive) {
@@ -67,7 +69,7 @@ const Movies = ({
                 <Preloader />
             </div>;
     }
-    else if (moviesFiltered.length === 0) {
+    else if (moviesNotFound) {
         moviesElem =
             <span className='movies__result'>
                 Ничего не найдено
