@@ -19,10 +19,10 @@ const Movies = ({
     const [isMoviesSearchActive, setIsMoviesSearchActive] = React.useState(false);
     const [isMoviesSearchError, setIsMoviesSearchError] = React.useState(false);
     const [moviesDisplayParams, setMoviesDisplayParams] = React.useState(getMoviesDisplayParams());
-    const [movieRows, setMovieRows] = React.useState(moviesDisplayParams.rows);
+    const [movieRows, setMovieRows] = React.useState(moviesDisplayParams.rowsInit);
 
     const handleSearch = () => {
-        setMovieRows(moviesDisplayParams.rows);
+        setMovieRows(moviesDisplayParams.rowsInit);
         setIsMoviesSearchActive(true);
         setIsMoviesSearchError(false);
         return onSearch(searchFormValues)
@@ -31,14 +31,14 @@ const Movies = ({
     }
 
     const handleMoreClick = () => {
-        setMovieRows(movieRows + numLoadRow());
+        setMovieRows(movieRows + moviesDisplayParams.rowsAdd);
     }
 
     const handleResize = () => {
         setTimeout(() => {
             const displayParams = getMoviesDisplayParams();
             setMoviesDisplayParams(displayParams);
-            setMovieRows(displayParams.rows);
+            setMovieRows(displayParams.rowsInit);
         }
             , RESIZE_DELAY_MS
         );
@@ -56,7 +56,7 @@ const Movies = ({
     );
 
     const moviesFiltered = filterMovies(movies, searchFormValues);
-    const cntDisplayMovies = Math.max(moviesDisplayParams.rows, movieRows) * moviesDisplayParams.perRow;
+    const cntDisplayMovies = Math.max(moviesDisplayParams.rowsInit, movieRows) * moviesDisplayParams.perRow;
     const displayMovies = moviesFiltered.slice(0, cntDisplayMovies);
     const hasMore = (moviesFiltered.length > 0) && (displayMovies.length < moviesFiltered.length);
     const moviesNotFound = displayMovies.length === 0 && movies.length > 0;
