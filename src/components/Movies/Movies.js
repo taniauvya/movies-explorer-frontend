@@ -22,6 +22,7 @@ const Movies = ({
     const [movieRows, setMovieRows] = React.useState(moviesDisplayParams.rows);
 
     const handleSearch = () => {
+        setMovieRows(moviesDisplayParams.rows);
         setIsMoviesSearchActive(true);
         setIsMoviesSearchError(false);
         return onSearch(searchFormValues)
