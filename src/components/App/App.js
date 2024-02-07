@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
+import { Route, Routes, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import './App.css';
 import ScrollToAnchor from '../ScrollToAnchor/ScrollToAnchor';
 import Header from '../Header/Header';
@@ -251,8 +251,8 @@ const App = () => {
             />
             <Route path="/saved-movies" element={<ProtectedRoute element={SavedMovies} loggedIn={loggedIn} movies={savedMovies} onDeleteMovie={handleDeleteMovie} />} />
             <Route path="/profile" element={<ProtectedRoute element={Profile} loggedIn={loggedIn} onProfileChange={handleProfileChange} onLogout={handleLogout} />} />
-            <Route path="/signin" element={<Login onLogin={handleLogin} />} />
-            <Route path="/signup" element={<Register onRegister={handleRegister} />} />
+            <Route path="/signin" element={loggedIn ? <Navigate to="/" replace/> : <Login onLogin={handleLogin} />} />
+            <Route path="/signup" element={loggedIn ? <Navigate to="/" replace/> : <Register onRegister={handleRegister} />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </main>
