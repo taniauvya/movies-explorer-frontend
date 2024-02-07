@@ -14,7 +14,7 @@ const MoviesCardList = ({ movies, savedMovies, savedList, onSaveMovie, onDeleteM
                     let actionImg;
 
                     if (savedList) {
-                        actionImgClass = 'moviescard__button_unsave';
+                        actionImgClass = 'moviescard__button_unsave moviescard__button_saved';
                         actionImg = () => onDeleteMovie(movie._id);
                     }
                     else {

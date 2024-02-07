@@ -31,7 +31,6 @@ const Movies = ({
     }
 
     const handleMoreClick = () => {
-        console.log('handleMoreClick', movieRows, numLoadRow());
         setMovieRows(movieRows + numLoadRow());
     }
 
@@ -56,7 +55,6 @@ const Movies = ({
         , []
     );
 
-    console.log('movies length', movies.length);
     const moviesFiltered = filterMovies(movies, searchFormValues);
     const cntDisplayMovies = Math.max(moviesDisplayParams.rows, movieRows) * moviesDisplayParams.perRow;
     const displayMovies = moviesFiltered.slice(0, cntDisplayMovies);
