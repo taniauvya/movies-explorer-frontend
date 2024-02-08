@@ -1,24 +1,42 @@
 import './MoviesCardList.css'
 import MoviesCard from '../MoviesCard/MoviesCard'
 
-const MoviesCardList = ({ movies, savedList }) => {
+const MoviesCardList = ({ movies, savedMovies, savedList, onSaveMovie, onDeleteMovie }) => {
+
+    const savedMoviesMap = savedList ? null : new Map(savedMovies.map(movie => [movie.movieId, movie]));
 
     return (
         <div className="moviescardlist">
             <ul className="moviescardlist__list">
                 {movies.map(movie => {
 
-                    const actionImgClass = savedList ? 'moviescard__button_unsave' :
-                        (movie.isLiked ? 'moviescard__button_like' : 'moviescard__button_dislike');
+                    let actionImgClass;
+                    let actionImg;
+
+                    if (savedList) {
+                        actionImgClass = 'moviescard__button_unsave moviescard__button_saved';
+                        actionImg = () => onDeleteMovie(movie._id);
+                    }
+                    else {
+                        const savedMovie = savedMoviesMap.get(movie.movieId);
+
+                        if (savedMovie) {
+                            actionImgClass = 'moviescard__button_like';
+                            actionImg = () => onDeleteMovie(savedMovie._id);
+                        }
+                        else {
+                            actionImgClass = 'moviescard__button_dislike';
+                            actionImg = () => onSaveMovie(movie);
+                        }
+                    }
 
                     return (
                         <MoviesCard
-                            link={movie.link}
-                            title={movie.title}
-                            duration={movie.duration}
-                            key={movie._id}
+                            movie={movie}
+                            key={movie.movieId}
                             actionImgClass={actionImgClass}
-                            isSaved={savedList} />
+                            onClick={actionImg}
+                        />
                     );
                 })}
 
@@ -28,6 +46,3 @@ const MoviesCardList = ({ movies, savedList }) => {
 };
 
 export default MoviesCardList
-
-
-

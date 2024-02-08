@@ -1,59 +1,118 @@
+import React from 'react';
 import './Movies.css'
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import Preloader from '../Preloader/Preloader';
+import { getMoviesDisplayParams, numLoadRow, filterMovies } from '../../utils/Movies';
+import { RESIZE_DELAY_MS } from '../../utils/Constants';
 
-const Movies = () => {
+const Movies = ({
+    movies,
+    savedMovies,
+    searchFormValues,
+    searchFormHandleChange,
+    onSearch,
+    onSaveMovie,
+    onDeleteMovie
+}) => {
 
-    const moviesData = [
-        { _id: 1, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 2, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 3, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: true, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 4, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 5, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 6, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 7, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 8, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 9, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 10, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 11, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: true, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 12, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 13, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 14, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 15, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { _id: 16, title: "Киноальманах «100 лет дизайна»", duration: "1ч 42м", isLiked: false, link: "https://images.unsplash.com/photo-1682686581580-d99b0230064e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    ];
+    const [isMoviesSearchActive, setIsMoviesSearchActive] = React.useState(false);
+    const [isMoviesSearchError, setIsMoviesSearchError] = React.useState(false);
+    const [moviesDisplayParams, setMoviesDisplayParams] = React.useState(getMoviesDisplayParams());
+    const [movieRows, setMovieRows] = React.useState(moviesDisplayParams.rowsInit);
 
-    let movies;
-    if (window.innerWidth > 768) {
-        movies = moviesData;
+    const handleSearch = () => {
+        setMovieRows(moviesDisplayParams.rowsInit);
+        setIsMoviesSearchActive(true);
+        setIsMoviesSearchError(false);
+        return onSearch(searchFormValues)
+            .catch(() => setIsMoviesSearchError(true))
+            .finally(() => setIsMoviesSearchActive(false));
     }
-    else if (window.innerWidth <= 768 && window.innerWidth > 320) {
-        movies = moviesData.slice(0, 8);
+
+    const handleMoreClick = () => {
+        setMovieRows(movieRows + moviesDisplayParams.rowsAdd);
     }
-    else if (window.innerWidth <= 320) {
-        movies = moviesData.slice(0, 5);
+
+    const handleResize = () => {
+        setTimeout(() => {
+            const displayParams = getMoviesDisplayParams();
+            setMoviesDisplayParams(displayParams);
+            setMovieRows(displayParams.rowsInit);
+        }
+            , RESIZE_DELAY_MS
+        );
+    }
+
+    React.useEffect(
+        () => {
+            window.addEventListener('resize', handleResize);
+
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            }
+        }
+        , []
+    );
+
+    const moviesFiltered = filterMovies(movies, searchFormValues);
+    const cntDisplayMovies = Math.max(moviesDisplayParams.rowsInit, movieRows) * moviesDisplayParams.perRow;
+    const displayMovies = moviesFiltered.slice(0, cntDisplayMovies);
+    const hasMore = (moviesFiltered.length > 0) && (displayMovies.length < moviesFiltered.length);
+    const moviesNotFound = displayMovies.length === 0 && movies.length > 0;
+
+    let moviesElem;
+    if (isMoviesSearchActive) {
+        moviesElem =
+            <div className='movies__preloader'>
+                <Preloader />
+            </div>;
+    }
+    else if (moviesNotFound) {
+        moviesElem =
+            <span className='movies__result'>
+                Ничего не найдено
+            </span>;
+    }
+    else if (!isMoviesSearchError) {
+        moviesElem =
+            <section className='movies__cardlist'>
+                <MoviesCardList
+                    savedList={false}
+                    movies={displayMovies}
+                    savedMovies={savedMovies}
+                    onSaveMovie={onSaveMovie}
+                    onDeleteMovie={onDeleteMovie}
+                />
+            </section>;
+    }
+    else {
+        moviesElem =
+            <span className='movies__result movies__result_error'>
+                Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз
+            </span>;
     }
 
     return (
         <section className="movies page-width-common">
             <section className="movies__wrapper">
-                    <section className='movies__searchform'>
-                        <SearchForm />
-                    </section>
-                    <section className='movies__cardlist'>
-                        <MoviesCardList
-                            savedList={false}
-                            movies={movies} />
-                    </section>
+                <section className='movies__searchform'>
+                    <SearchForm
+                        onSubmit={handleSearch}
+                        values={searchFormValues}
+                        onChange={searchFormHandleChange}
+                    />
+                </section>
+
+                {moviesElem}
+
+                {hasMore &&
                     <section className='movies__load'>
-                        <button className='movies__button-load button-common' aria-label="Еще">
+                        <button className='movies__button-load button-common' aria-label="Еще" onClick={handleMoreClick}>
                             Ещё
                         </button>
-                        <div className='movies__preloader'>
-                            <Preloader />
-                        </div>
                     </section>
+                }
             </section>
         </section>
     )

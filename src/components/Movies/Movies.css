@@ -39,8 +39,8 @@
     border: none;
 }
 
-.movies__preloader {
-    display: none;
+.movies__result_error {
+    color: #FF3055
 }
 
 
